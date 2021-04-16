@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_map">
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.skyfishjy.library.RippleBackground
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ripple_bg"
+        app:rb_color="@color/red"
+        app:rb_radius="22dp"
+        app:rb_rippleAmount="4"
+        app:rb_duration="3000"
+        app:rb_scale="6">
+        <com.airbnb.lottie.LottieAnimationView
+
+            android:id="@+id/progressBarIcon"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:layout_weight="4"
+            app:lottie_autoPlay="true"
+            android:layout_centerInParent="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/location" />
+
+        <!-- <pl.droidsonroids.gif.GifImageView
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+             android:layout_centerInParent="true"
+
+             android:src="@drawable/pin_gif"/>-->
+    </com.skyfishjy.library.RippleBackground>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btn_find"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Find Restaurants"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorPrimary"
+        android:layout_margin="16dp"
+        android:textStyle="bold"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="5dp"
+        android:layout_alignParentBottom="true">
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:indeterminateTint="@color/red"
+            android:indeterminate="true"/>
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_location"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_edit_location_black_24dp"/>
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/iv_location"
+                    android:layout_toLeftOf="@+id/btn_AddressChange"
+                    android:id="@+id/tv_cityName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Locating......"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"/>
+                <Button
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:id="@+id/btn_AddressChange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Change"
+                    android:textColor="@color/red"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_marginTop="8dp"
+                android:id="@+id/tv_fullAddressDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:maxLines="3"
+                android:layout_marginLeft="5dp"
+
+                android:textColor="@color/black"/>
+            <Button
+                android:id="@+id/btn_ConfirmLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm Location"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_background_green"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

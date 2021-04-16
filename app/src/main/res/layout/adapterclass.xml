@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp">
+
+
+            <LinearLayout
+                android:id="@+id/ll_userClasslist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="4dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/tvSubjectname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Subject Name : "
+                        android:textColor="@color/dark_grey"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_marginRight="40dp"
+                        android:id="@+id/tv_Class_Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/tvSubjectname"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="Mathematics,"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="-10dp"
+                    android:gravity="end"
+                    android:layout_gravity="end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/iv_delete"
+                        android:layout_width="35dp"
+                        android:layout_height="26dp"
+                        android:src="@drawable/delete_icon" />
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_marginTop="-15dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+
+                        android:id="@+id/tvStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="Status :-"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <Spinner
+                        android:id="@+id/sp_Statuspending"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_toRightOf="@+id/tvStatus"
+                        android:maxLines="1"
+                        android:text="Pending "
+                        android:textColor="@color/dark_grey"
+                        android:textSize="10sp" />
+
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/iv_Edit"
+                        android:layout_width="25dp"
+                        android:layout_height="26dp"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/edit_icon"
+                        app:tint="@color/colorAccent" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

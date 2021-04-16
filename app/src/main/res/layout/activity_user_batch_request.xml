@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lgt.NeWay.activity.UserBatchRequest.UserBatchRequest">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/head"
+            layout="@layout/toolbar_with_back"/>
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:textColor="@color/colorAccent"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/head"
+            android:text="User Batch Request List"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_Userbatchreqlist"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/tv_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

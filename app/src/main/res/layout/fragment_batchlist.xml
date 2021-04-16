@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#32929292"
+    android:layout_height="match_parent">
+
+  <include
+      android:id="@+id/toolbar" layout="@layout/toolbar"/>
+
+
+
+  <RelativeLayout
+     android:layout_margin="20dp"
+      android:id="@+id/rv_Addbatches"
+      android:layout_below="@+id/toolbar"
+      android:background="@drawable/batchlist_background"
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="45dp">
+
+    <ImageView
+        android:layout_marginLeft="20dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/tv_Addbatches"
+        android:src="@drawable/join_batch_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:tint="@color/white" />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/tv_Addbatches"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:text="Add Batches "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+  </RelativeLayout>
+
+  <TextView
+      android:layout_below="@+id/rv_Addbatches"
+      android:id="@+id/tvBatchesList"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:text="Batches List"
+      android:textColor="@color/colorAccent"
+      android:textSize="14sp"
+      android:textStyle="bold" />
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:layout_below="@+id/tvBatchesList"
+      android:layout_marginTop="10dp"
+      android:id="@+id/rv_userbatchlist"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+
+</RelativeLayout>

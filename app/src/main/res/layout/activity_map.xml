@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MapActivity">
+
+    <include layout="@layout/contentmap" />
+
+    <ImageView
+        android:id="@+id/iv_back_ArrowFindLocation"
+        android:layout_margin="12dp"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/ic_keyboard_arrow_down_white_24dp"
+        app:tint="@color/black" />
+</RelativeLayout>

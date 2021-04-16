@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lgt.NeWay.activity.Addbatches">
+
+    <include
+        android:id="@+id/ic_toolbarback"
+        layout="@layout/toolbar_with_back" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ic_toolbarback"
+        android:fillViewport="false">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_uploadbatchimage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ad_image" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Upload Batch Image"
+                android:textColor="@color/colorAccent"
+                android:textSize="15dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="35dp"
+                    android:orientation="vertical">
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Batch Type"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/signup_background">
+
+                        <Spinner
+                            android:id="@+id/sp_batch_Type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/black"
+                            android:dropDownSelector="@color/black"
+                            android:padding="10dp">
+
+                        </Spinner>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Batch Name"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/et_Batch_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/signup_background"
+                        android:hint=" Enter Batch Name"
+                        android:inputType="textCapWords"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/light_grey"
+                        android:textColorHint="@color/light_grey">
+
+                    </EditText>
+
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Select Board"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/signup_background">
+
+
+                        <Spinner
+                            android:id="@+id/sp_Select_Board"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/black"
+                            android:dropDownSelector="@color/black"
+                            android:padding="10dp">
+
+                        </Spinner>
+
+                    </RelativeLayout>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Select Subject"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/signup_background">
+
+
+                        <Spinner
+                            android:id="@+id/sp_Select_Subject"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/black"
+                            android:dropDownSelector="@color/black"
+                            android:padding="10dp">
+
+                        </Spinner>
+
+                    </RelativeLayout>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Select Class
+"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/signup_background">
+
+
+                        <Spinner
+                            android:id="@+id/sp_Select_Class"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/black"
+                            android:dropDownSelector="@color/black"
+                            android:padding="10dp">
+
+                        </Spinner>
+
+                    </RelativeLayout>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Class Fee"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/et_ClassFee_signup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/signup_background"
+                        android:hint=" Enter Class Fee "
+                        android:inputType="textCapWords"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/light_grey"
+                        android:textColorHint="@color/light_grey">
+
+                    </EditText>
+
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/colorAccent"
+                        android:text="Monthly Fee Options Available"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <RadioGroup
+                        android:id="@+id/Rg_button"
+                        android:padding="8dp"
+                        android:background="@drawable/signup_background"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/bt_yes"
+                            android:buttonTint="@color/colorAccent"
+                            android:layout_marginLeft="5dp"
+                            android:text="Yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                        <RadioButton
+                            android:id="@+id/bt_no"
+                            android:buttonTint="@color/colorAccent"
+                            android:layout_marginLeft="60dp"
+                            android:text="No"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </RadioGroup>
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Duration (in month)"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/et_Duration"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/signup_background"
+                        android:hint=" Enter Duration (in month)"
+                        android:inputType="textWebEmailAddress"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/light_grey"
+                        android:textColorHint="@color/light_grey">
+
+                    </EditText>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Timing"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/et_timing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/signup_background"
+                        android:hint=" Enter Timing"
+                        android:maxLength="10"
+                        android:padding="10dp"
+                        android:textColor="@color/light_grey"
+                        android:textColorHint="@color/light_grey">
+
+                    </EditText>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Open Days"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+
+                    <EditText
+                        android:id="@+id/et_Open_Days"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/signup_background"
+                        android:hint=" Enter Open Days"
+                        android:inputType="textWebEmailAddress"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/light_grey"
+                        android:textColorHint="@color/light_grey">
+
+                    </EditText>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/white"
+                        android:visibility="gone"></View>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Select Teacher"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/signup_background">
+
+                        <Spinner
+                            android:id="@+id/sp_Select_Teacher"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/black"
+                            android:dropDownSelector="@color/black"
+                            android:padding="10dp">
+
+                        </Spinner>
+
+                    </RelativeLayout>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Total Seat Available"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+
+                    <EditText
+                        android:id="@+id/et_TotalSeatAvailable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/signup_background"
+                        android:hint=" Enter Total Seat Available"
+                        android:inputType="textWebEmailAddress"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/light_grey"
+                        android:textColorHint="@color/light_grey">
+
+                    </EditText>
+
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Total Left Seat"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/et_TotalLeftSeat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/signup_background"
+                        android:hint=" Enter Total Left Seat"
+                        android:inputType="textWebEmailAddress"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/light_grey"
+                        android:textColorHint="@color/light_grey">
+
+                    </EditText>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/white"
+                        android:visibility="gone"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <Button
+                            android:id="@+id/btn_submit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="50dp"
+                            android:background="@drawable/batchlist_background"
+                            android:text="Submit"
+                            android:textColor="@color/white">
+
+                        </Button>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progress_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/colorAccent"
+        android:visibility="gone"></ProgressBar>
+</RelativeLayout>

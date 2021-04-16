@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lgt.NeWay.activity.ContactList.AddContactNumber">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/head"
+            layout="@layout/toolbar_with_back" />
+
+
+        <TextView
+            android:id="@+id/tvaddcontact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/head"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Add contact No."
+            android:textColor="@color/colorAccent"
+            android:textSize="16dp" />
+
+        <EditText
+
+            android:id="@+id/et_AddName"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/tvaddcontact"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/signup_background"
+            android:hint="Enter Name"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+
+        <EditText
+            android:id="@+id/et_Addcontact"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/et_AddName"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/signup_background"
+            android:digits="1,2,3,4,5,6,7,8,9,0"
+            android:hint="Enter Mobile No"
+            android:inputType="number"
+            android:maxLength="10"
+            android:minEms="10"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/bt_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/et_Addcontact"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/batchlist_background"
+            android:text="submit" />
+
+
+        <TextView
+            android:id="@+id/tv_Clist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bt_submit"
+            android:layout_marginLeft="10dp"
+            android:text="Contact List"
+            android:textColor="@color/colorAccent"
+            android:textSize="15dp" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_contactlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_Clist"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    </LinearLayout>
+
+</RelativeLayout>

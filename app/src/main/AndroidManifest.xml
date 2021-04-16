@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lgt.NeWay.Neway">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NeWay"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.lgt.NeWay.activity.UploadOtherCertificate.UploadOtherCertificate"></activity>
+        <activity android:name="com.lgt.NeWay.activity.ActivityChangePassword" />
+        <activity android:name="com.lgt.NeWay.activity.UserBatchRequest.UserBatchRequest" />
+        <activity android:name="com.lgt.NeWay.activity.WebViewActivity" />
+        <activity android:name="com.lgt.NeWay.activity.ContactList.AddContactNumber" />
+        <activity android:name="com.lgt.NeWay.activity.Gallary.GallaryList" />
+        <activity android:name="com.lgt.NeWay.activity.Amity.Amitys" />
+        <activity android:name="com.lgt.NeWay.activity.TeacherList.TeacherList" />
+        <activity android:name="com.lgt.NeWay.activity.JobList.AddJob" />
+        <activity android:name="com.lgt.NeWay.activity.JobList.Jobs" />
+        <activity android:name="com.lgt.NeWay.activity.ClassList.ClassList" />
+        <activity android:name="com.lgt.NeWay.activity.SubjectList.SubjectList" />
+        <activity
+            android:name="com.lgt.NeWay.activity.BottomSheetForgotpassword"
+            tools:ignore="Instantiatable" />
+        <activity android:name="com.lgt.NeWay.activity.BoardList.BaordList" />
+        <activity android:name="com.lgt.NeWay.activity.DiscriptionJoinBatch" />
+        <activity android:name="com.lgt.NeWay.activity.Profile" />
+        <activity android:name="com.lgt.NeWay.activity.MapActivity" />
+        <activity android:name="com.lgt.NeWay.activity.Login" />
+        <activity android:name="com.lgt.NeWay.activity.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBG0SNlzbHuvd6Ok3BsZ831A47GIZ6wsOI" />
+
+        <activity android:name="com.lgt.NeWay.activity.Registration" />
+        <activity android:name="com.lgt.NeWay.activity.Addbatches" />
+        <activity android:name="com.lgt.NeWay.activity.MainActivity" />
+    </application>
+
+</manifest>

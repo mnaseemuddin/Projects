@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:background="#D8FAF6F6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/toolbar_with_back"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="35dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Student Name"
+            android:textColor="@color/colorAccent"
+            android:textSize="12dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/signup_background">
+
+            <TextView
+                android:id="@+id/tv_Student_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:dropDownSelector="@color/black"
+                android:padding="8dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Batch Name"
+            android:textColor="@color/colorAccent"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/tv_Batch_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/signup_background"
+            android:inputType="textCapWords"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textColor="@color/light_grey"
+            android:textColorHint="@color/light_grey"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Selected Class"
+            android:textColor="@color/colorAccent"
+            android:textSize="12dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/signup_background">
+
+            <TextView
+                android:id="@+id/sp_Select_Board"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:dropDownSelector="@color/black"
+                android:padding="8dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Subject"
+            android:textColor="@color/colorAccent"
+            android:textSize="12dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/signup_background">
+
+            <TextView
+                android:id="@+id/sp_Select_Subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:dropDownSelector="@color/black"
+                android:padding="8dp"/>
+
+
+        </RelativeLayout>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Fee Type"
+            android:textColor="@color/colorAccent"
+            android:textSize="12dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/signup_background">
+
+            <TextView
+                android:id="@+id/sp_Select_Class"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:dropDownSelector="@color/black"
+                android:padding="8dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Paid Amount"
+            android:textColor="@color/colorAccent"
+            android:textSize="12dp"/>
+
+
+        <TextView
+            android:id="@+id/et_Shopname_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/signup_background"
+            android:inputType="textCapWords"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textColor="@color/light_grey"
+            android:textColorHint="@color/light_grey"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Remain Amounts"
+            android:textColor="@color/colorAccent"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/tv_Remain_Amounts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/signup_background"
+            android:inputType="number"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/light_grey"
+            android:textColorHint="@color/light_grey"/>
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Total Amount"
+            android:textColor="@color/colorAccent"
+            android:textSize="12dp"/>
+
+         <TextView
+            android:id="@+id/et_mobileno_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/signup_background"
+            android:inputType="number"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/light_grey"
+            android:textColorHint="@color/light_grey"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Course Valid (in months)"
+            android:textColor="@color/colorAccent"
+            android:textSize="12dp" />
+
+
+        <TextView
+            android:id="@+id/et_Open_Days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/signup_background"
+            android:inputType="textWebEmailAddress"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/light_grey"
+            android:textColorHint="@color/light_grey"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Fee installment"
+            android:textColor="@color/colorAccent"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/et_TotalSeatAvailable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/signup_background"
+            android:inputType="textWebEmailAddress"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/light_grey"
+            android:textColorHint="@color/light_grey"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Join Date"
+            android:textColor="@color/colorAccent"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/et_TotalLeftSeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/signup_background"
+            android:inputType="textWebEmailAddress"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/light_grey"
+            android:textColorHint="@color/light_grey"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Next Fee Due Date"
+            android:textColor="@color/colorAccent"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_NextFeeDueDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/signup_background"
+            android:inputType="textWebEmailAddress"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/light_grey"
+            android:textColorHint="@color/light_grey"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Payment Status"
+            android:textColor="@color/colorAccent"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_Payment_Status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/signup_background"
+            android:inputType="textWebEmailAddress"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/light_grey"
+            android:textColorHint="@color/light_grey"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/batchlist_background"
+                android:text="Submit"
+                android:textColor="@color/white">
+
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

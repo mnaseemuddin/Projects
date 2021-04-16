@@ -1,0 +1,1102 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lgt.NeWay.Fragment.MoreFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="16dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="16dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/llMyProfile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ripple_test"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/et_login_bg"
+                                android:orientation="horizontal"
+                                android:padding="6dp"
+                                android:weightSum="2">
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="24dp"
+                                    android:layout_weight="0.3"
+                                    android:src="@drawable/user" />
+
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="24dp"
+                                    android:layout_marginRight="24dp"
+                                    android:layout_weight="1.5"
+                                    android:text="Coching Profile"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="24dp"
+                                    android:layout_gravity="right"
+                                    android:layout_weight="0.2"
+                                    android:src="@drawable/expand_more" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/llBoardlist"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ripple_test"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/et_login_bg"
+                                android:orientation="horizontal"
+                                android:padding="6dp"
+                                android:weightSum="2">
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="24dp"
+                                    android:layout_weight="0.3"
+                                    android:src="@drawable/list_icon"
+                                    app:tint="@color/light_grey" />
+
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="24dp"
+                                    android:layout_marginRight="24dp"
+                                    android:layout_weight="1.5"
+                                    android:text="Board List"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="24dp"
+                                    android:layout_gravity="right"
+                                    android:layout_weight="0.2"
+                                    android:src="@drawable/expand_more" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/llSubjectlist"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ripple_test"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/et_login_bg"
+                                android:orientation="horizontal"
+                                android:padding="6dp"
+                                android:weightSum="2">
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="24dp"
+                                    android:layout_weight="0.3"
+                                    android:src="@drawable/subjecticon"
+                                    app:tint="@color/light_grey" />
+
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="24dp"
+                                    android:layout_marginRight="24dp"
+                                    android:layout_weight="1.5"
+                                    android:text="Subject List"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="24dp"
+                                    android:layout_gravity="right"
+                                    android:layout_weight="0.2"
+                                    android:src="@drawable/expand_more" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/llClasstlist"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ripple_test"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/et_login_bg"
+                                android:orientation="horizontal"
+                                android:padding="6dp"
+                                android:weightSum="2">
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="24dp"
+                                    android:layout_weight="0.3"
+                                    android:src="@drawable/buldingicon"
+                                    app:tint="@color/light_grey" />
+
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="24dp"
+                                    android:layout_marginRight="24dp"
+                                    android:layout_weight="1.5"
+                                    android:text="Class List"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="24dp"
+                                    android:layout_gravity="right"
+                                    android:layout_weight="0.2"
+                                    android:src="@drawable/expand_more" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/llJobsAppliedNew"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="4dp">
+
+                            <LinearLayout
+                                android:id="@+id/llJobsApplied"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/ripple_test"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/et_login_bg"
+                                    android:orientation="horizontal"
+                                    android:padding="6dp"
+                                    android:weightSum="2">
+
+                                    <ImageView
+                                        android:layout_width="0dp"
+                                        android:layout_height="24dp"
+                                        android:layout_weight="0.3"
+                                        android:src="@drawable/jobs_applied" />
+
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginLeft="24dp"
+                                        android:layout_marginRight="24dp"
+                                        android:layout_weight="1.5"
+                                        android:text="Jobs List"
+                                        android:textColor="@color/black" />
+
+                                    <ImageView
+                                        android:layout_width="0dp"
+                                        android:layout_height="24dp"
+                                        android:layout_gravity="right"
+                                        android:layout_weight="0.2"
+                                        android:src="@drawable/expand_more" />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/llTeacherlist"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ripple_test"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:orientation="vertical"
+                            android:padding="4dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/et_login_bg"
+                                android:orientation="horizontal"
+                                android:padding="6dp"
+                                android:weightSum="2">
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="24dp"
+                                    android:layout_weight="0.3"
+                                    android:src="@drawable/teachericon"
+                                    app:tint="@color/dark_grey" />
+
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="24dp"
+                                    android:layout_marginRight="24dp"
+                                    android:layout_weight="1.5"
+                                    android:text="Teacher List"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="24dp"
+                                    android:layout_gravity="right"
+                                    android:layout_weight="0.2"
+                                    android:src="@drawable/expand_more" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/llUserBatchRequestlist"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ripple_test"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:orientation="vertical"
+                            android:padding="4dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/et_login_bg"
+                                android:orientation="horizontal"
+                                android:padding="6dp"
+                                android:weightSum="2">
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="24dp"
+                                    android:layout_weight="0.3"
+                                    android:src="@drawable/join_batch_icon"
+                                    app:tint="@color/dark_grey" />
+
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="24dp"
+                                    android:layout_marginRight="24dp"
+                                    android:layout_weight="1.5"
+                                    android:text="User Batch Request List"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="24dp"
+                                    android:layout_gravity="right"
+                                    android:layout_weight="0.2"
+                                    android:src="@drawable/expand_more" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/llAminitylist"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="4dp">
+
+                            <LinearLayout
+                                android:id="@+id/ll_Aminitylist"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/ripple_test"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/et_login_bg"
+                                    android:orientation="horizontal"
+                                    android:padding="6dp"
+                                    android:weightSum="2">
+
+                                    <ImageView
+                                        android:layout_width="0dp"
+                                        android:layout_height="24dp"
+                                        android:layout_weight="0.3"
+                                        android:src="@drawable/facelityicon"
+                                        app:tint="@color/light_grey" />
+
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginLeft="24dp"
+                                        android:layout_marginRight="24dp"
+                                        android:layout_weight="1.5"
+                                        android:text="Aminity List"
+                                        android:textColor="@color/black" />
+
+                                    <ImageView
+                                        android:layout_width="0dp"
+                                        android:layout_height="24dp"
+                                        android:layout_gravity="right"
+                                        android:layout_weight="0.2"
+                                        android:src="@drawable/expand_more" />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+                        <LinearLayout
+                            android:id="@+id/llgallerylist"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ripple_test"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/et_login_bg"
+                                android:orientation="horizontal"
+                                android:padding="6dp"
+                                android:weightSum="2">
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="24dp"
+                                    android:layout_weight="0.3"
+                                    android:src="@drawable/galleryicon" />
+
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="24dp"
+                                    android:layout_marginRight="24dp"
+                                    android:layout_weight="1.5"
+                                    android:text="Gallery List"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="24dp"
+                                    android:layout_gravity="right"
+                                    android:layout_weight="0.2"
+                                    android:src="@drawable/expand_more" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+                        <LinearLayout
+                            android:id="@+id/llVideolist"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ripple_test"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/et_login_bg"
+                                android:orientation="horizontal"
+                                android:padding="6dp"
+                                android:weightSum="2">
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="24dp"
+                                    android:layout_weight="0.3"
+                                    android:src="@drawable/videoicon" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="24dp"
+                                    android:layout_marginRight="24dp"
+                                    android:layout_weight="1.5"
+                                    android:text="Video Gallery List"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="24dp"
+                                    android:layout_gravity="right"
+                                    android:layout_weight="0.2"
+                                    android:src="@drawable/expand_more" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llOtherCertificatesTop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+                        <LinearLayout
+                            android:id="@+id/llOtherCertificate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ripple_test"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/et_login_bg"
+                                android:orientation="horizontal"
+                                android:padding="6dp"
+                                android:weightSum="2">
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="24dp"
+                                    android:layout_weight="0.3"
+                                    android:src="@drawable/certificates" />
+
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="24dp"
+                                    android:layout_marginRight="24dp"
+                                    android:layout_weight="1.5"
+                                    android:text="Upload Other certificates"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="24dp"
+                                    android:layout_gravity="right"
+                                    android:layout_weight="0.2"
+                                    android:src="@drawable/expand_more" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:id="@+id/llCertificatesNew"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+                        <LinearLayout
+                            android:id="@+id/llUsercontacts"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ripple_test"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/et_login_bg"
+                                android:orientation="horizontal"
+                                android:padding="6dp"
+                                android:weightSum="2">
+
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="24dp"
+                                    android:layout_weight="0.3"
+                                    android:src="@drawable/contacticon" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="24dp"
+                                    android:layout_marginRight="24dp"
+
+                                    android:layout_weight="1.5"
+                                    android:text="User Contact List"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="24dp"
+                                    android:layout_gravity="right"
+                                    android:layout_weight="0.2"
+                                    android:src="@drawable/expand_more" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+                        <LinearLayout
+                            android:id="@+id/llAboutUs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ripple_test"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/et_login_bg"
+                                android:orientation="horizontal"
+                                android:padding="6dp"
+                                android:weightSum="2">
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="24dp"
+                                    android:layout_weight="0.3"
+                                    android:src="@drawable/about_us"
+                                    app:tint="@color/light_grey" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="24dp"
+                                    android:layout_marginRight="24dp"
+                                    android:layout_weight="1.5"
+                                    android:text="About us"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="24dp"
+                                    android:layout_gravity="right"
+                                    android:layout_weight="0.2"
+                                    android:src="@drawable/expand_more" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+                        <LinearLayout
+                            android:id="@+id/llPrivacyPolicy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ripple_test"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/et_login_bg"
+                                android:orientation="horizontal"
+                                android:padding="6dp"
+                                android:weightSum="2">
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="24dp"
+                                    android:layout_weight="0.3"
+                                    android:src="@drawable/policy_dark_grey" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="24dp"
+                                    android:layout_marginRight="24dp"
+                                    android:layout_weight="1.5"
+                                    android:text="Privacy policy"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="24dp"
+                                    android:layout_gravity="right"
+                                    android:layout_weight="0.2"
+                                    android:src="@drawable/expand_more" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="4dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/llRefundPolicy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ripple_test"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/et_login_bg"
+                                android:orientation="horizontal"
+                                android:padding="6dp"
+                                android:weightSum="2">
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="24dp"
+                                    android:layout_weight="0.3"
+                                    android:src="@drawable/policy_dark_grey" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="24dp"
+                                    android:layout_marginRight="24dp"
+                                    android:layout_weight="1.5"
+                                    android:text="Refund &amp; Cancellation policy"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="24dp"
+                                    android:layout_gravity="right"
+                                    android:layout_weight="0.2"
+                                    android:src="@drawable/expand_more" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+                        <LinearLayout
+                            android:id="@+id/llShare"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ripple_test"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/et_login_bg"
+                                android:orientation="horizontal"
+                                android:padding="6dp"
+                                android:weightSum="2">
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="24dp"
+                                    android:layout_weight="0.3"
+                                    android:src="@drawable/share_dark_grey" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="24dp"
+                                    android:layout_marginRight="24dp"
+                                    android:layout_weight="1.5"
+                                    android:text="Share"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="24dp"
+                                    android:layout_gravity="right"
+                                    android:layout_weight="0.2"
+                                    android:src="@drawable/expand_more" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+                        <LinearLayout
+                            android:id="@+id/llChangePassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ripple_test"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/et_login_bg"
+                                android:orientation="horizontal"
+                                android:padding="6dp"
+                                android:weightSum="2">
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="24dp"
+                                    android:layout_weight="0.3"
+                                    android:src="@drawable/change_password" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="24dp"
+                                    android:layout_marginRight="24dp"
+                                    android:layout_weight="1.5"
+                                    android:text="Change password"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="24dp"
+                                    android:layout_gravity="right"
+                                    android:layout_weight="0.2"
+                                    android:src="@drawable/expand_more" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+                        <LinearLayout
+                            android:id="@+id/llLogOut"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ripple_test"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/et_login_bg"
+                                android:orientation="horizontal"
+                                android:padding="6dp"
+                                android:weightSum="2">
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="24dp"
+                                    android:layout_weight="0.3"
+                                    android:src="@drawable/logout_color_accent" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="24dp"
+                                    android:layout_marginRight="24dp"
+                                    android:layout_weight="1.5"
+                                    android:text="Log out"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="24dp"
+                                    android:layout_gravity="right"
+                                    android:layout_weight="0.2"
+                                    android:src="@drawable/expand_more" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>

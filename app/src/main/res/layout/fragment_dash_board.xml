@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#60929292"
+    android:id="@+id/FragmentDashboard"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lgt.NeWay.Fragment.DashBoardFragment">
+
+
+  <include
+     android:id="@+id/includetoolbar"
+      layout="@layout/toolbar_with_back" />
+
+
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:layout_marginTop="2dp"
+      android:layout_below="@+id/includetoolbar"
+      android:id="@+id/rvDashboardTab"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+
+
+</RelativeLayout>
