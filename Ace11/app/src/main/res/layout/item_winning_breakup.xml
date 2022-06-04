@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rankRL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_Rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:padding="10dp"
+        android:text="Rank: 1"
+        android:textColor="@color/sixtwo"
+        android:textSize="15sp" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_price_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="40dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:src="@drawable/ic_token_black"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/tv_Price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/sixtwo"
+            android:layout_gravity="center_vertical"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ll_price_holder"
+        android:background="#dbdbdb"
+        android:visibility="gone" />
+</RelativeLayout>

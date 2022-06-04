@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/bg_stroke_accent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+
+        android:layout_marginLeft="@dimen/margin_32_dp"
+        android:layout_marginRight="@dimen/margin_32_dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ScrollView
+            android:fillViewport="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_24_dp"
+                android:layout_marginBottom="@dimen/margin_40_dp"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:textSize="@dimen/text_16_sp"
+                    android:layout_marginTop="@dimen/margin_16_dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:text="Match Scheduled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+                <TextView
+
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/margin_16_dp"
+                    android:gravity="center"
+                    android:text="Match not yet started."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+                <TextView
+                    android:id="@+id/tvOk"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/margin_16_dp"
+                    android:textColor="@color/white"
+                    android:paddingBottom="@dimen/margin_8_dp"
+                    android:paddingTop="@dimen/margin_8_dp"
+                    android:layout_marginLeft="@dimen/margin_80_dp"
+                    android:layout_marginRight="@dimen/margin_80_dp"
+                    android:background="@drawable/gredient_bt"
+                    android:text="OK"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

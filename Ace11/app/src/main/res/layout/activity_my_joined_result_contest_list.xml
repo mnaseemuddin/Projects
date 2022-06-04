@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MyTabFragment.MyJoinedResultContestListActivity">
+    <include
+        layout="@layout/activity_mainheader"
+        android:id="@+id/head"/>
+
+    <include
+        android:id="@+id/upper"
+        layout="@layout/uppar_layout"/>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/head">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/white_rectangle">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:id="@+id/tv_MyJoinedContestTeamsName"
+                android:layout_toLeftOf="@+id/tv_MyJoinedContestTimer"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="Team Name"
+                android:textColor="#1e1e1e" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:id="@+id/tv_MyJoinedContestTimer"
+                android:text="Timer"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/watch_icon_cont"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorPrimaryDark" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/upper"
+        android:layout_height="wrap_content">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Rv_MyJoinedContestList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Completed Contest Joined"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:id="@+id/tv_NoDataAvailable"/>
+
+
+</RelativeLayout>

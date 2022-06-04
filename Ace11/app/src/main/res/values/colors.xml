@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#078bb7</color>
+    <color name="colorPrimaryDark">#078bb7</color>
+    <color name="colorAccent">#078bb7</color>
+    <color name="startcolor">#078bb7</color>
+    <color name="centercolor">#078bb7</color>
+    <color name="endcolor">#078bb7</color><!--Changing end color from #861388 to Green #169118-->
+    <color name="white">#FEFCFF</color>
+    <color name="black">#000000</color>
+    <color name="app_color">#078bb7</color>
+    <color name="fb_color">#3B5998</color>
+    <color name="background_splash">#078bb7</color>
+
+    <color name="selected_circle">#0C630D</color>
+
+    <color name="tabtextunselected">#626262</color>
+
+    <color name="sixtwo">#000000</color>
+    <color name="eightE">#8e8e8e</color>
+    <color name="myteamCaptain">#000000</color>
+    <color name="myteamdivider">#C5C3C3</color>
+    <color name="bg_gray">#f2f2f2</color>
+    <color name="red">#000000</color>
+    <color name="light_grey">#d3d3d3</color>
+    <color name="gray">#95a5a6</color>
+
+    <color name="lowendcolor">#F5CACF</color>
+    <color name="blueColor">#052F83</color>
+
+
+    <color name="view_light_grey">#cccccc</color>
+
+
+
+
+
+</resources>

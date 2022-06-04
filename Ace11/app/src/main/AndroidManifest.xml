@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lgt.Ace11">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+
+    <application
+        android:name="com.lgt.Ace11.PayUPayment.BaseApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/logo_new"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/logo_new"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="HardcodedDebugMode"
+        tools:replace="android:allowBackup,android:icon,android:roundIcon,android:usesCleartextTraffic"
+        tools:targetApi="m">
+        <activity
+            android:name="com.lgt.Ace11.TrakNPayPackage.PaymetPackageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lgt.Ace11.PayUPayment.PayUMoneyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lgt.Ace11.ROIWithdrawActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lgt.Ace11.SinglePlayerPoints"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lgt.Ace11.Playing11"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lgt.Ace11.ActivityPlayersInformation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lgt.Ace11.SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lgt.Ace11.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lgt.Ace11.RegistrationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lgt.Ace11.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lgt.Ace11.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lgt.Ace11.VerifyOTPActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lgt.Ace11.PayUPayment.PayUPaymentConfig"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lgt.Ace11.ForgotPasswordPackage.ForgotVerifyOTPActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lgt.Ace11.ForgotPasswordPackage.NewPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lgt.Ace11.ContestListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lgt.Ace11.CreateTeamActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lgt.Ace11.ChooseCandVCActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lgt.Ace11.MyTeamListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lgt.Ace11.JoinContestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lgt.Ace11.MyTabFragment.MyJoinedFixtureContestListActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.lgt.Ace11.MyTabFragment.MyFixtureContestDetailsActivity" />
+        <activity android:name="com.lgt.Ace11.MyTabFragment.MyJoinedLiveContestListActivity" />
+        <activity android:name="com.lgt.Ace11.MyTabFragment.MyJoinedResultContestListActivity" />
+        <activity android:name="com.lgt.Ace11.MyTabFragment.MyResultContestDetailsActivity" />
+        <activity android:name="com.lgt.Ace11.MyTabFragment.MyLiveContestDetailsActivity" />
+        <activity android:name="com.lgt.Ace11.PaymentOptionActivity" />
+        <activity android:name="com.lgt.Ace11.MyAccount.MyAccountActivity" />
+        <activity android:name="com.lgt.Ace11.EditProfileActivity" />
+        <activity android:name="com.lgt.Ace11.AddCashActivity" />
+        <activity android:name="com.lgt.Ace11.MyAccount.MyTransactionActivity" />
+        <activity android:name="com.lgt.Ace11.NotificationActivity" />
+        <activity android:name="com.lgt.Ace11.InviteFriendsActivity" />
+        <activity android:name="com.lgt.Ace11.InvitedFriendListActivity" />
+        <activity android:name="com.lgt.Ace11.PaymentConfirmationActivity" />
+        <activity android:name="com.lgt.Ace11.WebviewAcitivity" />
+        <activity android:name="com.lgt.Ace11.MyAccount.WithdrawAmountActivity" />
+        <activity android:name="com.lgt.Ace11.GlobalRankActivity" />
+        <activity android:name="com.lgt.Ace11.MyAccount.UploadKYCActivity" />
+        <activity android:name="com.lgt.Ace11.CreateContest.CreateContestActivity" />
+        <activity android:name="com.lgt.Ace11.CreateContest.SelectPrizeCreateActivity" />
+        <activity android:name="com.lgt.Ace11.CreateContest.EnterInviteCodeContestActivity" />
+        <activity android:name="com.lgt.Ace11.CreateContest.InviteInContestActivity" />
+        <activity android:name="com.lgt.Ace11.TrakNPayPackage.TrakNPayActivity" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.lgt.Ace11.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <service
+            android:name="com.lgt.Ace11.Notifications.MyFirebaseMessenging"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

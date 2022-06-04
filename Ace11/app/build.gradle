@@ -1,0 +1,98 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 30
+    defaultConfig {
+        applicationId "com.lgt.Ace11"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "3.3"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable true
+        }
+    }
+    
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildFeatures{
+        dataBinding = true
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'androidx.browser:browser:1.2.0'
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-messaging:21.0.1'
+    implementation 'androidx.mediarouter:mediarouter:1.2.1'
+    implementation 'com.google.firebase:firebase-analytics:18.0.2'
+    testImplementation 'junit:junit:4.13'
+    implementation project(':PGSDKVR4')
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'com.google.android.gms:play-services-gcm:17.0.0'
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    implementation 'com.joooonho:selectableroundedimageview:1.0.1'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.github.florent37:shapeofview:1.3.2'
+    implementation 'com.daimajia.easing:library:2.0@aar'
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
+
+    implementation 'com.squareup.picasso:picasso:2.3.2'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.daimajia.slider:library:1.1.5@aar'
+    
+    //sms retriever
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    implementation 'com.google.android.gms:play-services-auth-api-phone:17.5.0'
+    // firebase msg
+    implementation 'com.google.firebase:firebase-auth:20.0.2'
+    //sweet alert dialog
+    implementation 'com.github.f0ris.sweetalert:library:1.5.6'
+
+    //facebook lib
+    implementation 'com.facebook.android:facebook-login:5.15.3'
+    implementation 'com.github.javiersantos:AppUpdater:2.7'
+
+    //download library
+    implementation 'com.mindorks.android:prdownloader:0.6.0'
+    // update check
+    implementation 'com.google.firebase:firebase-config:20.0.2'
+    implementation 'com.google.android.material:material:1.2.1'
+
+    implementation 'com.google.android.material:material:1.3.0-rc01'
+    // barcode scanner
+    implementation 'com.google.zxing:core:3.3.3'
+    implementation 'com.journeyapps:zxing-android-embedded:3.2.0@aar'
+    // app update popup
+    implementation 'com.github.javiersantos:AppUpdater:2.7'
+    // gif view
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.20'
+    // payu payment setup
+    implementation 'com.payumoney.sdkui:plug-n-play:1.6.1'
+}

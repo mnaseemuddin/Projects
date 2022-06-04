@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/toolbar"/>
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/FragmentTabLayoutPlaying11"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    app:tabMode="fixed"
+                    app:tabIndicator="@null"
+                    app:tabBackground="@drawable/tab_color_selector"
+                    app:tabIndicatorColor="@color/white"
+                    app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+                    app:tabSelectedTextColor="@color/white"
+                    app:tabTextColor="@color/tabtextunselected"
+                    app:tabGravity="fill">
+
+
+                    <com.google.android.material.tabs.TabItem
+                        android:id="@+id/tab_TeamA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TeamA" />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:id="@+id/tab_TeamB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TeamB" />
+
+
+                </com.google.android.material.tabs.TabLayout>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPagerPlaying11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                </androidx.viewpager.widget.ViewPager>
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lgt.Ace11.TrakNPayPackage.TrakNPayActivity">
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/activity_mainheader" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <EditText
+            android:id="@+id/et_CheckName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_back"
+            android:hint="Name"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:textColor="#1e1e1e"
+            android:textColorHint="#626262"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_CheckEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_CheckName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_back"
+            android:hint="Email"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:textColor="#1e1e1e"
+            android:textColorHint="#626262"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/et_CheckNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_CheckEmail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_back"
+            android:hint="Number"
+            android:inputType="number"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:textColor="#1e1e1e"
+            android:textColorHint="#626262"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/et_CheckCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_CheckNumber"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_back"
+            android:hint="@string/city"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:textColor="#1e1e1e"
+            android:textColorHint="#626262"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/et_CheckState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_CheckCity"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_back"
+            android:hint="State"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:textColor="#1e1e1e"
+            android:textColorHint="#626262"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/et_CheckZipCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_CheckState"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_back"
+            android:hint="Pincode"
+            android:inputType="number"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:textColor="#1e1e1e"
+            android:textColorHint="#626262"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_totalamountHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_CheckZipCode"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Total Amount"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_totalamount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_totalamountHead"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textColor="#1e1e1e"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv_Checkout"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_below="@+id/tv_totalamount"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/gredient_bt"
+            android:paddingStart="50dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="40dp"
+            android:paddingBottom="10dp"
+            android:text="@string/checkout"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+</RelativeLayout>

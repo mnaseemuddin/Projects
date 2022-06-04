@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="5dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tv_download"
+            android:text="Downloading File..."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <ProgressBar
+            android:layout_below="@id/tv_download"
+            android:layout_marginTop="20dp"
+            android:id="@+id/download_progress"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+
+            android:progressBackgroundTintMode="src_in"
+            android:progress="0"
+
+            android:layout_width="match_parent"
+            android:layout_height="3dp"/>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/download_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_download_percentage"
+                android:text="0%"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginStart="5dp"
+                android:id="@+id/tv_total_size"
+                android:text="0 mb"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+
+                android:id="@+id/tv_divide"
+                android:text="/"
+
+                android:layout_marginStart="5dp"
+                android:layout_toStartOf="@id/tv_total_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_current_size_progress"
+                android:text="0 mb"
+                android:layout_toStartOf="@id/tv_divide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

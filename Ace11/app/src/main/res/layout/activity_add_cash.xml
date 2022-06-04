@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lgt.Ace11.AddCashActivity">
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/activity_mainheader" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/head"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/upper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="Choose Amount"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_Cash"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_OneHundred"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/addcash"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:text="$10 x 10000 Token"
+                    android:textColor="#1e1e1e"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_TwoHundred"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/addcash"
+                    android:gravity="center"
+
+                    android:padding="12dp"
+                    android:text="$20 x 20000 Token"
+
+                    android:textColor="#1e1e1e"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_Cash"
+
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_FiveHundred"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/addcash"
+                    android:gravity="center"
+
+                    android:padding="12dp"
+                    android:text="$50 x 50000 Token"
+
+                    android:textColor="#1e1e1e"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_sixHundred"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/addcash"
+                    android:gravity="center"
+
+                    android:padding="12dp"
+                    android:text="$60 x 60000 Token"
+
+                    android:textColor="#1e1e1e"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upper"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_AmountToAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Dollar ( $10 to 1000 )"
+                android:textColor="#1e1e1e"
+                android:textSize="15sp"
+                android:visibility="visible" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_Cash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_AmountToAdd"
+                android:layout_marginTop="10dp"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/et_AddCashEnterAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/edittext_back"
+                    android:hint="$ Amount"
+                    android:inputType="number"
+                    android:padding="12dp"
+                    android:singleLine="true"
+                    android:textColor="#1e1e1e"
+                    android:textColorHint="#626262"
+                    android:textSize="15sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_AddCash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_Cash"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/gredient_bt"
+                android:elevation="3dp"
+                android:gravity="center"
+                android:padding="12dp"
+
+                android:text="ADD CASH"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="20dp">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/giv_bitcoin_icon"
+                android:layout_width="@dimen/margin_80_dp"
+                android:layout_height="@dimen/margin_80_dp"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/bitcoin_icon" />
+
+
+            <ImageView
+                android:layout_below="@+id/giv_bitcoin_icon"
+                android:id="@+id/iv_barcode_scanner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" />
+
+            <LinearLayout
+                android:id="@+id/code_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_barcode_scanner"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_barcode_address"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Copy Pay Address"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iv_copy_barcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic__copy" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_check_balance"
+                android:text="Check Balance"
+                android:layout_below="@+id/code_holder"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="15dp"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/black"
+                android:background="@drawable/btn_circle"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_Transactions_history"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:layout_below="@+id/code_holder" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

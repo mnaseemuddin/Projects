@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    app:cardElevation="5dp"
+
+
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <RelativeLayout
+
+        android:background="@drawable/fixturebg"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+
+        <TextView
+            android:id="@+id/matchType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="type"
+            android:textAllCaps="false"
+            android:textColor="#626262"
+            android:textSize="12dp" />
+
+        <RelativeLayout
+            android:layout_marginStart="10dp"
+            android:background="@drawable/team_border"
+            android:id="@+id/circle"
+            android:padding="5dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_width="65dp"
+            android:layout_height="65dp">
+
+        <com.github.florent37.shapeofview.shapes.CircleView
+android:elevation="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:shape_circle_borderColor="@color/startcolor"
+            app:shape_circle_borderWidth="0dp">
+
+            <ImageView
+
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/im_Team1"/>
+
+        </com.github.florent37.shapeofview.shapes.CircleView>
+        </RelativeLayout>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+android:layout_marginStart="5dp"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:layout_toEndOf="@+id/circle"
+            android:id="@+id/tv_TeamOneName"
+            android:textAlignment="center"
+            android:maxLines="2"
+            android:textSize="15dp"
+            android:ellipsize="end"
+            android:text="No Team1"/>
+
+
+        <ImageView
+            android:layout_toEndOf="@+id/tv_TeamOneName"
+            android:src="@drawable/vsimg"
+            android:id="@+id/vss"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:layout_toStartOf="@+id/tv_TeamTwoName"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="23dp"/>
+
+        <RelativeLayout
+            android:gravity="center"
+            android:background="@drawable/vs_circle_bg"
+
+
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="23dp"
+            android:layout_height="23dp">
+
+            <TextView
+
+                android:id="@+id/tv_TeamsVS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+android:layout_centerHorizontal="true"
+
+                android:text="v"
+android:textSize="13dp"
+                android:textColor="#626262"
+
+                android:visibility="visible" />
+
+            <TextView
+
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+android:layout_marginTop="2dp"
+android:layout_toEndOf="@+id/tv_TeamsVS"
+                android:textSize="13dp"
+                android:text="s"
+
+                android:textColor="#626262"
+
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:layout_marginEnd="5dp"
+            android:textSize="15dp"
+            android:textAllCaps="true"
+            android:layout_toLeftOf="@+id/circle2"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:id="@+id/tv_TeamTwoName"
+            android:text="No Team2"
+            android:textAlignment="center"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+
+
+    <RelativeLayout
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/team_border"
+        android:id="@+id/circle2"
+        android:padding="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="65dp"
+        android:layout_height="65dp">
+
+        <com.github.florent37.shapeofview.shapes.CircleView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+
+
+            app:shape_circle_borderColor="@color/startcolor"
+            app:shape_circle_borderWidth="0dp">
+
+            <ImageView
+
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+
+
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+
+                android:id="@+id/im_Team2"/>
+        </com.github.florent37.shapeofview.shapes.CircleView>
+    </RelativeLayout>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00:00"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/new_timer_bg"
+            android:textSize="10sp"
+            android:textColor="@color/endcolor"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textAlignment="center"
+            android:drawablePadding="5dp"
+
+
+
+            android:drawableTint="@color/endcolor"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_TimeRemained"/>
+
+        <TextView
+            android:id="@+id/tv_MatchResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/circle"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+
+
+            android:text=""
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

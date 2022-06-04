@@ -1,0 +1,46 @@
+<resources>
+    <dimen name="snack">50dp</dimen>
+    <string name="app_name">Ace 11</string>
+    <string name="let_s_play">Let\'s Play</string>
+    <string name="have_a_referral_code">Have a referral code?</string>
+    <string name="enter_a_code">Enter a code</string>
+    <string name="already_a_user">Already a user?</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="log_in">Log in</string>
+
+    <string name="MinimumWithdrawAmountLimit">500</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="odisha_tigers">Odisha Tigers</string>
+    <string name="odisha_pumas">Odisha Pumas</string>
+    <string name="mgm_odisha_t20">MGM Odisha T20</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="amount_to_be_added">Amount to be added</string>
+    <string name="checkout">Checkout</string>
+    <string name="city">City</string>
+    <string name="payu_payment">Add Amount</string>
+    <string name="google">Google</string>
+    <string name="facebook">facebook</string>
+
+
+    <string name="fb_app_name">FacebookLogin</string>
+    <string name="facebook_app_id">720151498867457</string>
+   <!--<string name="fb_login_protocol_scheme">390a233e3110519692321bd7bb99c29e</string>-->
+    <string name="fb_login_protocol_scheme">2c13f152493b01b7a65ff7c6b443d979</string>
+    <string name="by_registering_i_agree_to_all_rounder">By Registering, I Agree To Best11.</string>
+    <string name="t_amp_c"><![CDATA[T&C]]></string>
+    <string name="minimum_8_characters_with_1_number_symbol">Minimum 8 characters with 1 number/symbol</string>
+    <string name="no_spam_we_promise">No spam. We promise!</string>
+    <string name="date_of_birth">Date Of Birth.</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="name">Name.</string>
+    <string name="referral_code_optional">Referral Code ( Optional )</string>
+    <string name="referral_code">Referral Code.</string>
+    <string name="gmail_com">*******@gmail.com</string>
+    <string name="email">Email.</string>
+    <string name="verify">VERIFY</string>
+    <string name="didn_t_receive_the_otp_request_for_a_new_one_in">Didn\'t receive the OTP? Request for a new one in</string>
+    <string name="resend_otp">Resend OTP</string>
+
+</resources>
