@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="8dp">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/margin_16_dp"
+        android:background="@drawable/et_rectangular_green"
+        android:padding="@dimen/margin_8_dp">
+
+
+        <TextView
+            android:id="@+id/tvNameSender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ranjan"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_msg_sent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvNameSender"
+            android:maxWidth="240dp"
+            android:minWidth="120dp"
+            android:padding="@dimen/margin_4dp_homescreen"
+            android:text="@string/textTest"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvChatSentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_msg_sent"
+            android:layout_marginTop="4dp"
+            android:layout_alignEnd="@id/tv_msg_sent"
+            android:text="12:12 PM"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@color/white"
+    tools:context="com.lgt.o7foodapp.Fragments.FragmentAddAddress">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/toolbar"/>
+
+
+        <ScrollView
+            android:fillViewport="true"
+            android:paddingBottom="@dimen/margin_16_dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/margin_8_dp"
+                    android:layout_marginRight="@dimen/margin_24_dp"
+                    android:layout_marginLeft="@dimen/margin_24_dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+
+                            android:textColor="@color/red"
+                            android:layout_centerHorizontal="true"
+                            android:text="Add a new address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <ImageView
+                            android:padding="@dimen/margin_4dp_homescreen"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/margin_16_dp"
+                            android:src="@drawable/ic_close_black_48dp"
+                            android:layout_width="@dimen/margin_32_dp"
+                            android:layout_height="@dimen/margin_32_dp"/>
+
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="@dimen/text_12sp"
+                            android:textColor="@color/red"
+                            android:text="Name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_4dp_homescreen"
+                            android:background="@drawable/et_bg_profile_section"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/margin_24_dp"
+                                android:layout_height="@dimen/margin_24_dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/margin_4dp_homescreen"
+                                android:src="@drawable/ic_person_black_24dp" />
+
+                            <EditText
+                                android:id="@+id/etNameAddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_8_dp"
+                                android:layout_marginRight="@dimen/margin_8_dp"
+                                android:background="@null"
+                                android:hint="Enter name"
+                                android:imeOptions="actionNext"
+                                android:inputType="textPersonName"
+                                android:maxLength="30"
+                                android:padding="@dimen/padding_address"
+                                android:maxLines="1"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/darker_grey"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/margin_4dp_homescreen"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="@dimen/text_12sp"
+                            android:textColor="@color/red"
+                            android:text="Mobile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_4dp_homescreen"
+                            android:background="@drawable/et_bg_profile_section"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/margin_24_dp"
+                                android:layout_height="@dimen/margin_24_dp"
+                                android:layout_gravity="center"
+                                android:padding="@dimen/margin_4dp_homescreen"
+                                android:layout_marginLeft="@dimen/margin_4dp_homescreen"
+                                android:src="@drawable/mobile" />
+
+                            <EditText
+                                android:id="@+id/etMobileAddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_8_dp"
+                                android:layout_marginRight="@dimen/margin_8_dp"
+                                android:background="@null"
+                                android:hint="Enter mobile no"
+                                android:imeOptions="actionNext"
+                                android:inputType="textPersonName"
+                                android:maxLength="30"
+                                android:padding="@dimen/padding_address"
+                                android:maxLines="1"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/darker_grey"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/margin_4dp_homescreen"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="@dimen/text_12sp"
+                            android:textColor="@color/red"
+                            android:text="House no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_4dp_homescreen"
+                            android:background="@drawable/et_bg_profile_section"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/margin_24_dp"
+                                android:layout_height="@dimen/margin_24_dp"
+                                android:layout_gravity="center"
+                                android:padding="@dimen/margin_4dp_homescreen"
+                                android:layout_marginLeft="@dimen/margin_4dp_homescreen"
+                                android:src="@drawable/ic_home_black_24dp" />
+
+                            <EditText
+                                android:id="@+id/etHousenoAddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_8_dp"
+                                android:layout_marginRight="@dimen/margin_8_dp"
+                                android:background="@null"
+                                android:hint="Enter house no"
+                                android:imeOptions="actionNext"
+                                android:inputType="textPersonName"
+                                android:maxLength="30"
+                                android:padding="@dimen/padding_address"
+                                android:maxLines="1"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/darker_grey"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/margin_4dp_homescreen"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="@dimen/text_12sp"
+                            android:textColor="@color/red"
+                            android:text="Address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_4dp_homescreen"
+                            android:background="@drawable/et_bg_profile_section"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/margin_24_dp"
+                                android:layout_height="@dimen/margin_24_dp"
+                                android:layout_gravity="center"
+                                android:padding="@dimen/margin_4dp_homescreen"
+                                android:layout_marginLeft="@dimen/margin_4dp_homescreen"
+                                android:src="@drawable/ic_home_black_24dp" />
+
+                            <EditText
+                                android:id="@+id/etFullAddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_8_dp"
+                                android:layout_marginRight="@dimen/margin_8_dp"
+                                android:background="@null"
+                                android:hint="Enter full address"
+                                android:imeOptions="actionNext"
+                                android:inputType="textPersonName"
+                                android:maxLength="30"
+                                android:padding="@dimen/padding_address"
+                                android:maxLines="1"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/darker_grey"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/margin_4dp_homescreen"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="@dimen/text_12sp"
+                            android:textColor="@color/red"
+                            android:text="Address type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_4dp_homescreen"
+                            android:background="@drawable/et_bg_profile_section"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/margin_24_dp"
+                                android:layout_height="@dimen/margin_24_dp"
+                                android:layout_gravity="center"
+                                android:padding="@dimen/margin_4dp_homescreen"
+                                android:layout_marginLeft="@dimen/margin_4dp_homescreen"
+                                android:src="@drawable/ic_home_black_24dp" />
+
+
+                                <Spinner
+                                    android:id="@+id/spinner_address"
+                                    style="@style/SpinnerStyle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:backgroundTint="@color/colorPrimary"
+                                    />
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/margin_4dp_homescreen"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="@dimen/text_12sp"
+                            android:textColor="@color/red"
+                            android:text="Landmark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_4dp_homescreen"
+                            android:background="@drawable/et_bg_profile_section"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/margin_24_dp"
+                                android:layout_height="@dimen/margin_24_dp"
+                                android:layout_gravity="center"
+                                android:padding="@dimen/margin_4dp_homescreen"
+                                android:layout_marginLeft="@dimen/margin_4dp_homescreen"
+                                android:src="@drawable/location_black_24dp" />
+
+                            <EditText
+                                android:id="@+id/etNearbyPlace"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_8_dp"
+                                android:layout_marginRight="@dimen/margin_8_dp"
+                                android:background="@null"
+                                android:hint="Enter landmark"
+                                android:imeOptions="actionNext"
+                                android:inputType="textPersonName"
+                                android:maxLength="30"
+                                android:padding="@dimen/padding_address"
+                                android:maxLines="1"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/darker_grey"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                        <LinearLayout
+                        android:layout_marginTop="@dimen/margin_4dp_homescreen"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="@dimen/text_12sp"
+                            android:textColor="@color/red"
+                            android:text="Pincode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_4dp_homescreen"
+                            android:background="@drawable/et_bg_profile_section"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/margin_24_dp"
+                                android:layout_height="@dimen/margin_24_dp"
+                                android:layout_gravity="center"
+                                android:padding="@dimen/margin_4dp_homescreen"
+                                android:layout_marginLeft="@dimen/margin_4dp_homescreen"
+                                android:src="@drawable/location_black_24dp" />
+
+                            <EditText
+                                android:id="@+id/etPinCodeAddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_8_dp"
+                                android:layout_marginRight="@dimen/margin_8_dp"
+                                android:background="@null"
+                                android:hint="Enter pincode"
+                                android:imeOptions="actionNext"
+                                android:inputType="textPersonName"
+                                android:maxLength="30"
+                                android:padding="@dimen/padding_address"
+                                android:maxLines="1"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/darker_grey"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/margin_4dp_homescreen"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/margin_4dp_homescreen"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="@dimen/text_12sp"
+                                android:textColor="@color/red"
+                                android:text="City"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_4dp_homescreen"
+                                android:background="@drawable/et_bg_profile_section"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/margin_24_dp"
+                                    android:layout_height="@dimen/margin_24_dp"
+                                    android:layout_gravity="center"
+                                    android:padding="@dimen/margin_4dp_homescreen"
+                                    android:layout_marginLeft="@dimen/margin_4dp_homescreen"
+                                    android:src="@drawable/ic_home_black_24dp" />
+
+
+                                <Spinner
+                                    android:id="@+id/spinner_pincode"
+                                    style="@style/SpinnerStyle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:backgroundTint="@color/colorPrimary"
+                                    />
+
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <TableLayout
+                            android:id="@+id/tablelayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:orientation="vertical"
+                                android:padding="4dp">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:textSize="@dimen/text_14sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="District"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/tv_district"
+                                    android:textSize="@dimen/text_14sp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"/>
+
+
+                            </TableRow>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="2dp"
+                                android:background="@color/red" />
+
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:orientation="vertical"
+                                android:padding="4dp">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:textSize="@dimen/text_14sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="State"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/tv_state"
+                                    android:layout_width="0dp"
+                                    android:textSize="@dimen/text_14sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"/>
+
+                            </TableRow>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="2dp"
+                                android:background="@color/red" />
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:orientation="vertical"
+                                android:padding="4dp">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textSize="@dimen/text_14sp"
+                                    android:text="Country"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/tv_country"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textSize="@dimen/text_14sp"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"/>
+
+                            </TableRow>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="2dp"
+                                android:background="@color/red" />
+                        </TableLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+                    <TextView
+                        android:id="@+id/tvAddNewAddress"
+                        android:paddingBottom="@dimen/margin_8_dp"
+                        android:paddingTop="@dimen/margin_8_dp"
+                        android:layout_marginTop="@dimen/margin_32_dp"
+                        android:background="@drawable/btn_background_red"
+                        android:textColor="@color/white"
+                        android:text="Save"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/pbAddNewAddress"
+                    android:visibility="gone"
+                    android:indeterminateTint="@color/red"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

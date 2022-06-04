@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:fillViewport="true"
+    android:focusable="true"
+    tools:context=".Activities.ActivityRestaurantList">
+
+
+    <RelativeLayout
+
+        android:id="@+id/rlCart"
+
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/LL_Cart_details"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_cart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LL_Cart_details"
+            android:layout_above="@id/RL_Procced"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:background="@color/darker_grey"
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"/>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Sub Total"
+                    android:fontFamily="@font/sans_bold"
+                    android:textColor="@color/darker_grey"
+                    android:textSize="17sp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_subtotal_amount"
+                    android:gravity="end"
+                    android:textColor="@color/darker_grey"
+                    android:fontFamily="@font/sans_regular"
+                    android:text="0"
+                    android:textSize="15sp"
+
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Tax &amp; Fees"
+                    android:fontFamily="@font/sans_bold"
+                    android:textColor="@color/darker_grey"
+                    android:textSize="17sp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_textCharges"
+                    android:gravity="end"
+                    android:textColor="@color/darker_grey"
+                    android:fontFamily="@font/sans_regular"
+                    android:text="0"
+                    android:textSize="15sp"
+
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Delivery"
+                    android:fontFamily="@font/sans_bold"
+                    android:textColor="@color/darker_grey"
+                    android:textSize="17sp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:gravity="end"
+                    android:textColor="@color/darker_grey"
+                    android:fontFamily="@font/sans_regular"
+                    android:text="Free"
+                    android:textSize="15sp"
+                    android:id="@+id/tv_delivery_charge"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/RL_Procced"
+            android:background="@color/red"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+
+
+                android:id="@+id/tv_procced"
+                android:textStyle="bold"
+                android:textSize="17sp"
+
+
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:fontFamily="@font/sans_bold"
+                android:textColor="@color/white"
+                android:text="Proceed"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+
+
+                android:id="@+id/tv_total_amount"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_marginEnd="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:fontFamily="@font/sans_bold"
+                android:textColor="@color/white"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvNoItems"
+        android:visibility="gone"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:text="No items in cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+   <ProgressBar
+       android:id="@+id/pbCart"
+       android:layout_centerInParent="true"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

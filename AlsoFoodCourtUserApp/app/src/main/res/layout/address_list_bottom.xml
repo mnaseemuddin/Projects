@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <TextView
+
+
+        android:paddingStart="15dp"
+        android:textColor="@color/black"
+        android:text="Choose Address"
+        android:gravity="start|center_vertical"
+        android:background="@color/bg_gray"
+        android:fontFamily="@font/sans_bold"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:paddingStart="15dp"
+
+        android:id="@+id/rv_address_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/LL_Add_new_address"
+        android:paddingStart="15dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:tint="@color/red"
+            android:src="@drawable/add_pink_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginStart="10dp"
+            android:textColor="@color/red"
+            android:text="ADD NEW ADDRESS"
+            android:fontFamily="@font/sans_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/pb_address"
+
+        android:indeterminateTint="@color/red"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@color/white"
+    android:clickable="true"
+    android:fillViewport="true"
+    android:focusable="true"
+    tools:context=".Fragments.FragmentPaymentConfirmation">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_ordering"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/iv_back_ordering"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_left_black_48dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="Order Confirmation"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.core.widget.NestedScrollView
+
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp"
+            android:fillViewport="true">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_gravity="center"
+                    android:background="@drawable/order_confirm"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+
+                <LinearLayout
+                    android:padding="4dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:text="Your Order number is :"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+
+
+                    <TextView
+                        android:id="@+id/tvOrderID"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:textColor="@color/red"
+                        android:text="O7123ABC:"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:padding="4dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:text="Transaction No :"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:textColor="@color/red"
+                        android:text="O7ABC123:"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="36dp"
+                    android:padding="4dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@color/black"
+                    android:text="Your Order is SuccessFull"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

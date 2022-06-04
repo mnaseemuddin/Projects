@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llFullBtmSheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+
+            android:id="@+id/chkBoxType"
+            android:buttonTint="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_quantity"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:text=""
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/rupees_black"
+                android:layout_width="@dimen/margin_16_dp"
+                android:layout_height="@dimen/margin_16_dp"/>
+
+            <TextView
+                android:id="@+id/tvAmount"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/rupees_black"
+                android:layout_width="@dimen/margin_16_dp"
+                android:layout_height="@dimen/margin_16_dp"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tv_fullAmount"
+                android:layout_gravity="center"
+                android:textColor="@color/red"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

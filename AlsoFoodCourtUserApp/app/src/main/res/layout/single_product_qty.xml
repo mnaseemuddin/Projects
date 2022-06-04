@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/text_10sp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/text_10sp"
+        android:id="@+id/llFull"
+        android:paddingBottom="@dimen/margin_8_dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_Quntity"
+            android:layout_gravity="center"
+            android:paddingBottom="@dimen/margin_4dp_homescreen"
+            android:paddingTop="@dimen/margin_4dp_homescreen"
+            android:paddingRight="@dimen/margin_16_dp"
+            android:paddingLeft="@dimen/margin_16_dp"
+            android:textColor="@color/white"
+            android:background="@color/red"
+            android:text="Full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_4dp_homescreen"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/rupees_black"
+                android:layout_width="@dimen/margin_16_dp"
+                android:layout_height="@dimen/margin_16_dp"/>
+
+            <TextView
+                android:id="@+id/tvFullPrice"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

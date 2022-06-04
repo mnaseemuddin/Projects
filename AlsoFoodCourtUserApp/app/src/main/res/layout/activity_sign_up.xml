@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.lgt.also_food_court_userApp.Activities.ActivitySignUp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <LinearLayout
+                android:id="@+id/ll_back_sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:tint="@color/black"
+                    android:src="@drawable/arrow_back_white_24dp" />
+
+
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.core.widget.NestedScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="24dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+
+                    android:text="Create an account"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/sans_bold" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/user"
+                    android:layout_marginTop="20dp"
+
+                    app:civ_border_color="@color/black"
+                    app:civ_border_width="0.5dp" />
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="@font/sans_regular"
+                    android:background="@drawable/et_rectangular_white_border"
+                    android:hint="Enter name"
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/darker_grey" />
+
+
+                <EditText
+                    android:id="@+id/etMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/et_rectangular_white_border"
+                    android:hint="Mobile"
+                    android:fontFamily="@font/sans_regular"
+                    android:maxLength="10"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:imeOptions="actionNext"
+
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/darker_grey"/>
+
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/et_rectangular_white_border"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:fontFamily="@font/sans_regular"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/black"
+                    android:imeOptions="actionDone"
+                    android:textColorHint="@color/darker_grey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/signup_cheakbox"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+
+                        android:buttonTint="@color/red"
+
+                        android:text="I agree with "
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/sans_regular"
+                        android:gravity="center_vertical"
+                        android:text="@string/terms_amp_conditions"
+                        android:textColor="@color/red"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+                <ProgressBar
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone"
+                    android:indeterminateTint="@color/red"
+                    android:id="@+id/progress_bar_signup"
+                    android:outlineSpotShadowColor="@color/red"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </ProgressBar>
+
+                <Button
+                    android:id="@+id/btnRegisterUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/btn_background_red"
+                    android:text="Sign Up"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/sans_bold"
+                    android:textColor="@color/white"
+                  android:textSize="16sp"
+                />
+
+
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

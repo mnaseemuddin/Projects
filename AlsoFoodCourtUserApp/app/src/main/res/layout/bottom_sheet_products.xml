@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/modal_color"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_16_dp">
+
+                <LinearLayout
+                    android:id="@+id/llProductBottomSheet"
+                    android:layout_marginRight="@dimen/margin_16_dp"
+                    android:layout_toLeftOf="@id/ivCloseBottomSheet"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvPDeliverAt"
+                        android:textSize="@dimen/text_12sp"
+                        android:textColor="@color/white"
+                        android:text="Deliver at"
+                        android:textAllCaps="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/margin_4dp_homescreen"
+                        android:textSize="@dimen/text_12sp"
+                        android:text="Okhla, New Delhi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+
+                        android:textColor="@color/white"
+                        android:layout_marginTop="@dimen/margin_4dp_homescreen"
+                        android:textSize="@dimen/text_10sp"
+                        android:text="Delivery in 27 mins"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+                <ImageView
+                    android:id="@+id/ivCloseBottomSheet"
+                    android:padding="@dimen/margin_4dp_homescreen"
+                    android:src="@drawable/close_white_24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="@dimen/margin_32_dp"
+                    android:layout_height="@dimen/margin_32_dp"/>
+
+
+            </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/llItems"
+                    android:padding="@dimen/margin_8_dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvBottomSheet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llPieceOption"
+                    android:visibility="gone"
+                    android:layout_marginRight="@dimen/margin_24_dp"
+                    android:layout_marginLeft="@dimen/margin_24_dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="40dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioGroup
+                            android:layout_alignParentLeft="true"
+                            android:id="@+id/radioGroupSize"
+                            android:padding="@dimen/margin_8_dp"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/radioFull"
+                                android:text="Full"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+
+
+                            <RadioButton
+                                android:id="@+id/radioHalf"
+                                android:text="Half"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <RadioButton
+                                android:id="@+id/radioQuarter"
+                                android:text="Quarter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+
+
+                        </RadioGroup>
+
+                        <LinearLayout
+
+                            android:layout_toEndOf="@+id/radioGroupSize"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:padding="8dp"
+                                android:text="599.00"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:padding="8dp"
+                                android:text="599.00"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:padding="8dp"
+                                android:text="599.00"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+
+
+
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_16_dp"
+                        android:padding="@dimen/margin_8_dp"
+                        android:background="@color/modal_color"
+                        android:textColor="@color/white"
+                        android:text="Add to cart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+</LinearLayout>

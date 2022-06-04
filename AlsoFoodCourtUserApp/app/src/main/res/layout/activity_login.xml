@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@color/bg_gray"
+    android:orientation="vertical"
+    tools:context="com.lgt.also_food_court_userApp.Activities.ActivityLogin">
+
+
+    <RelativeLayout
+        android:id="@+id/RL_Head"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+
+
+        <!--<com.smarteist.autoimageslider.SliderView
+            android:id="@+id/login_sliders"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            app:sliderAutoCycleDirection="back_and_forth"
+
+            app:sliderCircularHandlerEnabled="true"
+
+            app:sliderIndicatorRtlMode="auto"
+
+            app:sliderIndicatorGravity="end"
+            app:sliderIndicatorMargin="10dp"
+
+            app:sliderIndicatorOrientation="horizontal"
+            app:sliderIndicatorPadding="3dp"
+            app:sliderIndicatorRadius="2dp"
+            app:sliderScrollTimeInSec="8"
+            app:sliderIndicatorSelectedColor="@color/white"
+            app:sliderIndicatorUnselectedColor="@color/darker_grey" />-->
+
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:src="@drawable/arrow_back_white_24dp"
+        app:tint="@color/white" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:background="@drawable/login_bg"
+        android:layout_marginTop="190dp"
+        android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+
+
+        android:paddingEnd="24dp"
+        android:paddingTop="24dp"
+        android:paddingStart="24dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:text="Welcome back"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                android:fontFamily="@font/sans_bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Login to your account"
+                android:textColor="@color/darker_grey"
+                android:fontFamily="@font/sans_regular"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_LoginMobile"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:hint="Enter Mobile Number"
+                android:layout_marginTop="32dp"
+                android:inputType="number"
+
+                android:maxLines="1"
+                android:fontFamily="@font/sans_regular"
+                android:maxLength="10"
+                android:background="@drawable/et_rectangular_white_border"
+                android:paddingStart="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darker_grey"
+                android:textSize="16sp" />
+
+
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/tv_forgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/sans_bold"
+                android:text="Forgot Password ?"
+                android:textColor="@color/red"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:id="@+id/LL_Signup"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Don't have an account ? "
+                    android:textColor="@color/darker_grey"
+                    android:fontFamily="@font/sans_regular"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Up"
+                    android:textColor="@color/red"
+                    android:fontFamily="@font/sans_regular"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnLoginUser"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_background_red"
+                android:text="Log In"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                 android:fontFamily="@font/sans_bold"
+                 />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Or"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+
+            <RelativeLayout
+                android:id="@+id/Rl_Facebook"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/facebook_drawable"
+                android:layout_width="match_parent"
+                android:layout_height="47dp">
+
+                <ImageView
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/facebook"
+                    android:layout_toStartOf="@id/btnfacebook"
+                    android:layout_centerVertical="true"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"/>
+                <TextView
+                    android:id="@+id/btnfacebook"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+
+                    android:text="Connect with facebook"
+                    android:fontFamily="@font/sans_bold"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/RL_Google"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_background_red"
+                android:layout_width="match_parent"
+                android:layout_height="47dp">
+
+                <ImageView
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/googleplus"
+                    android:layout_toStartOf="@id/tv_google"
+                    android:layout_centerVertical="true"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"/>
+                <TextView
+                    android:id="@+id/tv_google"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+
+                    android:text="Connect with google"
+                    android:fontFamily="@font/sans_bold"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="New here ?"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/tvSignup_Login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/sign_up"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/progressbar_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminateTint="@color/white">
+
+            </ProgressBar>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

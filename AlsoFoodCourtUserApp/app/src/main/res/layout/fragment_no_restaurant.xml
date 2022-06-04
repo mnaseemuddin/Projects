@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/fragment_bg_color"
+    tools:context="com.lgt.o7foodapp.Fragments.FragmentNoRestaurant">
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <include layout="@layout/toolbar"/>
+           <View
+               android:background="@color/light_black"
+               android:layout_width="match_parent"
+               android:layout_height="0.5dp"/>
+
+            <LinearLayout
+                android:layout_marginTop="40dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/oops_not_found"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"/>
+
+                <com.airbnb.lottie.LottieAnimationView
+
+                    app:lottie_loop="true"
+                    app:lottie_autoPlay="true"
+                    android:layout_gravity="center"
+                    app:lottie_fileName="not_found.json"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"/>
+
+                <TextView
+                    android:textSize="@dimen/text_18sp"
+                    android:layout_marginTop="@dimen/margin_32_dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:text="No restaurant found"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+            </LinearLayout>
+
+
+       </LinearLayout>
+
+   </RelativeLayout>
+
+</FrameLayout>

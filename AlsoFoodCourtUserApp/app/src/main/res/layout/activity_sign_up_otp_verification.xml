@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.lgt.o7foodapp.Activities.SignUpOtpVerification">
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="#70000000"
+         android:orientation="vertical">
+         <androidx.appcompat.widget.Toolbar
+             android:layout_width="match_parent"
+             android:layout_height="?attr/actionBarSize">
+             <LinearLayout
+                 android:id="@+id/ll_back_sign_upotpverification"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+
+                 <ImageView
+                     android:layout_width="wrap_content"
+                     android:layout_height="32dp"
+                     android:gravity="center"
+                     android:src="@drawable/back_white_24dp" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="4dp"
+                     android:gravity="center"
+                     android:padding="2dp"
+                     android:text="Back"
+                     android:textColor="@color/white"
+                     android:textSize="18sp"
+                     android:textStyle="bold" />
+
+             </LinearLayout>
+
+         </androidx.appcompat.widget.Toolbar>
+         <ScrollView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:fillViewport="true">
+             <LinearLayout
+
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_marginLeft="24dp"
+                 android:layout_marginTop="2dp"
+                 android:layout_marginRight="24dp"
+                 android:orientation="vertical">
+                 <ImageView
+                     android:layout_width="140dp"
+                     android:layout_height="120dp"
+                     android:layout_gravity="center"
+                     android:src="@drawable/logo"/>
+
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:gravity="center"
+                     android:layout_marginTop="32dp"
+                     android:text="Send Otp For Mobile Number"
+                     android:imeOptions="actionNext"
+                     android:maxLines="1"
+                     android:padding="10dp"
+                     android:paddingLeft="8dp"
+                     android:textColor="@color/white" />
+                 <TextView
+                     android:id="@+id/tv_signup_mobile"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:gravity="center"
+                     android:layout_marginTop="10dp"
+                     android:hint="2548965324"
+                     android:imeOptions="actionNext"
+                     android:maxLines="1"
+                     android:padding="10dp"
+                     android:paddingLeft="8dp"
+                     android:textColor="@color/white" />
+
+
+                 <EditText
+                     android:id="@+id/et_otp_signup_verification"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:gravity="center"
+                     android:layout_marginTop="32dp"
+                     android:background="@drawable/et_rectangular_white_border"
+                     android:hint="Enter OTP"
+                     android:inputType="number"
+                     android:imeOptions="actionNext"
+                     android:maxLines="1"
+                     android:padding="10dp"
+                     android:paddingLeft="8dp"
+                     android:textColor="@color/black"
+                     android:textColorHint="@color/darker_grey" />
+
+
+                 <EditText
+                     android:visibility="gone"
+                     android:id="@+id/etMobile"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="16dp"
+                     android:background="@drawable/et_rectangular_white_border"
+                     android:hint="Mobile"
+                     android:inputType="number"
+                     android:maxLines="1"
+                     android:imeOptions="actionNext"
+                     android:padding="10dp"
+                     android:paddingLeft="8dp"
+                     android:textColor="@color/white"
+                     android:textColorHint="@color/white" />
+
+
+                 <EditText
+                     android:visibility="gone"
+                     android:id="@+id/etEmail"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="16dp"
+                     android:background="@drawable/et_rectangular_white_border"
+                     android:hint="Email"
+                     android:inputType="textEmailAddress"
+                     android:maxLines="1"
+                     android:padding="10dp"
+                     android:paddingLeft="8dp"
+                     android:textColor="@color/white"
+                     android:imeOptions="actionDone"
+                     android:textColorHint="@color/white" />
+
+
+                 <Button
+                     android:id="@+id/btn_otp_signup_verification"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="80dp"
+                     android:background="@drawable/btn_background_red"
+                     android:text="Verify OTP"
+                     android:textColor="@color/white"
+                     android:textSize="18sp"
+                     android:textStyle="bold" />
+
+                 <TextView
+                     android:id="@+id/tv_noOTPget"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="12dp"
+                     android:textColor="@color/white"
+                     android:gravity="center"
+                     android:text="Didn't receive the OTP? Request for a new one in" />
+                 <Button
+                     android:id="@+id/btnsignup_resendOTP"
+                     android:visibility="gone"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                     android:layout_marginTop="8dp"
+                     android:background="@color/quantum_grey"
+                     android:padding="10dp"
+                     android:text="Resend OTP"
+                     android:textAllCaps="false"
+                     android:textColor="@color/white" />
+
+
+             </LinearLayout>
+
+
+         </ScrollView>
+         <ProgressBar
+             android:id="@+id/pb_resend_otpsignup"
+             style="?android:attr/progressBarStyleLarge"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:indeterminateTint="@color/quantum_grey"
+             android:indeterminateTintMode="src_atop"
+             android:visibility="gone" />
+
+
+     </LinearLayout>
+
+</LinearLayout>

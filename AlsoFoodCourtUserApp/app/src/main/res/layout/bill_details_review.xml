@@ -1,0 +1,133 @@
+<LinearLayout android:id="@+id/LL_Cart_details"
+    android:layout_marginTop="10dp"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:text="Bill Details"
+        android:fontFamily="@font/sans_bold"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Sub Total"
+            android:fontFamily="@font/sans_bold"
+            android:textColor="@color/darker_grey"
+
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_subtotal_amount"
+            android:gravity="end"
+            android:textColor="@color/darker_grey"
+            android:fontFamily="@font/sans_regular"
+            android:text="0"
+
+
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Tax &amp; Fees"
+            android:fontFamily="@font/sans_bold"
+            android:textColor="@color/darker_grey"
+
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_textCharges"
+            android:gravity="end"
+            android:textColor="@color/darker_grey"
+            android:fontFamily="@font/sans_regular"
+            android:text="0"
+
+
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Delivery"
+            android:fontFamily="@font/sans_bold"
+            android:textColor="@color/darker_grey"
+
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:gravity="end"
+            android:textColor="@color/darker_grey"
+            android:fontFamily="@font/sans_regular"
+            android:text="Free"
+
+            android:id="@+id/tv_delivery_charge"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="To Pay"
+            android:fontFamily="@font/sans_regular"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:gravity="end"
+            android:textColor="@color/black"
+            android:fontFamily="@font/sans_regular"
+            android:text="0"
+            android:textSize="16sp"
+            android:id="@+id/tv_to_pay"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

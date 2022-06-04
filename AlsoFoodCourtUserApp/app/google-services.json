@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "862309751540",
+    "firebase_url": "https://alaofoodcourtuserapp.firebaseio.com",
+    "project_id": "alaofoodcourtuserapp",
+    "storage_bucket": "alaofoodcourtuserapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:862309751540:android:16a3483f5f35e0c4e6dca1",
+        "android_client_info": {
+          "package_name": "com.lgt.also_food_court_userApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "862309751540-ciedrqnlti340job5fp6itgpd58ghrn0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lgt.also_food_court_userApp",
+            "certificate_hash": "ef05f6c4cdcba6847f9b668a14aac817dfba44af"
+          }
+        },
+        {
+          "client_id": "862309751540-7rc91g49g2h9boled7vkrolni5a0nkt1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiTAm0mGb2rhbbg7qgp0eN52gQnjl-6eM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "862309751540-7rc91g49g2h9boled7vkrolni5a0nkt1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

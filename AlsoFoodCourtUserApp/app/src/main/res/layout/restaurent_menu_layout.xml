@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_margin="10dp"
+    android:id="@+id/ll_ItemData"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/tv_food_name"
+        android:text="Biryani"
+         android:textSize="@dimen/text_12sp"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:fontFamily="@font/sans_regular"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+
+        android:id="@+id/tv_available_quantity"
+        android:gravity="end"
+        android:text="0"
+        android:textColor="@color/darker_grey"
+        android:fontFamily="@font/sans_regular"
+        android:layout_weight="0.3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+
+
+</LinearLayout>

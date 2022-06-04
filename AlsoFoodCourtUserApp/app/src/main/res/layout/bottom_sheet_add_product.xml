@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/login_bg"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:padding="@dimen/margin_8_dp"
+            android:background="@color/red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvNameBtmSheet"
+                android:textColor="@color/white"
+                android:text="Product name"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+
+
+        <ScrollView
+
+            android:fillViewport="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_margin="@dimen/margin_16_dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                        <LinearLayout
+                            android:id="@+id/llShowIfSizeBtmSheet"
+                            android:layout_marginTop="@dimen/margin_16_dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rv_ProductQuantityData"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:id="@+id/llFullBtmSheet"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <CheckBox
+
+                                    android:id="@+id/chkFull"
+                                    android:buttonTint="@color/black"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                                <TextView
+
+                                    android:textColor="@color/black"
+                                    android:layout_weight="1"
+                                    android:text="Full"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"/>
+
+                                <LinearLayout
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/rupees_black"
+                                        android:layout_width="@dimen/margin_16_dp"
+                                        android:layout_height="@dimen/margin_16_dp"/>
+
+                                    <TextView
+                                        android:id="@+id/tvFull"
+                                        android:layout_gravity="center"
+                                        android:textColor="@color/black"
+                                        android:text="0.00"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"/>
+
+                                </LinearLayout>
+
+
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:layout_marginTop="@dimen/margin_4_dp"
+                                android:id="@+id/llHalfBtmSheet"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <CheckBox
+
+                                    android:id="@+id/chkHalf"
+                                    android:buttonTint="@color/black"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                                <TextView
+                                    android:textColor="@color/black"
+                                    android:layout_weight="1"
+                                    android:text="Half"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"/>
+
+                                <LinearLayout
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/rupees_black"
+                                        android:layout_width="@dimen/margin_16_dp"
+                                        android:layout_height="@dimen/margin_16_dp"/>
+
+                                    <TextView
+                                        android:id="@+id/tvHalf"
+                                        android:layout_gravity="center"
+                                        android:textColor="@color/black"
+                                        android:text="0.00"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"/>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:id="@+id/llQuarterBtmSheet"
+                                android:layout_marginTop="@dimen/margin_4_dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <CheckBox
+                                    android:id="@+id/chkQuarter"
+                                    android:buttonTint="@color/black"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                                <TextView
+                                    android:textColor="@color/black"
+                                    android:layout_weight="1"
+                                    android:text="Quarter"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"/>
+
+                                <LinearLayout
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/rupees_black"
+                                        android:layout_width="@dimen/margin_16_dp"
+                                        android:layout_height="@dimen/margin_16_dp"/>
+
+                                    <TextView
+                                        android:id="@+id/tvQuarter"
+                                        android:layout_gravity="center"
+                                        android:textColor="@color/black"
+                                        android:text="0.00"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"/>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llShowIfPieceBtmSheet"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/ivVegNonVegBottomSheet"
+                            android:layout_marginRight="@dimen/margin_2_dp"
+                            android:src="@drawable/veg"
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"/>
+
+                        <ImageView
+                            android:id="@+id/iv_productImageImage"
+                            android:gravity="center"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/burger"
+                            android:layout_width="@dimen/margin_80_dp"
+                            android:layout_height="@dimen/margin_88_dp"/>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/margin_4_dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:src="@drawable/rupees_black"
+                            android:layout_width="@dimen/margin_16_dp"
+                            android:layout_height="@dimen/margin_16_dp"/>
+
+                        <TextView
+                            android:id="@+id/tvPerPiecePriceBottomSheet"
+                            android:textColor="@color/black"
+                            android:text="0.00"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/pbBottomSheetAddToCart"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/margin_8_dp"
+                    android:layout_gravity="center"
+                    android:layout_width="@dimen/margin_24_dp"
+                    android:layout_height="@dimen/margin_24_dp"/>
+
+                <TextView
+                    android:id="@+id/tvAddToCartBottomSheet"
+                    android:gravity="center"
+                    android:background="@color/red"
+                    android:layout_marginTop="@dimen/margin_24_dp"
+                    android:textColor="@color/white"
+                    android:paddingBottom="@dimen/margin_8_dp"
+                    android:paddingTop="@dimen/margin_8_dp"
+                    android:layout_marginLeft="@dimen/margin_80_dp"
+                    android:layout_marginRight="@dimen/margin_80_dp"
+                    android:text="Add to cart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is a BottomSheet"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="button 1" />
+
+    <Button
+        android:id="@+id/button2"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="button 2" />
+
+</RelativeLayout>

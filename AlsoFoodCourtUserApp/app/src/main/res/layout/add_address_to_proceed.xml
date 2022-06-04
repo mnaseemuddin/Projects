@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:id="@+id/LL_Address"
+        android:visibility="visible"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                android:id="@+id/iv_location"
+                android:src="@drawable/logo"
+
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+            <TextView
+                android:text="You don't have any address yet !\nplease add to proceed"
+                android:fontFamily="@font/sans_bold"
+                android:textColor="@color/darker_grey"
+
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_add_addressToProceed"
+                android:text="Add Address to proceed"
+                android:fontFamily="@font/sans_bold"
+                android:textColor="@color/white"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/add_address_to_proceed"
+
+                android:layout_width="match_parent"
+                android:layout_height="45dp"/>
+
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

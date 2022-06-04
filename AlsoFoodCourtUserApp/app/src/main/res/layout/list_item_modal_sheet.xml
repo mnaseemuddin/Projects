@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/margin_4dp_homescreen"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlModalItems"
+        android:padding="@dimen/margin_8_dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivVegOrNonVeg"
+            android:layout_marginTop="@dimen/margin_4dp_homescreen"
+            android:padding="@dimen/margin_2_dp"
+            android:src="@drawable/veg"
+            android:layout_alignParentLeft="true"
+            android:layout_width="@dimen/margin_16_dp"
+            android:layout_height="@dimen/margin_16_dp"/>
+
+
+        <LinearLayout
+            android:layout_marginRight="@dimen/margin_16_dp"
+            android:layout_toLeftOf="@+id/llAddOrReduce"
+            android:layout_marginLeft="@dimen/margin_16_dp"
+            android:layout_toRightOf="@+id/ivVegOrNonVeg"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvNameOrProduct"
+                android:padding="@dimen/margin_4dp_homescreen"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_14sp"
+                android:text="Aloo Paratha combo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+
+                    android:layout_gravity="center"
+                    android:src="@drawable/rupees_black"
+                    android:layout_width="@dimen/margin_16_dp"
+                    android:layout_height="@dimen/margin_16_dp"/>
+
+                <TextView
+                    android:id="@+id/tvOldPrice"
+                    android:textSize="@dimen/text_12sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/light_black"
+                    android:text="520"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/margin_8_dp"
+                    android:src="@drawable/rupees_black"
+                    android:layout_width="@dimen/margin_16_dp"
+                    android:layout_height="@dimen/margin_16_dp"/>
+
+                <TextView
+                    android:id="@+id/tvPriceModalSheet"
+                    android:textSize="@dimen/text_14sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:text="500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="@dimen/margin_4dp_homescreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+
+
+                    android:textColor="@color/tintcolor"
+                    android:textSize="@dimen/text_12sp"
+                    android:text="Total saving"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                  android:layout_marginLeft="@dimen/margin_16_dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/rupees_black"
+                    android:layout_width="@dimen/margin_16_dp"
+                    android:layout_height="@dimen/margin_16_dp"/>
+
+                <TextView
+                    android:id="@+id/tvPriceDifference"
+                    android:textColor="@color/quantum_pink"
+                    android:text="77"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llAddOrReduce"
+            android:background="@drawable/bg_modal_list_item_plus_minus"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:paddingLeft="@dimen/margin_8_dp"
+                android:paddingRight="@dimen/margin_8_dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivMinus"
+                    android:padding="@dimen/margin_4dp_homescreen"
+                   android:layout_marginLeft="@dimen/margin_4dp_homescreen"
+                    android:layout_gravity="center"
+                    android:src="@drawable/minus_pink"
+                    android:layout_width="@dimen/margin_24_dp"
+                    android:layout_height="@dimen/margin_24_dp"/>
+
+                <TextView
+                    android:id="@+id/tvQTY"
+                    android:background="@color/light_pink"
+                    android:padding="@dimen/margin_4dp_homescreen"
+                    android:layout_margin="@dimen/margin_4dp_homescreen"
+                    android:text="1"
+                    android:textSize="@dimen/text_12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/ivPlus"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/margin_4dp_homescreen"
+                    android:src="@drawable/add_pink_24dp"
+                    android:layout_width="@dimen/margin_24_dp"
+                    android:layout_height="@dimen/margin_24_dp"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+
+
+        android:background="@color/tintcolor"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+</LinearLayout>

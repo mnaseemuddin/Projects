@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">AlsoFoodCourt</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="terms_amp_conditions"><u><![CDATA[Terms & Conditions]]></u></string>
+    <string name="new_here_sign_up">New here? Sign Up</string>
+    <string name="sign_up"><u>Sign Up</u></string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="textTest">So you can get Screen Width and set maxWidth to half of it for your TextView This is how you can get screen width and pass it to your TextView</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+
+    <string name="launcher_title">Delivered\nfast food\nto your\ndoor. </string>
+    <string name="launcher_description">Set exact location to find the right\nrestaurants near you.</string>
+    <string name="rs">\u20B9</string>
+</resources>

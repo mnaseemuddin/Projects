@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:fillViewport="true"
+    android:background="@color/bg_gray"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Models.TopBrandAllProductListActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+   <androidx.appcompat.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_backArrowTopBrand"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_arrow_left_black_48dp"/>
+         <TextView
+             android:id="@+id/tv_brandName"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Product List"
+             android:fontFamily="@font/sans_bold"
+             android:gravity="center_horizontal"
+             android:textColor="@color/black"/>
+                </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:background="@color/light_black"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/frameRestaurantList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ProgressBar
+                        android:id="@+id/pbTopBrandList"
+                        android:visibility="gone"
+                        android:indeterminateTint="@color/progress_bar_color"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+
+                        android:id="@+id/tvResListNoRestaurant"
+                        android:visibility="gone"
+                        android:layout_below="@id/pbTopBrandList"
+                        android:gravity="center"
+                        android:layout_centerInParent="true"
+                        android:textSize="@dimen/text_24sp"
+                        android:textColor="@color/red"
+                        android:text="Sorry, No Product found"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_4dp_homescreen"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:orientation="vertical">
+
+
+
+
+
+                            <RelativeLayout
+                                android:layout_marginTop="@dimen/margin_8_dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rv_BrandProductList"
+                                    android:layout_width="match_parent"
+                                    android:background="@color/white"
+                                    android:layout_height="wrap_content"/>
+
+
+
+                            </RelativeLayout>
+
+
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_RestaurantListNoData"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.airbnb.lottie.LottieAnimationView
+
+                    app:lottie_loop="true"
+                    app:lottie_autoPlay="true"
+                    android:layout_gravity="center"
+                    app:lottie_fileName="not_found.json"
+                    android:layout_width="180dp"
+                    android:layout_height="140dp"/>
+
+                <TextView
+                    android:textSize="@dimen/text_18sp"
+                    android:layout_marginTop="@dimen/margin_32_dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/red"
+                    android:text="No Product found"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

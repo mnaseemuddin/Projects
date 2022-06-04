@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#352F2B</color>
+    <color name="colorPrimaryDark">#F3F1F1</color>
+    <color name="colorAccent">#000000</color>
+
+
+    <color name="black">#000000</color>
+    <color name="medium_black">#464545</color>
+    <color name="light_black">#868686</color>
+    <color name="progress_bar_color">#65C02D</color>
+    <color name="lightGreen">#65C02D</color>
+    <color name="darkRed">#d92727</color>
+
+
+    <color name="white">#FEFCFF</color>
+    <color name="red">#E53935</color>
+    <color name="light_red">#FFDDDC</color>
+    <color name="light_blue">#38AFE0</color>
+    <color name="dark_blue">#29599A</color>
+    <color name="modal_color">#1B6DF7</color>
+
+    <color name="tintcolor">#D81B60</color>
+
+    <color name="fragment_bg_color">#FAFAFA</color>
+
+    <color name="textblack_homescreen">#000</color>
+
+    <color name="grey">#F0F0F0</color>
+    <color name="light_pink">#FDF2F7</color>
+    <color name="darker_grey">#646464</color>
+    <color name="yellow">#FFC107</color>
+    <color name="color_stroke_profile">#C8C8C8</color>
+    <color name="bg_gray">#f2f2f2</color>
+    <color name="fb_color">#3B5998</color>
+    <color name="transparent_bg">#70000000</color>
+
+    <!--
+        <color name="colorAccent">#F2F2F2</color>
+    -->
+</resources>

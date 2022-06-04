@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="10dp"
+    tools:context="com.lgt.also_food_court_userApp.Activities.LoginOtpVerification">
+    <ProgressBar
+        android:id="@+id/pb_resend_otplogin"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/red"
+        android:indeterminateTintMode="src_atop"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/iv_back"
+        android:tint="@color/black"
+        android:src="@drawable/arrow_back_white_24dp" />
+
+
+        <ScrollView
+           android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:layout_marginTop="32dp"
+                android:text="OTP VERIFICATION"
+                android:fontFamily="@font/sans_bold"
+                android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="Send Otp For Mobile Number"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+                    android:fontFamily="@font/sans_regular"
+                    android:padding="10dp"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/tv_login_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/sans_bold"
+
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/black" />
+
+
+                <EditText
+                    android:id="@+id/et_otp_login_verification"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/et_rectangular_white_border"
+                    android:hint="Enter OTP"
+                    android:inputType="number"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/darker_grey" />
+
+                <Button
+                    android:id="@+id/btn_otp_login_verification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/btn_background_red"
+                    android:text="Verify OTP"
+                    android:fontFamily="@font/sans_bold"
+                    android:textColor="@color/white"
+
+                   />
+                <TextView
+                    android:id="@+id/tv_NoOTPget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:text="Didn't receive the OTP? Request for a new one in" />
+                <TextView
+                    android:id="@+id/tvnlogin_resendOTP"
+                    android:visibility="gone"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:paddingTop="@dimen/margin_8_dp"
+                    android:paddingBottom="@dimen/margin_8_dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/btn_background_red"
+                    android:text="Resend OTP"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+</RelativeLayout>

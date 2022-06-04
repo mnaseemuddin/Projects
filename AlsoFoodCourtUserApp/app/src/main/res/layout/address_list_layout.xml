@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+   android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_address_icon"
+
+        android:layout_marginTop="7dp"
+        android:src="@drawable/app_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"/>
+
+    <LinearLayout
+        android:paddingStart="15dp"
+        android:layout_toEndOf="@+id/iv_address_icon"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:id="@+id/tv_address_type"
+            android:textColor="@color/red"
+            android:text="home"
+
+            android:maxLines="1"
+            android:fontFamily="@font/sans_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+
+            android:id="@+id/tv_full_address"
+            android:textColor="@color/darker_grey"
+            android:text="address"
+            android:maxLines="1"
+            android:fontFamily="@font/sans_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+
+            android:id="@+id/tv_delivery_time"
+            android:textColor="@color/darker_grey"
+            android:text="31 Mins"
+            android:maxLines="1"
+            android:fontFamily="@font/sans_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_marginTop="15dp"
+            android:background="@color/bg_gray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

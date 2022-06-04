@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="8dp">
+
+    <!-- This layout is now not in use , used list_item_sent_new.xml 26-09-19-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_msg_sent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+
+            android:background="@drawable/et_rectangular_green"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_8_dp">
+
+            <TextView
+                android:layout_marginLeft="@dimen/margin_16_dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ranjan"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/margin_16_dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_msg_sent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="240dp"
+                    android:text="hello, hello!"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="@dimen/margin_4dp_homescreen"
+                    android:background="@drawable/et_rectangular_green"
+                    android:text="15:15 PM"
+                    android:textColor="@color/grey"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

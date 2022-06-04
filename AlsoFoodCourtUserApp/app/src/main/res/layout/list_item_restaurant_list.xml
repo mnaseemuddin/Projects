@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlRestaurantDesc"
+    android:padding="@dimen/margin_8_dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewProducts"
+        android:layout_alignParentLeft="true"
+        app:cardCornerRadius="@dimen/margin_8_dp"
+        android:layout_margin="@dimen/margin_4dp_homescreen"
+        android:layout_width="@dimen/margin_80_dp"
+        android:layout_height="@dimen/margin_80_dp">
+
+        <ImageView
+            android:id="@+id/ivRestaurantList"
+            android:layout_width="@dimen/margin_80_dp"
+            android:layout_height="@dimen/margin_80_dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/burger" />
+
+    </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_marginRight="@dimen/margin_16_dp"
+            android:layout_marginTop="@dimen/margin_8_dp"
+            android:layout_toLeftOf="@id/llRating"
+            android:layout_marginLeft="@dimen/margin_16_dp"
+            android:layout_toRightOf="@id/cardViewProducts"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:id="@+id/tvRestaurantNameList"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:text="HOD"
+                android:fontFamily="@font/sans_bold"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+
+                android:id="@+id/tvRestaurantLocation"
+                android:layout_marginTop="@dimen/margin_4dp_homescreen"
+                android:textColor="@color/black"
+                android:text="Zakir Nagar"
+                android:fontFamily="@font/sans_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/llRating"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_8_dp"
+        android:background="@color/red"
+        android:paddingLeft="@dimen/margin_16_dp"
+        android:paddingTop="@dimen/margin_4dp_homescreen"
+        android:paddingRight="@dimen/margin_16_dp"
+        android:layout_centerVertical="true"
+        android:paddingBottom="@dimen/margin_4dp_homescreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvRatingRestaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3.8"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_12sp" />
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
