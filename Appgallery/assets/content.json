@@ -1,0 +1,56 @@
+[
+  {
+    "Category": [
+      {
+        "Id": "1",
+        "name": "MX Taka Tak Short Video",
+        "category": "Photo & video",
+        "description": "Indian Short Videos Community:Funny Videos App,Create & Share Free Short Videos",
+        "img": "assets/mxtakatak.png"
+      },
+      {
+        "id": "2",
+        "name": "Hungama Music",
+        "category": "Entertainment", "description": "Free Music App, Listen & Download Your Favourite Songs", "img":
+      "assets/hungama.jpg"
+      }, {
+        "id": "3",
+        "name": "D2H Infinity","category": "Entertainment",
+        "description": "With d2h inifinity app, Recharge d2h account, Add channels & get great offers.", "img":
+        "assets/d2h.jpg"
+      }]
+  },
+  {
+    "Category": [
+      {
+        "Id": "1",
+        "name": "MX Taka Tak Short Video",
+        "category": "Photo & video",
+        "description": "Indian Short Videos Community:Funny Videos App,Create & Share Free Short Videos",
+        "img": "assets/mxtakatak.png"
+      },
+      {
+        "id": "2",
+        "name": "Hungama Music",
+        "category": "Entertainment", "description": "Free Music App, Listen & Download Your Favourite Songs", "img":
+      "assets/hungama.jpg"
+      }, {
+        "id": "3",
+        "name": "D2H Infinity","category": "Entertainment",
+        "description": "With d2h inifinity app, Recharge d2h account, Add channels & get great offers.", "img":
+        "assets/d2h.jpg"
+      }]
+  }, {
+  "Category": [{
+    "id": "1",
+    "name": "My DishTV","category": "Entertainment",
+    "description": "With My DishTV app, Recharge DishTV account, Add channels & get great offers.", "img":
+    "assets/mydishtv.jpg"
+  }, {
+    "id": "2",
+    "name": "Quikr-Search Jobs","category": "Shopping",
+    "description": "Quikr-Search Jobs, Mobiles, Cars, Home Services", "img":
+    "assets/quikr.png"
+  }]
+}
+]
