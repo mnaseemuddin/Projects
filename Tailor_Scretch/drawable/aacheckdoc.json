@@ -1,0 +1,122 @@
+{
+  "status": "success",
+  "message": "Category wise attribute data",
+  "data": [
+    {
+      "tbl_attribute_id": 4,
+      "category_id": 4,
+      "attribute_name": "Sleeves",
+      "z_index": 3,
+      "top_marging": "22.8",
+      "left_margin": "0",
+      "image": "http://3.108.177.150:8000/files/upload/attribute/dress.png",
+      "sub_attribute_data": [
+        {
+          "tbl_sub_attribute_id": 13,
+          "attribute_id": 4,
+          "sub_attribute_name": "short sleeves",
+          "image": "http://3.108.177.150:8000/files/upload/sub_attribute/short_sleeves.png"
+        },
+        {
+          "tbl_sub_attribute_id": 12,
+          "attribute_id": 4,
+          "sub_attribute_name": "long sleeves",
+          "image": "http://3.108.177.150:8000/files/upload/sub_attribute/long_sleeves.png"
+        },
+        {
+          "tbl_sub_attribute_id": 11,
+          "attribute_id": 4,
+          "sub_attribute_name": "3by4 sleeves",
+          "image": "http://3.108.177.150:8000/files/upload/sub_attribute/3by4_sleeves.png"
+        }
+      ]
+    },
+    {
+      "tbl_attribute_id": 3,
+      "category_id": 4,
+      "attribute_name": "Ruffles",
+      "z_index": 5,
+      "top_marging": "518",
+      "left_margin": "234",
+      "image": "http://3.108.177.150:8000/files/upload/attribute/dress.png",
+      "sub_attribute_data": [
+        {
+          "tbl_sub_attribute_id": 10,
+          "attribute_id": 3,
+          "sub_attribute_name": "single ruffle",
+          "image": "http://3.108.177.150:8000/files/upload/sub_attribute/single_ruffle.png"
+        },
+        {
+          "tbl_sub_attribute_id": 9,
+          "attribute_id": 3,
+          "sub_attribute_name": "flounce",
+          "image": "http://3.108.177.150:8000/files/upload/sub_attribute/flounce.png"
+        },
+        {
+          "tbl_sub_attribute_id": 7,
+          "attribute_id": 3,
+          "sub_attribute_name": "double ruffle",
+          "image": "http://3.108.177.150:8000/files/upload/sub_attribute/double_ruffle.png"
+        }
+      ]
+    },
+    {
+      "tbl_attribute_id": 2,
+      "category_id": 4,
+      "attribute_name": "Pockets",
+      "z_index": 4,
+      "top_marging": "152",
+      "left_margin": "297",
+      "image": "http://3.108.177.150:8000/files/upload/attribute/dress.png",
+      "sub_attribute_data": [
+        {
+          "tbl_sub_attribute_id": 6,
+          "attribute_id": 2,
+          "sub_attribute_name": "sloping welt pockets",
+          "image": "http://3.108.177.150:8000/files/upload/sub_attribute/sloping_welt_pockets.png"
+        },
+        {
+          "tbl_sub_attribute_id": 5,
+          "attribute_id": 2,
+          "sub_attribute_name": "patch pockets",
+          "image": "http://3.108.177.150:8000/files/upload/sub_attribute/patch_pockets.png"
+        },
+        {
+          "tbl_sub_attribute_id": 4,
+          "attribute_id": 2,
+          "sub_attribute_name": "flap pockets",
+          "image": "http://3.108.177.150:8000/files/upload/sub_attribute/flap_pockets.png"
+        }
+      ]
+    },
+    {
+      "tbl_attribute_id": 1,
+      "category_id": 4,
+      "attribute_name": "Neck",
+      "z_index": 2,
+      "top_marging": "0",
+      "left_margin": "191",
+      "image": "http://3.108.177.150:8000/files/upload/attribute/dress.png",
+      "sub_attribute_data": [
+        {
+          "tbl_sub_attribute_id": 3,
+          "attribute_id": 1,
+          "sub_attribute_name": "square neck",
+          "image": "http://3.108.177.150:8000/files/upload/sub_attribute/square_neck.png"
+        },
+        {
+          "tbl_sub_attribute_id": 2,
+          "attribute_id": 1,
+          "sub_attribute_name": "deep keyhole neck",
+          "image": "http://3.108.177.150:8000/files/upload/sub_attribute/deep_keyhole_neck.png"
+        },
+        {
+          "tbl_sub_attribute_id": 1,
+          "attribute_id": 1,
+          "sub_attribute_name": "curved v neck",
+          "image": "http://3.108.177.150:8000/files/upload/sub_attribute/curved_v_neck.png"
+        }
+      ]
+    }
+  ]
+}
