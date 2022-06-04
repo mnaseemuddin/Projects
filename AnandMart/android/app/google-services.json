@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "625469938843",
+    "project_id": "flutter-anandmart-d2522",
+    "storage_bucket": "flutter-anandmart-d2522.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:625469938843:android:df7acd5da474549f6aba3e",
+        "android_client_info": {
+          "package_name": "com.app.anandmart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "625469938843-pfms90ir891lholpo06cuftod2ba0ql3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCO09CefWqdkiqrFq76zYgrFRjBH1XV3gw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "625469938843-pfms90ir891lholpo06cuftod2ba0ql3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
