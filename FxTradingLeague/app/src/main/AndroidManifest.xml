@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lgt.fxtradingleague">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:name=".Education.utils.AppController"
+        android:allowBackup="false"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="HardcodedDebugMode"
+        tools:replace="android:allowBackup,android:icon,android:roundIcon">
+        <activity android:name=".Education.Activity.EducationDetailsActivity"></activity>
+        <activity
+            android:name=".Education.Activity.VideoPlayerActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".TrakNPayPackage.PaymetPackageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ROIWithdrawActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RazorPayments.AddPaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WithdrawListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SinglePlayerPoints"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Playing11"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityPlayersInformation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TradingPackage.TradingChartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IndiWorldLeague.ActivityIndiWorldLeague"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IndiWorldLeague.ActivityBuyOrSellIndiLeague"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IndiWorldLeague.FinalTeamIndiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TradingPackage.JoinPackageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TradingPackage.SelectTradingMaster"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TradingPackage.ActivityResultTypeContainer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WorldLeague.ActivityWorldLeague"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WorldLeague.ActivityBuyOrSaleWorldLeague"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WorldLeague.finalCreateTeamActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VerifyOTPActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ForgotPasswordPackage.ForgotVerifyOTPActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ForgotPasswordPackage.NewPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ContestListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CreateTeamActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChooseCandVCActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyTeamListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".JoinContestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyTabFragment.MyJoinedFixtureContestListActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MyTabFragment.MyFixtureContestDetailsActivity" />
+        <activity android:name=".MyTabFragment.MyJoinedLiveContestListActivity" />
+        <activity android:name=".MyTabFragment.MyJoinedResultContestListActivity" />
+        <activity android:name=".MyTabFragment.MyResultContestDetailsActivity" />
+        <activity android:name=".MyTabFragment.MyLiveContestDetailsActivity" />
+        <activity android:name=".PaymentOptionActivity" />
+        <activity android:name=".MyAccount.MyAccountActivity" />
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".AddCashActivity" />
+        <activity android:name=".MyAccount.MyTransactionActivity" />
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".InviteFriendsActivity" />
+        <activity android:name=".InvitedFriendListActivity" />
+        <activity android:name=".PaymentConfirmationActivity" />
+        <activity android:name=".WebviewAcitivity" />
+        <activity android:name=".MyAccount.WithdrawAmountActivity" />
+        <activity android:name=".GlobalRankActivity" />
+        <activity android:name=".MyAccount.UploadKYCActivity" />
+        <activity android:name=".CreateContest.CreateContestActivity" />
+        <activity android:name=".CreateContest.SelectPrizeCreateActivity" />
+        <activity android:name=".CreateContest.EnterInviteCodeContestActivity" />
+        <activity android:name=".CreateContest.InviteInContestActivity" />
+        <activity android:name=".TrakNPayPackage.TrakNPayActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.lgt.fxtradingleague.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <service
+            android:name=".Notifications.MyFirebaseMessenging"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

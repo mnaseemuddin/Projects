@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/ptl_color"
+    android:orientation="vertical"
+    android:paddingLeft="8dp">
+
+    <ImageView
+        android:id="@+id/ivBackToolbar"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:padding="4dp"
+        android:src="@drawable/bck_arrow" />
+
+    <LinearLayout
+        android:id="@+id/ll_toolbarContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toEndOf="@+id/ivBackToolbar"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvToolbarTitle"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Select Stock"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvToolbarPriceUpdate"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toEndOf="@+id/ivBackToolbar"
+            android:text="Date 11-Nov-2020"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_disclaimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:drawableTint="@color/white"
+        android:textSize="12sp"
+        android:drawableTop="@drawable/ic_report"
+        android:text="Desclaimer"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_gray"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        android:background="@color/white"
+        android:id="@+id/RL_ContestListMain"
+        android:elevation="5dp">
+
+
+
+        <LinearLayout
+            android:id="@+id/top"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Winnings"
+                    android:textColor="@color/tabtextunselected"
+                    android:textSize="16sp"/>
+
+
+
+                <TextView
+                    android:visibility="visible"
+                    android:layout_weight="1"
+
+
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:background="@drawable/contestbg"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contest Name"
+                    android:textSize="10sp"
+                    android:id="@+id/tv_LiveContestName"/>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹ 0"
+                    android:id="@+id/tv_TotalPrice"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:paddingEnd="10dp"
+                android:gravity="end"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="end"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:id="@id/tv_EntryFees"
+                    android:textColor="@color/tabtextunselected"
+                    android:text="Entry Fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="JOIN"
+                    android:layout_weight="0.2"
+
+                    android:id="@+id/tv_JoinContest"
+                    android:textColor="@color/white"
+                    android:background="@drawable/gredient_bt"
+
+                    android:textSize="12sp"
+                    android:paddingRight="12dp"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/LL_ContestTop"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_below="@+id/top"
+            android:id="@+id/LL_ContestTop">
+
+            <TextView
+
+
+
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/tv_LiveContestDesc"
+                android:textSize="12sp"
+                android:text="Winner takes all the glory"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingEnd="10dp"
+                android:layout_gravity="center"
+                android:gravity="end"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Winners"
+                    android:textColor="@color/sixtwo"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_WinnersCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+
+                    android:layout_marginTop="2dp"
+                    android:drawableRight="@drawable/round_keyboard_arrow_down_black_18"
+                    android:drawableTint="@color/colorPrimary"
+                    android:gravity="center_horizontal"
+                    android:text="0"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/RL_ProgressBar"
+            android:layout_below="@+id/LL_ContestTop"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp">
+            <ProgressBar
+                android:id="@+id/PB_EntryProgress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:maxHeight="5dp"
+                android:minHeight="5dp"
+                android:progressDrawable="@drawable/contestprogressbar"
+                android:progressBackgroundTint="#dbdbdb"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:progress="0"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 Teams Left"
+                android:textSize="11sp"
+                android:textColor="#1e1e1e"
+                android:id="@+id/tv_TeamLeftCount"
+                android:layout_below="@+id/PB_EntryProgress"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 Teams"
+                android:textColor="#1e1e1e"
+                android:id="@+id/tv_TotalTeamCount"
+                android:textSize="11sp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/PB_EntryProgress"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:id="@+id/tv_MyJoinedTeamCount"
+            android:layout_below="@+id/RL_ProgressBar"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:drawableRight="@drawable/arrow_icon_mr"/>
+    </RelativeLayout>
+
+    <View
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dbdbdb"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/RL_ContestListMain"/>
+
+</RelativeLayout>

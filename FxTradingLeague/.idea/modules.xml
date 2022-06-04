@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FxTradingLeague.iml" filepath="$PROJECT_DIR$/.idea/modules/FxTradingLeague.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PGSDKVR4/FxTradingLeague.PGSDKVR4.iml" filepath="$PROJECT_DIR$/.idea/modules/PGSDKVR4/FxTradingLeague.PGSDKVR4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FxTradingLeague.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FxTradingLeague.app.iml" />
+    </modules>
+  </component>
+</project>

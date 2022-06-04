@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/RL_PlayerListMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/twox"
+        android:layout_margin="2dp"
+        android:elevation="0dp"
+        android:padding="5dp">
+
+
+        <TextView
+            android:id="@+id/tv_TeamNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_width="50dp"
+            android:gravity="center"
+            android:padding="2dp"
+            android:src="@drawable/icon"
+            android:id="@+id/cv_CompanyIcon"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:id="@+id/tv_World_symbol"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/company_background_text"
+            android:gravity="center"
+            android:padding="2dp"
+            android:visibility="gone"
+            android:text="AB"
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/cv_CompanyIcon">
+
+            <TextView
+                android:id="@+id/tv_PlayerWorldName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player Name"
+                android:textColor="#1e1e1e" />
+
+            <ImageView
+                android:id="@+id/iv_display_price_world_status"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toEndOf="@+id/tv_PlayerWorldName"
+                android:src="@drawable/ic_downward" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_PlayerWorldName"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_PlayerTeamWorldName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:text="IND"
+                    android:textColor="@color/tabtextunselected" />
+
+                <View
+                    android:layout_width="9dp"
+                    android:layout_height="7dp"
+                    android:layout_gravity="center"
+                    android:background="#8e8e8e"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tv_PlayerPoints"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="55 Points"
+                    android:textColor="#8e8e8e"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/tv_SelectCaptain"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/circle_captain_vc_back"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="C"
+                android:textAlignment="center"
+                android:textColor="#1e1e1e"
+                android:visibility="gone" />
+
+
+            <CheckBox
+                android:id="@+id/checkboxWorld"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="50dp"
+                android:layout_toRightOf="@+id/tv_SelectViceCaptain"
+                android:background="@drawable/radio_vc_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="B"
+                android:textColor="@color/black"
+                android:visibility="visible" />
+
+            <CheckBox
+                android:id="@+id/checkboxWorldTwo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/checkboxWorld"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="S"
+                android:textColor="@color/ptl_color"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/im_onetwox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/onex_icon"
+                android:visibility="invisible" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/im_onetwox"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:id="@+id/radio"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/tv_SelectViceCaptain"
+                    android:background="@drawable/radio_selector"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="C"
+                    android:visibility="visible" />
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/checkbox"
+                    android:background="@drawable/radio_vc_selector"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="VC"
+                    android:visibility="visible" />
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/tv_SelectViceCaptain"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_SelectCaptain"
+                android:background="@drawable/circle_captain_vc_back"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="VC"
+                android:textAlignment="center"
+                android:textColor="#1e1e1e"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/RL_PlayerListMain"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="2dp"
+        android:background="#8e8e8e" />
+
+</RelativeLayout>

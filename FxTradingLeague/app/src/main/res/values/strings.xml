@@ -1,0 +1,28 @@
+<resources>
+    <dimen name="snack">50dp</dimen>
+    <string name="app_name">FxTradingLeague</string>
+    <string name="let_s_play">Let\'s Play</string>
+    <string name="have_a_referral_code">Have a referral code?</string>
+    <string name="enter_a_code">Enter a code</string>
+    <string name="already_a_user">Already a user?</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="log_in">Log in</string>
+
+    <string name="MinimumWithdrawAmountLimit">500</string>
+    <!-- match text -->
+    <string name="daily_contest">Daily Contest</string>
+    <string name="Weekly_contest">Weekly Contest</string>
+    <string name="Monthly_contest">Monthly Contest</string>
+    <string name="header_title_text">CHOOSE Buy <b>or</b> Sale</string>
+    <string name="_0">0</string>
+    <string name="sameer">Sameer</string>
+    <string name="pending">Pending</string>
+    <string name="no_data_found">No data found</string>
+    <string name="disclaimer">Disclaimer</string>
+    <string name="more">More</string>
+    <string name="about_us">About Us</string>
+    <string name="work_with_us">Work With Us</string>
+    <string name="helpdesk">Helpdesk</string>
+    <string name="bignner_text">Essentials For Beginners</string>
+</resources>

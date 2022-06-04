@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lgt.fxtradingleague.ChooseCandVCActivity">
+
+    <include
+        layout="@layout/activity_mainheader"
+        android:id="@+id/head"/>
+
+    <include
+        android:visibility="gone"
+        android:id="@+id/upper"
+        layout="@layout/uppar_layout"/>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradiet_background"
+        android:layout_below="@+id/head">
+
+        <RelativeLayout
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/vs"
+                android:textSize="12dp"
+
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"
+                android:text="S"
+                android:textStyle="italic"
+                android:paddingTop="4dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="12dp"
+                android:textStyle="italic"
+                android:layout_toLeftOf="@+id/vs"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"
+                android:text="V"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.github.florent37.shapeofview.shapes.CircleView
+                android:id="@+id/circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:elevation="8dp"
+
+                android:layout_marginStart="20dp"
+                app:shape_circle_borderColor="@color/startcolor"
+                app:shape_circle_borderWidth="1dp">
+
+                <ImageView
+
+                    android:id="@+id/team1Image"
+
+                    android:scaleType="centerCrop"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp" />
+            </com.github.florent37.shapeofview.shapes.CircleView>
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/vs"
+                android:textColor="@color/white"
+                android:text="TN"
+                android:textAllCaps="true"
+                android:id="@+id/team1Name"
+                android:layout_marginEnd="45dp"
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_marginEnd="5dp"
+
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/vs"
+                android:textColor="@color/white"
+                android:text="TN"
+                android:id="@+id/team2Name"
+                android:textAllCaps="true"
+
+                android:layout_marginStart="45dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/team2Name"
+                android:layout_marginTop="18dp"
+                android:id="@+id/tv_CreateTeamTimer"
+                android:text="Timer"
+                android:textSize="11dp"
+
+                android:drawablePadding="5dp"
+
+
+                android:textColor="@color/white" />
+
+
+            <com.github.florent37.shapeofview.shapes.CircleView
+                android:id="@+id/circle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:elevation="8dp"
+                android:layout_marginEnd="20dp"
+                android:layout_alignParentEnd="true"
+                app:shape_circle_borderColor="@color/startcolor"
+                app:shape_circle_borderWidth="1dp">
+
+                <ImageView
+
+
+                    android:id="@+id/team2Image"
+                    android:scaleType="centerCrop"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp" />
+
+            </com.github.florent37.shapeofview.shapes.CircleView>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/white_rectangle">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:id="@+id/tv_CreateTeamsName"
+
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="Team Name"
+                android:textColor="#1e1e1e" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+
+                android:text="Timer"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/watch_icon_cont"
+                android:layout_alignParentRight="true"
+                android:textColor="#ff5050" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/upper"
+        android:gravity="center"
+        android:id="@+id/LL_CVCInfoHead"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Captain "
+        android:textSize="14sp"
+        android:textColor="#1c2e46"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(C) "
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&amp; Vice Captain "
+        android:textSize="14sp"
+        android:textColor="#1c2e46"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(VC)"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"
+        />
+
+    </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:paddingStart="10dp"
+                android:text="Selected Price"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+
+                android:id="@+id/twox"
+
+                android:textColor="@color/black"
+                android:text="     Buy    "
+                android:layout_toStartOf="@+id/onex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="20dp"
+                android:id="@+id/onex"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/black"
+                android:text="     Sell    "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(C) Gets 2X Points &amp; (VC) Gets 1.5X Points"
+                android:textSize="12sp"
+                android:textColor="#1c2e46"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LL_CVCInfoHead"
+        android:id="@+id/LL_PlayerList"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Rv_FinalPlayerList"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/LL_CVCInfoHead"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/RL_Bottomfooter"
+        android:scrollbars="vertical" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/LL_CVCInfoHead"
+        android:layout_above="@+id/RL_Bottomfooter"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:id="@+id/RL_Bottomfooter">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SAVE TEAM"
+            android:id="@+id/tv_TeamNext"
+            android:paddingBottom="12dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:paddingTop="12dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+
+            android:textColor="@color/white"
+            android:background="@drawable/joinbutton_back"
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+          />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_progressBarSave"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/progress"
+        android:progressDrawable="@drawable/progress"/>
+
+</RelativeLayout>

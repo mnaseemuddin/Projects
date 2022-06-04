@@ -1,0 +1,294 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        tools:context="com.lgt.fxtradingleague.FragmentBottomMenu.MoreFragment">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="10dp"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:padding="10dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/RL_ProfileFriends"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/iv_invitingFriend"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/invitefriend"
+                                app:tint="@color/ptl_color" />
+
+                            <TextView
+                                android:id="@+id/tv_MyFriendsList"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+
+                                android:layout_toRightOf="@+id/iv_invitingFriend"
+                                android:fontFamily="@font/lato_regular"
+
+
+                                android:text="Invite Your Friends"
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/im_InviteFriendss"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/contest"
+                        app:tint="@color/ptl_color" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/im_InviteFriendss"
+
+                        android:fontFamily="@font/lato_regular"
+
+                        android:text="Contests"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_JoinedContest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="10dp"
+                        android:padding="3dp"
+                        android:text="0"
+                        android:textColor="#626262"
+                        android:textSize="16sp" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/img"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+
+                        android:src="@drawable/matchess"
+                        app:tint="@color/ptl_color" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_centerVertical="true"
+
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/img"
+                        android:fontFamily="@font/lato_regular"
+
+                        android:text="Matches"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_JoinedMatches"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="10dp"
+                        android:padding="3dp"
+                        android:text="0"
+
+
+                        android:textColor="#626262"
+                        android:textSize="16sp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RL_MoreInviteFriend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+
+                    <ImageView
+                        android:id="@+id/im_InviteFriends"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/invite_frnds"
+                        app:tint="@color/ptl_color" />
+
+                    <TextView
+                        android:id="@+id/tv_InviteFriend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+
+                        android:layout_toRightOf="@+id/im_InviteFriends"
+                        android:fontFamily="@font/lato_regular"
+
+                        android:text="Invite Friends"
+                        android:textColor="@color/black" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RL_FantasyPointSystem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:id="@+id/im_FPS"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/fantasy_point"
+                        app:tint="@color/ptl_color" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toLeftOf="@+id/im_arrow3"
+                        android:layout_toRightOf="@+id/im_FPS"
+
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Fantasy Point System"
+
+                        android:textColor="@color/black" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/RL_MoreHowToPlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:id="@+id/im_HowToPlay"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/how_to_play"
+                        app:tint="@color/ptl_color" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toLeftOf="@+id/im_arrow4"
+                        android:layout_toRightOf="@+id/im_HowToPlay"
+
+                        android:fontFamily="@font/lato_regular"
+                        android:text="@string/disclaimer"
+                        android:textColor="@color/black" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/RL_MoreHelpDesk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:id="@+id/im_HelpDesk"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/helpdesk"
+                        app:tint="@color/ptl_color" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+
+                        android:layout_toRightOf="@+id/im_HelpDesk"
+                        android:fontFamily="@font/lato_regular"
+
+                        android:text="@string/helpdesk"
+                        android:textColor="@color/black" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+</layout>

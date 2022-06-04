@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/mainHeader"
+            layout="@layout/activity_mainheader" />
+
+        <LinearLayout
+            android:layout_below="@id/mainHeader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Add Amount"
+                            android:singleLine="true"
+                            android:textColorHint="#626262"
+                            android:textColor="#1e1e1e"
+                            android:textSize="15sp"
+                            android:inputType="number"
+                            android:digits="1234567890"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/edittext_back"
+                            android:padding="12dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/et_AddAmt"/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:background="@drawable/gredient_bt"
+                            android:text="Continue"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:textSize="15sp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_below="@+id/et_AddAmt"
+                            android:id="@+id/tv_Checkout"
+                            />
+
+                        <TextView
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:text="No Upcoming Transaction"
+                            android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+        </LinearLayout>
+
+</RelativeLayout>

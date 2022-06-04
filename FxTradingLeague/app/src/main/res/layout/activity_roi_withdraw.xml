@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ROIWithdrawActivity">
+
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_below="@+id/head"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+        <LinearLayout
+            android:padding="@dimen/margin_8_dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_24_dp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorAccent"
+                android:text="Your current wallet balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:textSize="10sp"
+                android:textColor="@color/sixtwo"
+                android:text="Minimum amount should be 100 Rs for withdraw."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_4_dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_WalletBalance"
+                    android:padding="@dimen/margin_4_dp"
+                    android:textSize="22sp"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/rupee_icon"
+                    android:layout_width="@dimen/margin_16_dp"
+                    android:layout_height="@dimen/margin_16_dp"
+                    app:tint="@color/colorAccent" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_32_dp"
+                android:layout_marginLeft="@dimen/margin_16_dp"
+                android:layout_marginRight="@dimen/margin_16_dp"
+                android:padding="@dimen/margin_4_dp"
+                android:background="@drawable/edittext_back"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/margin_4_dp"
+                    android:layout_marginRight="@dimen/margin_4_dp"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/margin_4_dp"
+                    android:src="@drawable/mobile"
+                    android:layout_width="@dimen/margin_24_dp"
+                    android:layout_height="@dimen/margin_24_dp"
+                    app:tint="@color/colorAccent" />
+
+                <EditText
+                    android:id="@+id/et_MobileNo"
+                    android:textSize="14sp"
+                    android:maxLines="1"
+                    android:maxLength="10"
+                    android:inputType="number"
+                    android:imeOptions="actionDone"
+                    android:hint="Enter Mobile Number"
+                    android:padding="@dimen/margin_8_dp"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="@dimen/margin_16_dp"
+                android:layout_marginRight="@dimen/margin_16_dp"
+                android:padding="@dimen/margin_4_dp"
+                android:background="@drawable/edittext_back"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+              <ImageView
+                  android:layout_marginLeft="@dimen/margin_4_dp"
+                  android:layout_marginRight="@dimen/margin_4_dp"
+                  android:layout_gravity="center"
+                  android:padding="@dimen/margin_4_dp"
+                  android:src="@drawable/rupee_icon"
+                  android:layout_width="@dimen/margin_24_dp"
+                  android:layout_height="@dimen/margin_24_dp"
+                  app:tint="@color/colorAccent" />
+
+                <EditText
+                    android:id="@+id/etWithDrawAmount"
+                    android:textSize="14sp"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:imeOptions="actionDone"
+                    android:hint="Enter withdrawl amount"
+                    android:padding="@dimen/margin_8_dp"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="@dimen/margin_16_dp"
+                android:layout_marginRight="@dimen/margin_16_dp"
+                android:padding="@dimen/margin_4_dp"
+                android:background="@drawable/edittext_back"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/margin_4_dp"
+                    android:layout_marginRight="@dimen/margin_4_dp"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/margin_4_dp"
+                    android:src="@drawable/userr"
+                    android:layout_width="@dimen/margin_24_dp"
+                    android:layout_height="@dimen/margin_24_dp"
+                    app:tint="@color/colorAccent" />
+
+                <EditText
+                    android:id="@+id/etbank_holder_name"
+                    android:textSize="14sp"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:imeOptions="actionDone"
+                    android:hint="Enter Bank Holder Name"
+                    android:padding="@dimen/margin_8_dp"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="@dimen/margin_16_dp"
+                android:layout_marginRight="@dimen/margin_16_dp"
+                android:padding="@dimen/margin_4_dp"
+                android:background="@drawable/edittext_back"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/margin_4_dp"
+                    android:layout_marginRight="@dimen/margin_4_dp"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/margin_4_dp"
+                    android:src="@drawable/account_number"
+                    android:layout_width="@dimen/margin_24_dp"
+                    android:layout_height="@dimen/margin_24_dp"
+                    app:tint="@color/colorAccent" />
+
+                <EditText
+                    android:id="@+id/et_account_no"
+                    android:textSize="14sp"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:maxLength="16"
+                    android:imeOptions="actionDone"
+                    android:hint="Enter Account Number"
+                    android:padding="@dimen/margin_8_dp"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="@dimen/margin_16_dp"
+                android:layout_marginRight="@dimen/margin_16_dp"
+                android:padding="@dimen/margin_4_dp"
+                android:background="@drawable/edittext_back"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/margin_4_dp"
+                    android:layout_marginRight="@dimen/margin_4_dp"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/margin_4_dp"
+                    android:src="@drawable/ifsc"
+                    android:layout_width="@dimen/margin_24_dp"
+                    android:layout_height="@dimen/margin_24_dp"
+                    app:tint="@color/colorAccent" />
+
+                <EditText
+                    android:id="@+id/et_ifsc"
+                    android:textSize="14sp"
+                    android:maxLines="1"
+                    android:inputType="textCapCharacters"
+                    android:imeOptions="actionDone"
+                    android:hint="Enter IFSC"
+                    android:padding="@dimen/margin_8_dp"
+                    android:maxLength="10"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+            <TextView
+                android:id="@+id/tvProceed"
+                android:layout_marginTop="24dp"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/margin_32_dp"
+                android:paddingRight="@dimen/margin_32_dp"
+                android:background="@drawable/gredient_bt"
+                android:textColor="@color/white"
+                android:text="Proceed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

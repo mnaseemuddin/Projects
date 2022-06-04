@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "601082270577",
+    "firebase_url": "https://all-rounder-b64aa.firebaseio.com",
+    "project_id": "all-rounder-b64aa",
+    "storage_bucket": "all-rounder-b64aa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601082270577:android:054b0a185ee23106669cd0",
+        "android_client_info": {
+          "package_name": "com.lgt.fxtradingleague"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "601082270577-e7o35gpm2iipsnq76vhgndo8g16vtc9s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lgt.fxtradingleague",
+            "certificate_hash": "be59d6ed0040953e463beaa51fd08acaf5b4e5fc"
+          }
+        },
+        {
+          "client_id": "601082270577-r61h0qbc06r4bob618th8oap33f91vf7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_foRLa35xtEbc7aRTW9afX_FrI87eW3o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "601082270577-r61h0qbc06r4bob618th8oap33f91vf7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

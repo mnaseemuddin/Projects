@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lgt.fxtradingleague.ChooseCandVCActivity">
+
+    <include
+        layout="@layout/activity_mainheader"
+        android:id="@+id/head"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head"
+        android:gravity="center"
+        android:id="@+id/LL_CVCInfoHead"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingStart="10dp"
+                android:text="Selected Price"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/twox"
+                android:textColor="@color/black"
+                android:text="     Buy    "
+                android:layout_toStartOf="@+id/onex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="20dp"
+                android:id="@+id/onex"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/black"
+                android:text="     Sell    "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Rv_FinalPlayerListIndia"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/LL_CVCInfoHead"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/RL_Bottomfooter"
+        android:scrollbars="vertical" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/RL_Bottomfooter">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SAVE TEAM"
+            android:id="@+id/tv_TeamNextIndia"
+            android:paddingBottom="12dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:paddingTop="12dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/joinbutton_back"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_progressBarSaveIndia"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/progress"
+        android:progressDrawable="@drawable/progress"/>
+
+</RelativeLayout>

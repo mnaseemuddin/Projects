@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#052F83</color>
+    <color name="colorPrimaryDark">#052F83</color>
+    <color name="colorAccent">#052F83</color>
+    <color name="startcolor">#3A72E1</color>
+    <color name="centercolor">#2653AC</color>
+    <color name="endcolor">#052F83</color>
+
+    <!--Changing end color from #861388 to Green #169118-->
+    <color name="white">#FEFCFF</color>
+    <color name="black">#000000</color>
+    <color name="ptl_color">#052F83</color>
+    <color name="selected_circle">#0C630D</color>
+    <color name="transparent">#33000000</color>
+    <color name="tabtextunselected">#626262</color>
+
+    <color name="sixtwo">#626262</color>
+    <color name="eightE">#8e8e8e</color>
+    <color name="myteamCaptain">#000000</color>
+    <color name="myteamdivider">#C5C3C3</color>
+    <color name="bg_gray">#f2f2f2</color>
+    <color name="red">#DF2D2D</color>
+    <color name="light_grey">#d3d3d3</color>
+    <color name="ex_light_grey">#F3F3F3</color>
+    <color name="gray">#95a5a6</color>
+
+    <color name="lowendcolor">#F5CACF</color>
+    <color name="blueColor">#052F83</color>
+
+
+    <color name="view_light_grey">#cccccc</color>
+    <color name="green">#097032</color>
+    <color name="green_light">#24C664</color>
+    <color name="red_light">#F66262</color>
+
+
+
+
+</resources>
