@@ -3,8 +3,7 @@ package com.lgt.NeWay.Extra;
 
 public class NeWayApi {
 
-
-    public static String BASE_URL = " http://neway.today/api/";
+    public static String BASE_URL = "http://neway.today/api/";
 
     public static String SIGN_UP = BASE_URL + "coaching_signup_api.php";
     public static String LOGIN = BASE_URL + "coaching_login_api.php";
@@ -40,6 +39,7 @@ public class NeWayApi {
     public static String Delete_AmitysList = BASE_URL + "delete_coaching_amenity_api.php";
     public static String AddGallery_image_API = BASE_URL + "add_coaching_gallery_api.php";
     public static String AddedGallery_image_API = BASE_URL + "coaching_image_gallery_list_api.php";
+
     public static String DeleteGallery_image_API = BASE_URL + "delete_coaching_gallery_image_api.php";
     public static String AddContact_API = BASE_URL + "add_coaching_contact_api.php";
     public static String Contact_ListAPI = BASE_URL + "coaching_contact_list_api.php";
@@ -47,12 +47,15 @@ public class NeWayApi {
     public static String DashBoardAPI = BASE_URL + "home_screen_api.php";
     public static String Batch_Type = BASE_URL + "coaching_batch_type_api.php";
     public static String Add_Batch = BASE_URL + "add_coaching_batch_api.php";
+    public static String User_Join_Request = BASE_URL + "user_join_batch_list_api.php";
     public static String BatchList = BASE_URL + "coaching_batch_list_api.php";
+    public static String Delete_BatchList = BASE_URL + "delete_coaching_batch_api.php";
     public static String ChangePassword = BASE_URL + "choaching_change_password_api.php";
     public static String Uploaded_Certificate_List = BASE_URL + "coaching_uploaded_certificate_list_api.php";
     public static String Upload_Certificate = BASE_URL + "upload_coaching_certificate_api.php";
     public static String Edit_Certificate_Status = BASE_URL + "edit_coaching_certificate_api.php";
     public static String Delete_Certificate = BASE_URL + "delete_coaching_certificate_api.php";
+    public static String User_Batch_Request_List = BASE_URL + "user_coaching_batches_request_list_api.php";
 
     public static String ABOUT_US = "http://neway.today/about_us.php";
     public static String PRIVACY_POLICY = "http://neway.today/privacy_policy.php";

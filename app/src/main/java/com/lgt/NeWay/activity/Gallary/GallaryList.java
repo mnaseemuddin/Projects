@@ -151,7 +151,7 @@ public class GallaryList extends AppCompatActivity implements DeleteGalleryImage
                         //String status = jsonObject.getString("status");
                         progress_signup.setVisibility(View.GONE);
                         iv_uploadimage.setImageResource(R.drawable.galleryicon);
-                        Toast.makeText(GallaryList.this, "" + message, Toast.LENGTH_LONG).show();
+                       // Toast.makeText(GallaryList.this, "" + message, Toast.LENGTH_LONG).show();
                         Loadgallarylist();
 
                     } else {
@@ -377,7 +377,7 @@ public class GallaryList extends AppCompatActivity implements DeleteGalleryImage
                                 Log.e("cehcheggggg", image + "");
 
                                 mlist.add(new ModelGallary(image, tbl_gallery_id));
-                                Toast.makeText(GallaryList.this, message + "", Toast.LENGTH_SHORT).show();
+                               // Toast.makeText(GallaryList.this, message + "", Toast.LENGTH_SHORT).show();
 
                             }
 
@@ -435,7 +435,7 @@ public class GallaryList extends AppCompatActivity implements DeleteGalleryImage
                     if (status.equals("1")) {
                         progress_signup.setVisibility(View.GONE);
                         adapterGallary.notifyDataSetChanged();
-                        Toast.makeText(GallaryList.this, message + "", Toast.LENGTH_LONG).show();
+                       // Toast.makeText(GallaryList.this, message + "", Toast.LENGTH_LONG).show();
                         Loadgallarylist();
                     } else {
                         Toast.makeText(GallaryList.this, message + "", Toast.LENGTH_LONG).show();

@@ -165,7 +165,7 @@ public class SubjectList extends AppCompatActivity implements SubjectListClickRe
                     String message = jsonObject.getString("message");
                     String status = jsonObject.getString("status");
                     if (status.equals("1")) {
-                        Toast.makeText(SubjectList.this, message + "", Toast.LENGTH_SHORT).show();
+                       // Toast.makeText(SubjectList.this, message + "", Toast.LENGTH_SHORT).show();
                         download_dialog.dismiss();
                     } else {
                         Toast.makeText(SubjectList.this, message + "", Toast.LENGTH_SHORT).show();
@@ -215,7 +215,7 @@ public class SubjectList extends AppCompatActivity implements SubjectListClickRe
                             String name = object.getString("name");
                             stringList.add(name);
                             setSpinnerAdapter(stringList);
-                            Toast.makeText(SubjectList.this, message + "", Toast.LENGTH_SHORT).show();
+                          //  Toast.makeText(SubjectList.this, message + "", Toast.LENGTH_SHORT).show();
                         }
 
                     }
@@ -282,7 +282,7 @@ public class SubjectList extends AppCompatActivity implements SubjectListClickRe
                             String subject_status = object.getString("subject_status");
 
 
-                            Toast.makeText(SubjectList.this, message + "", Toast.LENGTH_SHORT).show();
+                       //     Toast.makeText(SubjectList.this, message + "", Toast.LENGTH_SHORT).show();
                             mLIst.add(new ModelSubject(name, "", subject_status, "", "", tbl_subject_id));
                         }
                         adapterSubjectList = new AdapterSubjectList(mLIst, getApplicationContext(), SubjectList.this);
@@ -349,7 +349,7 @@ public class SubjectList extends AppCompatActivity implements SubjectListClickRe
                     if (Status.equals("1")) {
 
                         notifyAdapter(positon);
-                        Toast.makeText(context, message + "", Toast.LENGTH_SHORT).show();
+                      //  Toast.makeText(context, message + "", Toast.LENGTH_SHORT).show();
                     } else {
                         Toast.makeText(context, message + "", Toast.LENGTH_SHORT).show();
                     }

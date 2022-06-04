@@ -100,7 +100,7 @@ public class AdapterAmitys extends RecyclerView.Adapter<AdapterAmitys.Cityholder
                     String amenity_status=jsonObject.getString("amenity_status");
                     String status=jsonObject.getString("status");
                     if (amenity_status.equals("1")){
-                        Toast.makeText(context, message+"", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(context, message+"", Toast.LENGTH_SHORT).show();
                     }else {
                         Toast.makeText(context, message+"", Toast.LENGTH_SHORT).show();
                     }

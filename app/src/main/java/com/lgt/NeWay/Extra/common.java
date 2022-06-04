@@ -1,5 +1,6 @@
 package com.lgt.NeWay.Extra;
 
+import android.accessibilityservice.AccessibilityService;
 import android.app.Activity;
 import android.content.Context;
 import android.net.ConnectivityManager;
@@ -21,16 +22,17 @@ public class common {
     public static String Longitude= "longitude";
     public static String Tbl_board_id= "tbl_board_id";
     public static String UsersChoice= "userChoiceSpinner";
+    public static String Upassword= "password";
 
-    private final Context _context;
+    public Context mContext;
 
     public common(Context context) {
-        _context = context;
+        mContext = context;
     }
 
 
-    public boolean isConnectingToInternet() {
-        ConnectivityManager connectivity = (ConnectivityManager) _context.getSystemService(Context.CONNECTIVITY_SERVICE);
+    /*public static boolean isConnectingToInternet() {
+        ConnectivityManager connectivity = (ConnectivityManager) mContext.getSystemService(Context.CONNECTIVITY_SERVICE);
         if (connectivity != null) {
             NetworkInfo[] info = connectivity.getAllNetworkInfo();
             if (info != null)
@@ -42,7 +44,7 @@ public class common {
         }
         return false;
     }
-
+*/
     public static boolean checkPlayServices(Context context) {
         GoogleApiAvailability apiAvailability = GoogleApiAvailability.getInstance();
         int resultCode = apiAvailability.isGooglePlayServicesAvailable(context);

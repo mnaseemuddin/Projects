@@ -140,7 +140,7 @@ public class Amitys extends AppCompatActivity implements AmityRefreshInterface{
                     String message=jsonObject.getString("message");
                     String status=jsonObject.getString("status");
                     if (status.equals("1")){
-                        Toast.makeText(Amitys.this, message+"", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(Amitys.this, message+"", Toast.LENGTH_SHORT).show();
                         download_dialog.dismiss();
                         LoadAmitylist();
                     }else {
@@ -192,7 +192,7 @@ public class Amitys extends AppCompatActivity implements AmityRefreshInterface{
                                 String Amitystatus=object.getString("status");
 
                                 mlist.add(new ModelAmitys(name,Amitystatus,tbl_amenity_id));
-                                Toast.makeText(Amitys.this, message+"", Toast.LENGTH_SHORT).show();
+                                //Toast.makeText(Amitys.this, message+"", Toast.LENGTH_SHORT).show();
                             }
                             adapterAmitys=new AdapterAmitys(mlist,getApplicationContext(),Amitys.this);
                             rv_Amitylist.setLayoutManager(new LinearLayoutManager(getApplicationContext(),LinearLayoutManager.VERTICAL,false));
@@ -244,7 +244,7 @@ public class Amitys extends AppCompatActivity implements AmityRefreshInterface{
                     if (status.equals("1")){
                         LoadAmitylist();
 
-                        Toast.makeText(Amitys.this, message+"", Toast.LENGTH_SHORT).show();
+                       // Toast.makeText(Amitys.this, message+"", Toast.LENGTH_SHORT).show();
                     }else {
                         Toast.makeText(Amitys.this, message+"", Toast.LENGTH_SHORT).show();
                     }

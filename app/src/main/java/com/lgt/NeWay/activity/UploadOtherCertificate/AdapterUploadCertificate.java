@@ -98,7 +98,7 @@ public class AdapterUploadCertificate extends RecyclerView.Adapter<AdapterUpload
 
     }
 
-    private void changestatus(int status, String id) {
+   private void changestatus(int status, String id) {
         StringRequest stringRequest=new StringRequest(Request.Method.POST, NeWayApi.Edit_Certificate_Status, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {

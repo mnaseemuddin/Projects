@@ -13,11 +13,9 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.lgt.NeWay.Fragment.BatchListFragment;
+import com.lgt.NeWay.BatchListFragment.BatchListFragment;
 import com.lgt.NeWay.Fragment.DashBoardFragment;
 import com.lgt.NeWay.Fragment.JoinBatchFragment;
 import com.lgt.NeWay.Fragment.MoreFragment;

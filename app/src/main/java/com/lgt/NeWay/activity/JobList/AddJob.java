@@ -216,7 +216,6 @@ public class AddJob extends AppCompatActivity {
                     Toast.makeText(AddJob.this, "Please Upload Coaching Image", Toast.LENGTH_LONG).show();
                     return;
                 }
-
                 sendImage();
             }
         });
@@ -307,9 +306,7 @@ public class AddJob extends AppCompatActivity {
         });
         builder.show();
 
-
     }
-
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -336,7 +333,7 @@ public class AddJob extends AppCompatActivity {
         if (requestCode == 2 && resultCode == RESULT_OK && data != null) {
 
             Log.e("gjhghhhhhhk", "called");
-
+            isImageAvailable=true;
             filePath = data.getData();
             Log.e("filepaththh", filePath + "");
             try {
@@ -416,7 +413,7 @@ public class AddJob extends AppCompatActivity {
                 return params;
             }
         };
-        ;
+
         Volley.newRequestQueue(AddJob.this).add(volleyMultipartRequest);
     }
 
@@ -441,7 +438,6 @@ public class AddJob extends AppCompatActivity {
         }
         return Bitmap.createScaledBitmap(image, width, height, true);
     }
-
 
     private void checkPosition(int position) {
         Log.d("selectedName", "mSelect_Board" + mSelect_Board.size());
@@ -521,7 +517,6 @@ public class AddJob extends AppCompatActivity {
         });
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
         requestQueue.add(stringRequest);
-
 
     }
 

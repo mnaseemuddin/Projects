@@ -1,4 +1,4 @@
-package com.lgt.NeWay.Fragment;
+package com.lgt.NeWay.BatchListFragment;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,8 +26,6 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.lgt.NeWay.Extra.NeWayApi;
 import com.lgt.NeWay.Extra.common;
-import com.lgt.NeWay.Fragment.Adapter.AdapterUserAppliedBatchlist;
-import com.lgt.NeWay.Fragment.Model.ModelUserAppliedJob;
 import com.lgt.NeWay.Neway.R;
 import com.lgt.NeWay.activity.Addbatches;
 
@@ -40,7 +39,7 @@ import java.util.List;
 import java.util.Map;
 
 
-public class BatchListFragment extends Fragment {
+public class BatchListFragment extends Fragment implements DeleteBatchInterFace {
     RelativeLayout rv_Addbatches;
     List<ModelUserAppliedJob> modelUserAppliedJobList = new ArrayList<>();
     AdapterUserAppliedBatchlist adapterUserAppliedBatchlist;
@@ -48,7 +47,6 @@ public class BatchListFragment extends Fragment {
     SharedPreferences sharedPreferences;
     String Mtable_id;
     Fragment FragmentDashboard;
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -67,19 +65,19 @@ public class BatchListFragment extends Fragment {
                 startActivity(intent);
             }
         });
-
-
         return view;
     }
+
     private void iniSharedpref() {
-        sharedPreferences=getContext().getSharedPreferences(common.UserData, Context.MODE_PRIVATE);
-        Mtable_id=sharedPreferences.getString("tbl_coaching_id","");
+        sharedPreferences = getContext().getSharedPreferences(common.UserData, Context.MODE_PRIVATE);
+        Mtable_id = sharedPreferences.getString("tbl_coaching_id", "");
     }
     private void loadlist() {
         modelUserAppliedJobList.clear();
         StringRequest stringRequest = new StringRequest(Request.Method.POST, NeWayApi.BatchList, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
+                Log.e("hdfhdhfh", response + "");
                 try {
                     JSONObject jsonObject = new JSONObject(response);
                     String message = jsonObject.getString("message");
@@ -95,21 +93,69 @@ public class BatchListFragment extends Fragment {
                                 String subject_name = object.getString("subject_name");
                                 String BatchStatus = object.getString("status");
 
-                                modelUserAppliedJobList.add(new ModelUserAppliedJob(batch_name,BatchStatus));
-                                Toast.makeText(getContext(), message+"", Toast.LENGTH_LONG).show();
+                                modelUserAppliedJobList.add(new ModelUserAppliedJob(batch_name, BatchStatus, tbl_batches_id));
+                                //Toast.makeText(getContext(), message + "", Toast.LENGTH_LONG).show();
                             }
-                            adapterUserAppliedBatchlist = new AdapterUserAppliedBatchlist(modelUserAppliedJobList, getContext());
+                            adapterUserAppliedBatchlist = new AdapterUserAppliedBatchlist(modelUserAppliedJobList, getContext(), BatchListFragment.this);
                             rv_userbatchlist.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
                             rv_userbatchlist.setHasFixedSize(true);
                             rv_userbatchlist.setAdapter(adapterUserAppliedBatchlist);
                             adapterUserAppliedBatchlist.notifyDataSetChanged();
                         }
                     }
-
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
 
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+            }
+        }) {
+            @Nullable
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String, String> param = new HashMap<>();
+                param.put("tbl_coaching_id", Mtable_id);
+                return param;
+            }
+        };
+        RequestQueue requestQueue = Volley.newRequestQueue(getContext());
+        requestQueue.add(stringRequest);
+    }
+
+    @Override
+    public void onResume() {
+        loadlist();
+        super.onResume();
+    }
+
+    @Override
+    public void deletebatch(String id) {
+        deleteBatchlist(id);
+
+    }
+    private void deleteBatchlist(String Batch_id) {
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, NeWayApi.Delete_BatchList, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                try {
+                    JSONObject jsonObject=new JSONObject(response);
+                    String message=jsonObject.getString("message");
+                    String status=jsonObject.getString("status");
+
+                    if (status.equals("1")){
+                        adapterUserAppliedBatchlist.notifyDataSetChanged();
+                        //Toast.makeText(getContext(), message+"", Toast.LENGTH_SHORT).show();
+                        loadlist();
+                    }else {
+                        Toast.makeText(getContext(), message+"", Toast.LENGTH_SHORT).show();
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
             }
         }, new Response.ErrorListener() {
             @Override
@@ -122,17 +168,11 @@ public class BatchListFragment extends Fragment {
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String,String>param=new HashMap<>();
                 param.put("tbl_coaching_id",Mtable_id);
+                param.put("tbl_batches_id",Batch_id);
                 return param;
             }
         };
         RequestQueue requestQueue = Volley.newRequestQueue(getContext());
         requestQueue.add(stringRequest);
-
-    }
-
-    @Override
-    public void onResume() {
-        loadlist();
-        super.onResume();
     }
 }

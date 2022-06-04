@@ -206,13 +206,13 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                 Registration.FullAddress = fullAddress;
 
 
-               // Log.d("location",""+new Gson().toJson(addresses));
+                // Log.d("location",""+new Gson().toJson(addresses));
                 String BlockName = addresses.get(0).getLocality();
                 String state = addresses.get(0).getAdminArea();
                 PinCode = addresses.get(0).getPostalCode();
                 latitudeCode = (float) addresses.get(0).getLatitude();
                 longitudeCode = (float) addresses.get(0).getLongitude();
-                Registration.State=state;
+                Registration.State = state;
                 Registration.City = BlockName;
                 Registration.PinCode = PinCode;
                 Registration.LatitudeCode = latitudeCode;
@@ -229,7 +229,6 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                 }
                 CityName = tv_cityName.getText().toString();
                 tv_fullAddressDetails.setText(fullAddress);
-
 
 
                 Log.e("JNHBG", BlockName + "");
@@ -295,6 +294,16 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         locationRequest.setFastestInterval(FASTEST_INTERVAL);
 
         locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
         fusedLocationClient.requestLocationUpdates(locationRequest, locationCallback, Looper.getMainLooper());
 
         LocationSettingsRequest.Builder builder = new LocationSettingsRequest.Builder().addLocationRequest(locationRequest);

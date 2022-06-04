@@ -364,7 +364,6 @@ public class TeacherList extends AppCompatActivity implements UpdateTeacherListI
                         .override(192, 192)).into(cv_TeacherImage);
                 converetdImage = getResizedBitmap(bitmap, 400);
 
-
                 //converetdImage = getResizedBitmap(bitmap, 400);
                 Log.e("CLICKEDINBYTES", bitmap.getAllocationByteCount() + "");
                 Log.e("CLICKEDINKILLOBYTE", (bitmap.getAllocationByteCount() / 1024) + "");
@@ -468,7 +467,7 @@ public class TeacherList extends AppCompatActivity implements UpdateTeacherListI
                         Toast.makeText(TeacherList.this, "" + message, Toast.LENGTH_SHORT).show();
                         download_dialog.dismiss();
                         LoadTeacherAddedList();
-                        Toast.makeText(TeacherList.this, "" + message, Toast.LENGTH_SHORT).show();
+                       // Toast.makeText(TeacherList.this, "" + message, Toast.LENGTH_SHORT).show();
 
                     } else {
                         Toast.makeText(TeacherList.this, "" + message, Toast.LENGTH_SHORT).show();
@@ -527,7 +526,7 @@ public class TeacherList extends AppCompatActivity implements UpdateTeacherListI
                     String status = jsonObject.getString("status");
 
                     if (status.equals("1")) {
-                        Toast.makeText(getApplicationContext(), message + "", Toast.LENGTH_SHORT).show();
+                       // Toast.makeText(getApplicationContext(), message + "", Toast.LENGTH_SHORT).show();
                         LoadTeacherAddedList();
                         adapterTteacher.notifyDataSetChanged();
 

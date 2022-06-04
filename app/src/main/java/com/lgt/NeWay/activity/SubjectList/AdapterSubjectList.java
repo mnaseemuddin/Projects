@@ -111,7 +111,7 @@ public class AdapterSubjectList extends RecyclerView.Adapter<AdapterSubjectList.
                     String message = jsonObject.getString("message");
                     String subject_status = jsonObject.getString("subject_status");
                     if (subject_status.equals("1")) {
-                        Toast.makeText(context, message + "", Toast.LENGTH_SHORT).show();
+                       // Toast.makeText(context, message + "", Toast.LENGTH_SHORT).show();
                     }else {
                         Toast.makeText(context, message + "", Toast.LENGTH_SHORT).show();
                     }

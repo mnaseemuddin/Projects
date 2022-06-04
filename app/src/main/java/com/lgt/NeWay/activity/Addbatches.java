@@ -86,7 +86,7 @@ public class Addbatches extends AppCompatActivity {
     ArrayList<String> mTracherId = new ArrayList<>();
     SharedPreferences sharedPreferences;
     TextView tvToolbar;
-    ImageView iv_uploadbatchimage;
+    ImageView iv_uploadbatchimage,ivBackFullDescription;
     Boolean isImageAvailable = false;
     private Uri filePath;
     int bitmapSize;
@@ -143,9 +143,9 @@ public class Addbatches extends AppCompatActivity {
                             for (int i = 0; jsonArray.length() > i; i++) {
                                 JSONObject jsonObject1 = jsonArray.getJSONObject(i);
                                 if (type.equals("one")) {
-                                    String title = jsonObject1.getString("title");
-                                    mBatch_type.add(title);
-                                    finalMList.add(title);
+                                    String value = jsonObject1.getString("value");
+                                    mBatch_type.add(value);
+                                    finalMList.add(value);
                                 } else {
                                     if (type.equals("two")) {
                                         String tbl_teacher_id = jsonObject1.getString("tbl_teacher_id");
@@ -374,8 +374,10 @@ public class Addbatches extends AppCompatActivity {
         et_TotalSeatAvailable = findViewById(R.id.et_TotalSeatAvailable);
         et_TotalLeftSeat = findViewById(R.id.et_TotalLeftSeat);
         bt_yes = findViewById(R.id.bt_yes);
+        ivBackFullDescription = findViewById(R.id.ivBackFullDescription);
         bt_no = findViewById(R.id.bt_no);
         tvToolbar.setText("Add Batch");
+
     }
 
     private void onclickListner() {
@@ -406,10 +408,20 @@ public class Addbatches extends AppCompatActivity {
                 }
             }
         });
+
         iv_uploadbatchimage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 checkPermissionForApp();
+            }
+
+        });
+
+
+        ivBackFullDescription.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
             }
 
         });
@@ -475,7 +487,7 @@ public class Addbatches extends AppCompatActivity {
             return;
         }
         if (TextUtils.isEmpty(selectedBatchType)) {
-            Toast.makeText(Addbatches.this, "selected Batch Name", Toast.LENGTH_LONG).show();
+            Toast.makeText(Addbatches.this, "selected Batch Type", Toast.LENGTH_LONG).show();
             return;
         }
         if (TextUtils.isEmpty(selectedNameTeacher)) {
@@ -579,7 +591,7 @@ public class Addbatches extends AppCompatActivity {
                             }
 
                             if (!report.areAllPermissionsGranted()) {
-                                Toast.makeText(Addbatches.this, "All permission are required to use this app", Toast.LENGTH_LONG).show();
+                               // Toast.makeText(Addbatches.this, "All permission are required to use this app", Toast.LENGTH_LONG).show();
                                 finish();
                             }
                             if (report.isAnyPermissionPermanentlyDenied()) {

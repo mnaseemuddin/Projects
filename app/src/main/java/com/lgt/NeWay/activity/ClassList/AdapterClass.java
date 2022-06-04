@@ -108,7 +108,7 @@ public class AdapterClass extends RecyclerView.Adapter<AdapterClass.Cityholder> 
                     String subject_status=jsonObject.getString("subject_status");
                     String status=jsonObject.getString("status");
                     if (subject_status.equals("0")){
-                        Toast.makeText(context, message+"", Toast.LENGTH_SHORT).show();
+                      //  Toast.makeText(context, message+"", Toast.LENGTH_SHORT).show();
                     }else {
                         if (subject_status.equals("1")){
                             Toast.makeText(context, message+"", Toast.LENGTH_SHORT).show();

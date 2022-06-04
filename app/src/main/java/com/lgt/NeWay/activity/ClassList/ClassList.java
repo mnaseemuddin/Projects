@@ -198,7 +198,7 @@ public class ClassList extends AppCompatActivity implements ClassListRefresh {
                             String name=object.getString("name");
 
 
-                            Toast.makeText(getApplicationContext(), message+"", Toast.LENGTH_SHORT).show();
+                            //Toast.makeText(getApplicationContext(), message+"", Toast.LENGTH_SHORT).show();
                             stringList.add(name);
                             setSpinnerAdapter(stringList);
                         }
@@ -238,7 +238,7 @@ public class ClassList extends AppCompatActivity implements ClassListRefresh {
                     String message=jsonObject.getString("message");
                     String status=jsonObject.getString("status");
                     if (status.equals("1")){
-                        Toast.makeText(ClassList.this, message+"", Toast.LENGTH_SHORT).show();
+                      //  Toast.makeText(ClassList.this, message+"", Toast.LENGTH_SHORT).show();
                         download_dialog.dismiss();
 
                     }else {
@@ -290,7 +290,7 @@ public class ClassList extends AppCompatActivity implements ClassListRefresh {
                             String tbl_coaching_id=object.getString("tbl_coaching_id");
                             String name=object.getString("name");
                             String class_status=object.getString("class_status");
-                            Toast.makeText(ClassList.this, message+"", Toast.LENGTH_LONG).show();
+                           // Toast.makeText(ClassList.this, message+"", Toast.LENGTH_LONG).show();
                             ModelClass modelClass = new ModelClass();
                             modelClass.setTv_Class_Name(name);
                             modelClass.setClass_status(class_status);
@@ -353,7 +353,7 @@ public class ClassList extends AppCompatActivity implements ClassListRefresh {
                     if (status.equals("1")){
 
                         adapterClass.notifyDataSetChanged();
-                        Toast.makeText(ClassList.this, message+"", Toast.LENGTH_SHORT).show();
+                       // Toast.makeText(ClassList.this, message+"", Toast.LENGTH_SHORT).show();
                         LoadClassAddedList();
                     }else {
                         adapterClass.notifyDataSetChanged();

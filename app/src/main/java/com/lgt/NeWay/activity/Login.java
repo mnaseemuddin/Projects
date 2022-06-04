@@ -142,6 +142,7 @@ public class Login extends AppCompatActivity {
                         String owner_name = object.getString("owner_name");
                         String special_course = object.getString("special_course");
                         String block_no = object.getString("block_no");
+                        String password = object.getString("password");
                         String state = object.getString("state");
                         String pincode = object.getString("pincode");
                         String full_address = object.getString("full_address");
@@ -149,6 +150,7 @@ public class Login extends AppCompatActivity {
                         String longitude = object.getString("longitude");
                         Toast.makeText(Login.this, message + "", Toast.LENGTH_LONG).show();
                         editor.putString("tbl_coaching_id",tbl_coaching_id);
+                        editor.putString("password",password);
                         editor.putString("coaching_name", coaching_name);
                         editor.putString("contact_no", contact_no);
                         editor.putString("owner_name", owner_name);

@@ -99,7 +99,6 @@ public class UploadOtherCertificate extends AppCompatActivity implements DeleteC
         setContentView(R.layout.activity_upload_other_certificate);
 
 
-
         tvToolbar = findViewById(R.id.tvToolbar);
         rv_UploadCertificate = findViewById(R.id.rv_UploadCertificate);
         Pb_Progressbar = findViewById(R.id.Pb_Progressbar);
@@ -111,6 +110,8 @@ public class UploadOtherCertificate extends AppCompatActivity implements DeleteC
         statusList.clear();
         statusList.add("Active");
         statusList.add("Inactive");
+
+        loadlist();
     }
 
     private void iniSharedpref() {
@@ -215,7 +216,6 @@ public class UploadOtherCertificate extends AppCompatActivity implements DeleteC
     }
 
     private void Validation() {
-
         if (TextUtils.isEmpty(et_Enter_Title.getText())) {
             et_Enter_Title.setError("All Field Required");
             et_Enter_Title.requestFocus();
@@ -235,8 +235,6 @@ public class UploadOtherCertificate extends AppCompatActivity implements DeleteC
             return;
         }
         uploadcertificate();
-
-
     }
 
     private void uploadcertificate() {
@@ -250,10 +248,8 @@ public class UploadOtherCertificate extends AppCompatActivity implements DeleteC
                     String message = jsonObject.getString("message");
                     if (status.equals("1")) {
                         Toast.makeText(UploadOtherCertificate.this, "" + message, Toast.LENGTH_SHORT).show();
-
                         download_dialog.dismiss();
                         loadlist();
-
                     } else {
                         Toast.makeText(UploadOtherCertificate.this, "" + message, Toast.LENGTH_SHORT).show();
                     }
@@ -264,7 +260,7 @@ public class UploadOtherCertificate extends AppCompatActivity implements DeleteC
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-
+                Log.e("PPPPPPP", error + "");
             }
         }) {
             @Override
@@ -274,7 +270,6 @@ public class UploadOtherCertificate extends AppCompatActivity implements DeleteC
                 parem.put("mobile_number", selectedNumber);
                 parem.put("title", et_Enter_Title.getText().toString());
                 parem.put("description", et_Type_Message.getText().toString());
-
                 Log.e("PPPPPPP", parem + "");
                 return parem;
 
@@ -284,8 +279,9 @@ public class UploadOtherCertificate extends AppCompatActivity implements DeleteC
             protected Map<String, DataPart> getByteData() throws AuthFailureError {
                 Map<String, DataPart> params = new HashMap<>();
                 long imagename = System.currentTimeMillis();
+                Log.e("PARPARAMSAMS", imagename + "");
                 params.put("image", new DataPart(imagename + ".png", getFileDataFromDrawable(converetdImage)));
-                Log.e("PARAMS", params + "");
+                Log.e("PARPARAMSAMS", params + "");
                 return params;
             }
         };
@@ -359,7 +355,6 @@ public class UploadOtherCertificate extends AppCompatActivity implements DeleteC
     }
 
     private void checkPermissionForApp() {
-
         try {
             Dexter.withActivity(UploadOtherCertificate.this).withPermissions(Manifest.permission.CAMERA,
                     Manifest.permission.WRITE_EXTERNAL_STORAGE,
@@ -411,7 +406,6 @@ public class UploadOtherCertificate extends AppCompatActivity implements DeleteC
                 public void onClick(DialogInterface dialogInterface, int i) {
                     dialogInterface.cancel();
                     openSetting();
-
                 }
             });
 
@@ -502,7 +496,6 @@ public class UploadOtherCertificate extends AppCompatActivity implements DeleteC
     }
 
     private void selectImage() {
-
         final CharSequence[] options = {"Take Photo", "Choose from Gallery", "Cancel"};
         android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(UploadOtherCertificate.this);
         builder.setTitle("Add Photo!");
@@ -524,8 +517,6 @@ public class UploadOtherCertificate extends AppCompatActivity implements DeleteC
             }
         });
         builder.show();
-
-
     }
 
 
@@ -554,14 +545,13 @@ public class UploadOtherCertificate extends AppCompatActivity implements DeleteC
                                 String title = jsonObject1.getString("title");
                                 String images = jsonObject1.getString("images");
                                 String Certificate_status = jsonObject1.getString("status");
-
-                                mlist.add(new MOdelUploadCertificate(images, username, title, mobile_number, tbl_upload_other_certificate_id,Certificate_status));
+                                mlist.add(new MOdelUploadCertificate(images, username, title, mobile_number, tbl_upload_other_certificate_id, Certificate_status));
                             }
-                            adapterUploadCertificate = new AdapterUploadCertificate(mlist, getApplicationContext(), UploadOtherCertificate.this);
-                            rv_UploadCertificate.setLayoutManager(new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false));
-                            rv_UploadCertificate.setHasFixedSize(true);
-                            rv_UploadCertificate.setAdapter(adapterUploadCertificate);
                         }
+                        adapterUploadCertificate = new AdapterUploadCertificate(mlist, getApplicationContext(), UploadOtherCertificate.this);
+                        rv_UploadCertificate.setLayoutManager(new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false));
+                        rv_UploadCertificate.setHasFixedSize(true);
+                        rv_UploadCertificate.setAdapter(adapterUploadCertificate);
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -584,19 +574,13 @@ public class UploadOtherCertificate extends AppCompatActivity implements DeleteC
         };
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
         requestQueue.add(stringRequest);
-
     }
 
-    @Override
-    protected void onResume() {
-        loadlist();
-        super.onResume();
-    }
+
 
     @Override
     public void deletecertificate(String id) {
         deletecertificateApi(id);
-
     }
 
     private void deletecertificateApi(String CertiFi_id) {
@@ -604,14 +588,14 @@ public class UploadOtherCertificate extends AppCompatActivity implements DeleteC
             @Override
             public void onResponse(String response) {
                 try {
-                    JSONObject jsonObject=new JSONObject(response);
-                    String message=jsonObject.getString("message");
-                    String status=jsonObject.getString("status");
-                    if (status.equals("1")){
-                        Toast.makeText(UploadOtherCertificate.this, message+"", Toast.LENGTH_SHORT).show();
+                    JSONObject jsonObject = new JSONObject(response);
+                    String message = jsonObject.getString("message");
+                    String status = jsonObject.getString("status");
+                    if (status.equals("1")) {
+                      //  Toast.makeText(UploadOtherCertificate.this, message + "", Toast.LENGTH_SHORT).show();
                         loadlist();
-                    }else {
-                        Toast.makeText(UploadOtherCertificate.this, message+"", Toast.LENGTH_SHORT).show();
+                    } else {
+                        Toast.makeText(UploadOtherCertificate.this, message + "", Toast.LENGTH_SHORT).show();
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -623,13 +607,13 @@ public class UploadOtherCertificate extends AppCompatActivity implements DeleteC
             public void onErrorResponse(VolleyError error) {
 
             }
-        }){
+        }) {
             @Nullable
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
-                Map<String,String>param=new HashMap<>();
-                param.put("tbl_coaching_id",Mtable_id);
-                param.put("tbl_upload_other_certificate_id",CertiFi_id);
+                Map<String, String> param = new HashMap<>();
+                param.put("tbl_coaching_id", Mtable_id);
+                param.put("tbl_upload_other_certificate_id", CertiFi_id);
                 return param;
             }
         };

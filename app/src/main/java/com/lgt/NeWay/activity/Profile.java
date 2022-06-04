@@ -11,8 +11,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -42,6 +40,7 @@ import com.android.volley.toolbox.Volley;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.google.android.gms.common.internal.service.Common;
+import com.google.gson.Gson;
 import com.karumi.dexter.Dexter;
 import com.karumi.dexter.MultiplePermissionsReport;
 import com.karumi.dexter.PermissionToken;
@@ -49,10 +48,7 @@ import com.karumi.dexter.listener.PermissionRequest;
 import com.karumi.dexter.listener.multi.MultiplePermissionsListener;
 import com.lgt.NeWay.Extra.NeWayApi;
 import com.lgt.NeWay.Extra.VolleyMultipartRequest;
-import com.lgt.NeWay.Fragment.Model.ModelUserAppliedJob;
 import com.lgt.NeWay.Neway.R;
-import com.lgt.NeWay.activity.JobList.AddJob;
-import com.lgt.NeWay.activity.JobList.Jobs;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -312,7 +308,7 @@ public class Profile extends AppCompatActivity {
                 Map<String, DataPart> params = new HashMap<>();
                 long imagename = System.currentTimeMillis();
                 params.put("image", new DataPart(imagename + ".png", getFileDataFromDrawable(converetdImage)));
-                Log.e("PARAMS", params + "");
+                Log.e("PARAMS", new Gson().toJson(params) + "");
                 return params;
             }
         };
@@ -447,7 +443,6 @@ public class Profile extends AppCompatActivity {
                 Glide.with(Profile.this).load(bitmap).apply(new RequestOptions()
                         .override(192, 192)).into(ivProfileImage);
                 converetdImage = getResizedBitmap(bitmap, 400);
-
 
                 //converetdImage = getResizedBitmap(bitmap, 400);
                 Log.e("CLICKEDINBYTES", bitmap.getAllocationByteCount() + "");

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -46,7 +47,7 @@ public class Registration extends AppCompatActivity {
     public static float LongitudeCode;
 
     public EditText et_CoachingCenterName, et_mobileno_signup, et_Password, et_email_signup, et_owner_name_signup, et_Blockname_signup, et_Pincode_signup, et_Statename_signup;
-    private TextView tv_Address_signup;
+    private TextView tv_Address_signup,tv_TNC;
     private ImageView iv_pointer,iv_back_signup;
     private ProgressBar progress_signup;
     private CheckBox signup_cheakbox;
@@ -74,6 +75,7 @@ public class Registration extends AppCompatActivity {
         rb_onlyclasses = findViewById(R.id.rb_onlyclasses);
 
         OnlyCourese = findViewById(R.id.OnlyCourese);
+       tv_TNC= findViewById(R.id.tv_TNC);
         rbBoth = findViewById(R.id.rbBoth);
         signup_cheakbox = findViewById(R.id.signup_cheakbox);
         progress_signup = findViewById(R.id.progress_signup);
@@ -119,7 +121,7 @@ public class Registration extends AppCompatActivity {
             public void onClick(View v) {
 
                 if (rb_onlyclasses.isChecked()) {
-                    type = "Class";
+                    type = "yes";
                     Log.e("checkradiobuttonclick", type + "");
 
                     if (rbBoth.isChecked()) {
@@ -140,7 +142,7 @@ public class Registration extends AppCompatActivity {
 
 
                 if (OnlyCourese.isChecked()) {
-                    type = "Course";
+                    type = "no";
                     Log.e("checkradiobuttonclick", type + "");
                     if (rbBoth.isChecked()) {
                         rbBoth.setChecked(false);
@@ -176,6 +178,19 @@ public class Registration extends AppCompatActivity {
                 }
             }
         });
+        tv_TNC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                String url = "http://neway.today/privacy_policy.php";
+
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
+
+            }
+        });
     }
 
     private void iniSharedPref() {
@@ -208,7 +223,7 @@ public class Registration extends AppCompatActivity {
 
       if (TextUtils.isEmpty(Uemail_signup)) {
             et_email_signup.setError("Please Enter Email");
-          et_email_signup.requestFocus();
+            et_email_signup.requestFocus();
             return;
 
         }
@@ -293,10 +308,11 @@ public class Registration extends AppCompatActivity {
                         String latitude = object.getString("latitude");
                         String longitude = object.getString("longitude");
 
-                        Toast.makeText(Registration.this, message + "", Toast.LENGTH_LONG).show();
+                       // Toast.makeText(Registration.this, message + "", Toast.LENGTH_LONG).show();
 
                         Intent intent = new Intent(Registration.this, MainActivity.class);
                         startActivity(intent);
+
                         Log.e("a2a2a2a2", intent + "");
                         editor.putString("tbl_coaching_id", tbl_coaching_id);
                         editor.putString("owner_name", owner_name);
@@ -309,6 +325,7 @@ public class Registration extends AppCompatActivity {
 
                         editor.commit();
                         editor.apply();
+                        finish();
 
                     } else if (status.equals("0")) {
                         progress_signup.setVisibility(View.GONE);

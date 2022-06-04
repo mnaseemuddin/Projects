@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/azhar project/NeWay Partner/app/src/main/res/layout/activity_add_job.xml" value="0.19947916666666668" />
+        <entry key="..\:/azhar project/NeWay Partner/app/src/main/res/layout/activity_addbatches.xml" value="0.13148148148148148" />
+        <entry key="..\:/azhar project/NeWay Partner/app/src/main/res/layout/activity_login.xml" value="0.11481481481481481" />
+        <entry key="..\:/azhar project/NeWay Partner/app/src/main/res/layout/activity_profile.xml" value="0.20416666666666666" />
+        <entry key="..\:/azhar project/NeWay Partner/app/src/main/res/layout/activity_registration.xml" value="0.21" />
+        <entry key="..\:/azhar project/NeWay Partner/app/src/main/res/layout/activity_teacher_list.xml" value="0.27291666666666664" />
+        <entry key="..\:/azhar project/NeWay Partner/app/src/main/res/layout/activity_web_view.xml" value="0.18" />
+        <entry key="..\:/azhar project/NeWay Partner/app/src/main/res/layout/adapterteacher.xml" value="0.18796296296296297" />
+        <entry key="..\:/azhar project/NeWay Partner/app/src/main/res/layout/addteacherdilough.xml" value="0.19722222222222222" />
+        <entry key="..\:/azhar project/NeWay Partner/app/src/main/res/layout/batchlist.xml" value="0.20416666666666666" />
+        <entry key="..\:/azhar project/NeWay Partner/app/src/main/res/layout/fragment_batchlist.xml" value="0.14166666666666666" />
+        <entry key="..\:/azhar project/NeWay Partner/app/src/main/res/layout/fragment_join_batch.xml" value="0.20416666666666666" />
+        <entry key="..\:/azhar project/NeWay Partner/app/src/main/res/layout/fragment_more.xml" value="0.22" />
+        <entry key="..\:/azhar project/NeWay Partner/app/src/main/res/layout/toolbar.xml" value="0.20416666666666666" />
+        <entry key="..\:/azhar project/NeWay Partner/app/src/main/res/layout/toolbar_with_back.xml" value="0.19947916666666668" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

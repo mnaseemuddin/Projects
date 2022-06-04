@@ -123,7 +123,7 @@ public class Jobs extends AppCompatActivity implements UpdateJobInterface{
                             String image=jsonObject1.getString("image");
 
 
-                            Toast.makeText(Jobs.this, message+"", Toast.LENGTH_SHORT).show();
+                         //   Toast.makeText(Jobs.this, message+"", Toast.LENGTH_SHORT).show();
 
                             ModelJob modelJob = new ModelJob();
                             modelJob.setTbl_jobs_id(tbl_jobs_id);
@@ -198,7 +198,7 @@ public class Jobs extends AppCompatActivity implements UpdateJobInterface{
                       adapterJob.notifyDataSetChanged();
 
 
-                       Toast.makeText(Jobs.this, message+"", Toast.LENGTH_SHORT).show();
+                     //  Toast.makeText(Jobs.this, message+"", Toast.LENGTH_SHORT).show();
                        LoadJobList();
 
                    }else {

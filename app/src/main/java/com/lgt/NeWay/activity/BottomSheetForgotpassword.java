@@ -96,15 +96,13 @@ public class BottomSheetForgotpassword extends BottomSheetDialogFragment {
                         String password=object.getString("password");
                         String contact_no=object.getString("contact_no");
 
-                        Toast.makeText(context, message+"", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getActivity(), message+"", Toast.LENGTH_LONG).show();
                         dismiss();
                     }else {
                         if (status.equals("0")){
-                            Toast.makeText(context, message+"", Toast.LENGTH_LONG).show();
+                            Toast.makeText(getActivity(), message+"", Toast.LENGTH_LONG).show();
                         }
                     }
-
-
 
                 } catch (JSONException e) {
                     e.printStackTrace();

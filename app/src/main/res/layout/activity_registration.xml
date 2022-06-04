@@ -66,11 +66,11 @@
                         android:layout_marginTop="10dp"
                         android:text="Coaching Center Name"
                         android:textColor="@color/colorAccent"
-                        android:textSize="12dp" />
+                        android:textSize="12sp" />
 
 
                     <EditText
-                        android:textSize="14dp"
+                        android:textSize="14sp"
                         android:id="@+id/et_CoachingCenterName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -95,11 +95,11 @@
                         android:layout_marginTop="8dp"
                         android:text="Mobile Number"
                         android:textColor="@color/colorAccent"
-                        android:textSize="12dp" />
+                        android:textSize="12sp" />
 
 
                     <EditText
-                        android:textSize="14dp"
+                        android:textSize="14sp"
                         android:id="@+id/et_mobileno_signup"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -121,11 +121,11 @@
                         android:layout_marginTop="8dp"
                         android:text="Password"
                         android:textColor="@color/colorAccent"
-                        android:textSize="12dp" />
+                        android:textSize="12sp" />
 
 
                     <EditText
-                        android:textSize="14dp"
+                        android:textSize="14sp"
                         android:id="@+id/et_Password"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -148,11 +148,11 @@
                         android:layout_marginTop="8dp"
                         android:text="Email"
                         android:textColor="@color/colorAccent"
-                        android:textSize="12dp" />
+                        android:textSize="12sp" />
 
 
                     <EditText
-                        android:textSize="14dp"
+                        android:textSize="14sp"
                         android:id="@+id/et_email_signup"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -174,11 +174,11 @@
                         android:layout_height="wrap_content"
                         android:text="Name"
                         android:textColor="@color/colorAccent"
-                        android:textSize="12dp" />
+                        android:textSize="12sp" />
 
 
                     <EditText
-                        android:textSize="14dp"
+                        android:textSize="14sp"
                         android:id="@+id/et_owner_name_signup"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -193,19 +193,13 @@
 
                     </EditText>
 
-
-
-
-
-
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:text="Select Adress"
                         android:textColor="@color/colorAccent"
-                        android:textSize="12dp" />
+                        android:textSize="12sp" />
 
                     <RelativeLayout
                         android:orientation="horizontal"
@@ -244,7 +238,7 @@
 
 
                     <EditText
-                        android:textSize="14dp"
+                        android:textSize="14sp"
                         android:id="@+id/et_Blockname_signup"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -256,7 +250,8 @@
                         android:maxLines="1"
                         android:padding="5dp"
                         android:textColor="@color/black"
-                        android:textColorHint="@color/light_grey">
+                        android:textColorHint="@color/light_grey"
+                        android:autofillHints="">
 
                     </EditText>
 
@@ -299,7 +294,7 @@
                         android:layout_marginTop="10dp"
                         android:text="Select Course"
                         android:textColor="@color/colorAccent"
-                        android:textSize="12dp" />
+                        android:textSize="12sp" />
 
                     <LinearLayout
                         android:layout_marginTop="2dp"
@@ -310,10 +305,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
-
-
                         <LinearLayout
-
                             android:orientation="vertical"
                             android:layout_width="0dp"
                             android:layout_weight="1"
@@ -408,10 +400,11 @@
                             android:textSize="14sp" />
 
                         <TextView
+                            android:id="@+id/tv_TNC"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginLeft="4dp"
+                            android:layout_marginStart="4dp"
                             android:gravity="center_vertical"
                             android:text="@string/terms_amp_conditions"
                             android:textColor="@color/colorAccent"

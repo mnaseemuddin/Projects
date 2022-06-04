@@ -108,7 +108,7 @@ public class AddContactNumber extends AppCompatActivity implements DeleteContact
                             adaptercontact = new Adaptercontact(mlist, getApplicationContext(), AddContactNumber.this);
 
                             rv_contactlist.setAdapter(adaptercontact);
-                            Toast.makeText(AddContactNumber.this, message + "", Toast.LENGTH_LONG).show();
+                            //Toast.makeText(AddContactNumber.this, message + "", Toast.LENGTH_LONG).show();
                         }
                         else {
                             Toast.makeText(AddContactNumber.this, message + "", Toast.LENGTH_LONG).show();
@@ -184,7 +184,7 @@ public class AddContactNumber extends AppCompatActivity implements DeleteContact
                     String message = jsonObject.getString("message");
                     String status = jsonObject.getString("status");
                     if (status.equals("1")) {
-                        Toast.makeText(AddContactNumber.this, message + "", Toast.LENGTH_LONG).show();
+                      //  Toast.makeText(AddContactNumber.this, message + "", Toast.LENGTH_LONG).show();
                         LoadContactlist();
                         et_AddName.setText("");
                         et_Addcontact.setText("");
@@ -237,7 +237,7 @@ public class AddContactNumber extends AppCompatActivity implements DeleteContact
                     String status=jsonObject.getString("status");
                     if (status.equals("1")){
 
-                        Toast.makeText(AddContactNumber.this, message+"", Toast.LENGTH_SHORT).show();
+                       // Toast.makeText(AddContactNumber.this, message+"", Toast.LENGTH_SHORT).show();
                         adaptercontact.notifyDataSetChanged();
                         LoadContactlist();
                     }else {

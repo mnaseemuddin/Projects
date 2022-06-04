@@ -1,13 +1,20 @@
 package com.lgt.NeWay.activity;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -24,6 +31,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.google.android.gms.common.internal.service.Common;
 import com.lgt.NeWay.Extra.NeWayApi;
 import com.lgt.NeWay.Extra.SingletonRequestQueue;
+import com.lgt.NeWay.Extra.common;
 import com.lgt.NeWay.Neway.R;
 
 import org.json.JSONException;
@@ -37,13 +45,13 @@ public class ActivityChangePassword extends AppCompatActivity {
     private EditText etOldPassword, etNewPassword, etConfirmPassword;
     private Button btnChangePassword;
     private ImageView ivBackFullDescription;
-    private TextView tvToolbar;
+    private TextView tvToolbar,tv_countinue;
     SharedPreferences sharedPreferences;
     SharedPreferences.Editor editor;
     private ProgressBar pbChangePassword;
     private String mOldPassword, mNewPassword, mConfirmPassword, mSharedPrefPassword, mUserID;
+    public AlertDialog download_dialog;
 
-    private Common common;
     private static final String TAG = "ActivityChangePassword";
 
     @Override
@@ -51,7 +59,7 @@ public class ActivityChangePassword extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_change_password2);
 
-
+         inisharedpref();
 
 
 
@@ -64,6 +72,7 @@ public class ActivityChangePassword extends AppCompatActivity {
 
         btnChangePassword = findViewById(R.id.btnChangePassword);
         pbChangePassword = findViewById(R.id.pbChangePassword);
+
 
        /* if (sharedPreferences.contains("KEY_PASSWORD")) {
             mSharedPrefPassword = sharedPreferences.getString("KEY_PASSWORD", "");
@@ -87,14 +96,17 @@ public class ActivityChangePassword extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 validation();
-               /* if (common.isConnectingToInternet()) {
-
-                } else {
-                    Toast.makeText(ActivityChangePassword.this, "Please check internet connection", Toast.LENGTH_SHORT).show();
-                }*/
 
             }
         });
+
+    }
+
+    private void inisharedpref() {
+        sharedPreferences=getSharedPreferences(common.UserData,MODE_PRIVATE);
+        mSharedPrefPassword=sharedPreferences.getString("password","");
+        mUserID=sharedPreferences.getString("tbl_coaching_id","");
+
 
     }
 
@@ -144,6 +156,7 @@ public class ActivityChangePassword extends AppCompatActivity {
         if (!mOldPassword.equals(mSharedPrefPassword)) {
             etOldPassword.setError("Entered old password is wrong");
             etOldPassword.requestFocus();
+            Log.e("dhsdshdhdsj",etOldPassword+"");
             return;
         }
 
@@ -173,16 +186,20 @@ public class ActivityChangePassword extends AppCompatActivity {
 
                     if (status.equals("1")) {
 
+                        diloughopen();
+
                         Toast.makeText(ActivityChangePassword.this, ""+message, Toast.LENGTH_SHORT).show();
 
-                        editor.clear();
+                      /*  editor.clear();
                         editor.commit();
 
                         Intent homeScreenIntent = new Intent(ActivityChangePassword.this, MainActivity.class);
                         homeScreenIntent.setFlags( Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-                        startActivity(homeScreenIntent);
+                        startActivity(homeScreenIntent);*/
 
-                        finish();
+                        //
+                        //
+                        // finish();
 
 
                     } else {
@@ -203,9 +220,9 @@ public class ActivityChangePassword extends AppCompatActivity {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> params = new HashMap<>();
-                params.put("user_id", mUserID);
-                params.put("newpassword", mNewPassword);
-                params.put("oldpassword", mOldPassword);
+                params.put("tbl_coaching_id", mUserID);
+                params.put("new_password", mNewPassword);
+                params.put("old_password", mOldPassword);
 
                 Log.e(TAG, "getParams: " + params);
                 return params;
@@ -214,6 +231,47 @@ public class ActivityChangePassword extends AppCompatActivity {
 
         RequestQueue requestQueue = SingletonRequestQueue.getInstance(ActivityChangePassword.this).getRequestQueue();
         requestQueue.add(stringRequest);
+    }
+
+    private void diloughopen() {
+        View customView = LayoutInflater.from(this).inflate(R.layout.changepasswordalert, null);
+        download_dialog = new AlertDialog.Builder(this).create();
+        download_dialog.setView(customView);
+        download_dialog.setCanceledOnTouchOutside(false);
+
+        tv_countinue = customView.findViewById(R.id.tv_countinue);
+        ivBackFullDescription = customView.findViewById(R.id.ivBackFullDescription);
+
+        tv_countinue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                inshareprefrence();
+            }
+        });
+
+        // tv_current_size_progress = customView.findViewById(R.id.tv_current_size_progress);
+        download_dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.WHITE));
+        download_dialog.show();
+
+
+    }
+
+    private void inshareprefrence() {
+        sharedPreferences = getSharedPreferences(common.UserData, Context.MODE_PRIVATE);
+        if (sharedPreferences.contains(common.UseriD)) {
+            mUserID = sharedPreferences.getString(common.UseriD, "");
+            editor = sharedPreferences.edit();
+            if (mUserID!=null&& !mUserID.isEmpty()){
+                editor.clear();
+                editor.commit();
+                editor.apply();
+
+                startActivity(new Intent(getApplicationContext(), Login.class));
+
+            }
+            Log.e("hhhhhhhhhh",mUserID);
+
+        }
     }
 
     @Override

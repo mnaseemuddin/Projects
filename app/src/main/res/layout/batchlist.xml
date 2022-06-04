@@ -76,12 +76,12 @@
                     android:textSize="12sp" />
 
                 <ImageView
-                    android:layout_toLeftOf="@+id/iv_delete"
-                    android:src="@drawable/edit_icon"
-                    android:layout_marginRight="15dp"
                     android:id="@+id/iv_Edit"
                     android:layout_width="25dp"
                     android:layout_height="26dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_toLeftOf="@+id/iv_delete"
+                    android:src="@drawable/edit_icon"
                     app:tint="@color/colorAccent" />
 
                 <ImageView

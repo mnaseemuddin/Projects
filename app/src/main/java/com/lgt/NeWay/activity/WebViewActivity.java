@@ -29,6 +29,7 @@ public class WebViewActivity extends AppCompatActivity {
     private String mURL = "";
     private String mTypeOfURL = "";
 
+    @SuppressLint("SetJavaScriptEnabled")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,8 +41,6 @@ public class WebViewActivity extends AppCompatActivity {
         ivBackFullDescription = findViewById(R.id.ivBackFullDescription);
 
         pbWebView.setNestedScrollingEnabled(true);
-
-
 
         Intent getURL = getIntent();
         if (getURL != null) {
@@ -63,7 +62,6 @@ public class WebViewActivity extends AppCompatActivity {
 
             }
         }
-
 
         ivBackFullDescription.setOnClickListener(new View.OnClickListener() {
             @Override
