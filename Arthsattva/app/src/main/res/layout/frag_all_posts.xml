@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/fav_container"
+    android:background="@color/bg_gray"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".most_popular.Popular">
+
+    <RelativeLayout
+
+        android:id="@+id/rl_head"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Posts"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/iv_post_image"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/camera"
+            app:tint="@color/white" />
+
+    </RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_referesh"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rl_head"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_popular"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+     />
+</RelativeLayout>

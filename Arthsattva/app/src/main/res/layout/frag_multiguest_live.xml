@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <pl.droidsonroids.gif.GifImageView
+      android:id="@+id/iv_coming_soon"
+
+        android:src="@drawable/coming_soon"
+        android:layout_gravity="center_vertical|center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <androidx.core.widget.NestedScrollView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:backgroundTint="#4DCCA2B0"
+                android:background="@drawable/rectangle_design"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="35dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/timeline1"/>
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="25dp"
+                        android:src="@drawable/timeline2"/>
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/timeline3"/>
+
+
+                </FrameLayout>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+
+                    android:fontFamily="@font/calibary_regular"
+                    android:text="looking for nearby friends"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See All"
+                    android:background="@drawable/btn_design"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:fontFamily="@font/calibary_regular"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Let's Party"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/calibary_bold"
+                    android:textColor="@color/black"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rv_lets_party"
+                    />
+                <TextView
+                    android:id="@+id/tv_seeAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:text="See All"
+                    android:fontFamily="@font/calibary_bold"
+                    android:drawableRight="@drawable/ic_arrow_forward"
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hot"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/calibary_bold"
+                    android:textColor="@color/black"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rv_hot"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

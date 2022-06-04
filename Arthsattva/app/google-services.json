@@ -1,0 +1,130 @@
+{
+  "project_info": {
+    "project_number": "258419433746",
+    "firebase_url": "https://cryptok-420ba-default-rtdb.firebaseio.com",
+    "project_id": "cryptok-420ba",
+    "storage_bucket": "cryptok-420ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258419433746:android:a55335e887f07581a413cb",
+        "android_client_info": {
+          "package_name": "com.app.arthasattva"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "258419433746-ckhla0u53fhqb6s2pjq8ofefmgb7p6dk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.arthasattva",
+            "certificate_hash": "11a47e89ace55ecb9028344c00a6c9c515aa784b"
+          }
+        },
+        {
+          "client_id": "258419433746-hqnme7kuap592p4qs34sduthk2tr7te3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApxCW6BT0aiKAuF7MPqQsFleHKBuds-n0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "258419433746-hqnme7kuap592p4qs34sduthk2tr7te3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258419433746:android:251a29b00d007a29a413cb",
+        "android_client_info": {
+          "package_name": "com.app.arthsattva"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "258419433746-hqnme7kuap592p4qs34sduthk2tr7te3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApxCW6BT0aiKAuF7MPqQsFleHKBuds-n0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "258419433746-hqnme7kuap592p4qs34sduthk2tr7te3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258419433746:android:ff7144166719157aa413cb",
+        "android_client_info": {
+          "package_name": "com.app.cryptok"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "258419433746-ha8f61occm05nmfatbft3glbsqu5fuo3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.cryptok",
+            "certificate_hash": "dc4878c2a60b511550186947a482a28197f52c96"
+          }
+        },
+        {
+          "client_id": "258419433746-hbqejgku4sq1qd27d8nbvdh03b7bj9ke.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.cryptok",
+            "certificate_hash": "5f7efd8ceb408af36c365fb13dcba84a99dd33bf"
+          }
+        },
+        {
+          "client_id": "258419433746-mc6hs5l12ntrv1oismdc5piv9uic6a8p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.cryptok",
+            "certificate_hash": "11a47e89ace55ecb9028344c00a6c9c515aa784b"
+          }
+        },
+        {
+          "client_id": "258419433746-hqnme7kuap592p4qs34sduthk2tr7te3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApxCW6BT0aiKAuF7MPqQsFleHKBuds-n0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "258419433746-hqnme7kuap592p4qs34sduthk2tr7te3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

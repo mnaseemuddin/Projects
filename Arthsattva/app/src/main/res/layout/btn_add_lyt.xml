@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/go_live"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/live_streaming"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/go_live"
+            android:layout_marginTop="-7dp"
+            android:text="Go Live"
+            android:textAlignment="center"
+            android:textColor="@color/black">
+
+        </TextView>
+
+
+        <!-- <com.google.android.material.floatingactionbutton.FloatingActionButton
+             android:id="@+id/go_live"
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+             android:layout_centerInParent="true"
+             android:backgroundTint="@color/white"
+             android:src="@drawable/go_live"
+             app:elevation="10dp"
+             app:fabCustomSize="45dp"
+             app:layout_insetEdge="bottom"
+             app:tint="@color/colorPrimary" />-->
+
+
+    </RelativeLayout>
+
+</layout>

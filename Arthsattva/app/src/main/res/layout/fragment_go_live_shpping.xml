@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        tools:context=".LiveShopping.Fragment.GoLiveShppingFragment">
+
+        <ScrollView
+            android:fillViewport="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp">
+
+                <TextView
+                    android:id="@+id/tv_stream_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/search_bg"
+                    android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+                    android:gravity="center"
+                    android:hint="Select Stream Type"
+                    android:paddingLeft="20dp"
+
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_videos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/search_bg"
+                    android:gravity="center"
+                    android:hint="Select Video"
+                    android:maxLines="1"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+                <TextView
+                    android:id="@+id/tv_select_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/search_bg"
+                    android:gravity="center"
+                    android:hint="Select Product"
+                    android:maxLines="1"
+                    android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:visibility="visible" />
+                <EditText
+                    android:id="@+id/et_live_title"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:hint="Enter Title"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingExtra="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+                <Button
+                    android:id="@+id/btn_go_live"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/btn_design"
+                    android:text="Go Live"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </FrameLayout>
+
+
+</layout>

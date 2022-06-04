@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.app.arthasattva">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+
+        android:name="com.app.arthasattva.activity.OfflineFun"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:theme"
+        tools:targetApi="n">
+
+        <activity android:name="com.app.arthasattva.LiveShopping.Activities.DeliveryDashboardActivity"
+            android:screenOrientation="fullSensor"
+            />
+        <activity android:name="com.app.arthasattva.LiveShopping.Activities.AddDeliveryChargesActivity"
+            android:screenOrientation="fullSensor"
+            />
+        <activity android:name="com.app.arthasattva.LiveShopping.Activities.SellOrderHistoryActivity"
+            android:screenOrientation="fullSensor"
+            />
+
+        <activity android:name="com.app.arthasattva.LiveShopping.Activities.OrderHistoryActivity"
+            android:screenOrientation="fullSensor" />
+
+        <activity android:name="com.app.arthasattva.LiveShopping.Activities.AddAddressActivity"
+            android:screenOrientation="fullSensor"
+            />
+
+        <activity android:name="com.app.arthasattva.activity.SinglePostActivity"
+            android:screenOrientation="fullSensor"
+            />
+
+        <activity android:name="com.app.arthasattva.LiveShopping.Activities.ManageAddressActivity"
+            android:screenOrientation="fullSensor"
+            />
+        <activity android:name="com.app.arthasattva.LiveShopping.Activities.LiveShoppingPreviewActivity"
+            android:screenOrientation="fullSensor"
+            />
+        <activity android:name="com.app.arthasattva.LiveShopping.Activities.LiveShoppingActivity"
+            android:screenOrientation="fullSensor"
+            />
+        <activity android:name="com.app.arthasattva.LiveShopping.Activities.CartListActivity"
+            android:screenOrientation="fullSensor"
+            />
+        <activity android:name="com.app.arthasattva.LiveShopping.Activities.PlayVideoActivity"
+            android:screenOrientation="fullSensor"
+            />
+        <activity android:name="com.app.arthasattva.LiveShopping.Activities.ProductVideosActivity"
+            android:screenOrientation="fullSensor"
+            />
+        <activity android:name="com.app.arthasattva.LiveShopping.Activities.ProductListActivity"
+            android:screenOrientation="fullSensor"
+            />
+        <activity android:name="com.app.arthasattva.LiveShopping.Activities.AddShppingVideoActivity"
+            android:screenOrientation="fullSensor"
+            />
+        <activity android:name="com.app.arthasattva.LiveShopping.Activities.AddCatalogsActivity"
+            android:screenOrientation="fullSensor"
+            />
+        <activity android:name="com.app.arthasattva.LiveShopping.Activities.ShoppingZoneActivity"
+            android:screenOrientation="fullSensor"
+            />
+
+        <activity android:name="com.app.arthasattva.PaymentGateway.RazorpayActivity"
+            android:screenOrientation="fullSensor"
+            />
+        <activity android:name="com.app.arthasattva.PaymentGateway.TrakNpayActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name="com.app.arthasattva.activity.ExchangeDiamondsActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.app.arthasattva.activity.PurchaseCoinsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.arthasattva.activity.MyConnectionsActivity"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name="com.app.arthasattva.activity.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.arthasattva.activity.AllNotificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.arthasattva.activity.EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.arthasattva.activity.ChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.arthasattva.activity.AnotherUserProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.arthasattva.activity.ReplyComments"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.arthasattva.activity.CommentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.arthasattva.activity.ViewImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.arthasattva.activity.SingleLiveStreamPreview"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.arthasattva.activity.LiveActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity
+            android:name="com.app.arthasattva.activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.arthasattva.go_live_module.GoLiveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.arthasattva.activity.AppSettings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.arthasattva.activity.VideoRecordingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.arthasattva.activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.arthasattva.activity.OtpActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.app.arthasattva.activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Add your API key here -->
+        <!-- rzp_live_6KROpAhp2K3nUn -->
+        <!-- rzp_test_JcK0Fp5l9nJktC -->
+
+
+        <activity
+            android:name="com.app.arthasattva.activity.MyPostsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.arthasattva.activity.MessageUsersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.arthasattva.activity.SendPostActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.arthasattva.activity.MyPostActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.arthasattva.activity.LevelActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.arthasattva.wallet_module.WalletActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.app.arthasattva.Notifications.MyFirebaseMessenging"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths_main"
+                tools:replace="android:resource" />
+        </provider>
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+
+
+    </application>
+
+</manifest>

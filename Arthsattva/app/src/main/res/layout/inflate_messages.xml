@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+   >
+    <data>
+
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_user"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/timeline1"/>
+        <LinearLayout
+            android:id="@+id/llInfo"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="Name"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_name"/>
+                <TextView
+                    android:fontFamily="@font/calibary_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25 Min Ago"
+                    android:id="@+id/tv_time_before"/>
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:text="By The Way -or- Bring The Wheelchair -or- Booty To Win."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:id="@+id/tv_message"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightGrey"/>
+    </LinearLayout>
+</layout>

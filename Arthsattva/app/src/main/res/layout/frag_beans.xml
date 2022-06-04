@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+
+                                android:src="@drawable/coin_icon" />
+
+                            <TextView
+                                android:id="@+id/tv_current_beans"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="1"
+                                android:textColor="@color/light_yellow"
+                                android:textSize="17sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="≈$0"
+                                android:textColor="@color/light_yellow"
+                                android:textSize="20sp" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="5dp"
+                                android:src="@drawable/questions_circle" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/ic_baseline_history" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/history"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/lightGrey"
+                    android:gravity="center_vertical"
+                    android:padding="7dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bonus_beans"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/questions_circle" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0≈$0" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="5dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/comment" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginLeft="5dp"
+                        android:text="Beans Records" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/bt_exchange_diamond"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/circular_outline"
+                    android:text="Exchange Diamonds"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circular_outline"
+                    android:text="Exchange Rewards"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/grey"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="Coins "
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/coin_gif" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="10"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>
