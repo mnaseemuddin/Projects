@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "258419433746",
+    "project_id": "cryptok-420ba",
+    "storage_bucket": "cryptok-420ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258419433746:android:ff7144166719157aa413cb",
+        "android_client_info": {
+          "package_name": "com.app.cryptok"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "258419433746-ha8f61occm05nmfatbft3glbsqu5fuo3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.cryptok",
+            "certificate_hash": "dc4878c2a60b511550186947a482a28197f52c96"
+          }
+        },
+        {
+          "client_id": "258419433746-hqnme7kuap592p4qs34sduthk2tr7te3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApxCW6BT0aiKAuF7MPqQsFleHKBuds-n0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "258419433746-hqnme7kuap592p4qs34sduthk2tr7te3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

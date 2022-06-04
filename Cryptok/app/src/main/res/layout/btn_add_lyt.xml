@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/go_live"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/go_live"
+            app:elevation="5dp"
+            app:fabCustomSize="45dp"
+            android:layout_marginBottom="5dp"
+            app:tint="@color/colorPrimary" />
+
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+
+
+    <RelativeLayout
+        android:background="@drawable/background2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.ChatActivity">
+
+        <LinearLayout
+            android:id="@+id/ll_header"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/logindrawable"
+            android:gravity="center|start"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                app:tint="@color/white" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_user_image"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="5dp"
+                android:clipChildren="false"
+                android:src="@drawable/fake_user_icon" />
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:gravity="start"
+                android:text="user name"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:background="@drawable/background2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/rl_bottom"
+            android:layout_below="@+id/ll_header">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_chat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+        <RelativeLayout
+
+            android:id="@+id/rl_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="15dp">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@+id/iv_send_msg"
+                android:background="@drawable/tab_bg"
+
+                android:backgroundTint="@color/bg_gray">
+
+                <EditText
+                    android:id="@+id/et_saySomething"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toStartOf="@+id/iv_send_attach"
+                    android:background="@null"
+                    android:hint="Say Something"
+                    android:paddingStart="25dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dark_grey"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/iv_send_attach"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:rotation="40"
+                    android:src="@drawable/ic_baseline_attach_file_24"
+                    android:visibility="visible"
+                    app:tint="@color/dark_grey" />
+
+
+            </RelativeLayout>
+
+            <ImageView
+
+                android:id="@+id/iv_send_msg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_design"
+                android:padding="10dp"
+                android:src="@drawable/ic_baseline_send_24"
+                android:visibility="visible"
+                app:tint="@color/white" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

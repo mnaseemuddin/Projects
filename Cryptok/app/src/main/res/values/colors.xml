@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#0033cc</color>
+    <color name="low_app_color">#0033cc</color>
+    <color name="colorPrimaryDark">#162B6C</color>
+    <color name="colorAccent">#BA000000</color>
+    <color name="black">#000</color>
+    <color name="grey">#BEBDBD</color>
+    <color name="dark_grey">#666161</color>
+    <color name="transparentBlack">#64000000</color>
+
+    <color name="dark_red">#FF1616</color>
+    <color name="low_red">#FF1616</color>
+    <color name="white">#FEFCFF</color>
+    <color name="low_white">#E9E7EA</color>
+    <color name="red2">#c40909</color>
+    <color name="red3">#e50909</color>
+    <color name="blue1">#66a3ff</color>
+    <color name="blue2">#0033cc</color>
+    <color name="darkGrey">#a6a6a6</color>
+    <color name="lightGrey">#f2f2f2</color>
+    <color name="darkTransparentGrey">#a0737373</color>
+    <color name="bg_gray">#f2f2f2</color>
+    <color name="tabtextunselected">#626262</color>
+    <color name="premium_color">#FFC107</color>
+
+    <color name="gray">#989898</color>
+    <color name="gray_dark">#626262</color>
+    <color name="dark_black">#CC262626</color>
+    <color name="sky_blue">#7c0085</color>
+    <color name="light_purple">#C423FF</color>
+    <color name="dark_purple">#301934</color>
+    <color name="light_gold">#b29700</color>
+    <color name="dark_gold">#aa6c39</color>
+</resources>

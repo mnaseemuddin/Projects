@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+
+        app:cardBackgroundColor="@color/bg_gray"
+        app:cardElevation="10dp"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="240dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:src="@drawable/app_logo"
+            android:id="@+id/iv_user"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="5dip"
+            app:riv_mutate_background="true"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+
+            <LinearLayout
+
+                android:padding="7dp"
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Name"
+                    android:maxLines="1"
+                    android:shadowColor="@color/black"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tv_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="City"
+                    android:maxLines="1"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="15dp"
+                    android:background="@drawable/transparent_et"
+                    android:textSize="11sp"
+                    android:textColor="@color/white"
+                    />
+
+                <TextView
+
+                    android:id="@+id/tv_follow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/calibary_regular"
+                    android:text="Follow"
+                    android:visibility="gone" />
+            </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

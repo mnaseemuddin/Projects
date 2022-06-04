@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".activity.ViewImageActivity">
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:id="@+id/upp"
+        android:orientation="horizontal"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <ImageView
+
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_width="25dp"
+            android:tint="@color/white"
+            android:id="@+id/iv_back"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:layout_toEndOf="@id/iv_back"
+            android:layout_marginStart="20dp"
+            android:id="@+id/tv_group_name"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:textSize="17dp"
+
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+
+
+
+    </RelativeLayout>
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/iv_post_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/upp"
+        android:layout_centerInParent="true"
+        android:paddingBottom="50dp" />
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+
+    <!--<string name="facebook_app_id">211002137265906</string>
+    <string name="fb_login_protocol_scheme">fb211002137265906</string>-->
+
+    <string name="facebook_app_id">997702227493712</string>
+    <string name="fb_login_protocol_scheme">fb997702227493712</string>
+
+
+
+
+    <!-- PLEASE KEEP THIS App ID IN SAFE PLACE -->
+    <!-- Get your own App ID at https://dashboard.agora.io/ -->
+    <!-- After you entered the App ID, remove <##> outside of Your App ID -->
+    <!-- Obtain a temp Access Token at https://dashboard.agora.io -->
+    <!-- You will need to deploy your own token server for production release -->
+    <!-- Leave this value empty if Security keys/Token is not enabled for your project -->
+
+    <!--
+    <string name="agora_access_token" translatable="false">006eba0f17605c64b179780d605d7ff1138IABFJSCwL0hh2Kq3qGsgleq/y63L/TGVEmE+FulW0kZJ4qA1270AAAAAEACPKt3u4HVbXwEAAQDfdVtf</string>
+-->
+
+</resources>

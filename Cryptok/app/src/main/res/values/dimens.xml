@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="cam_content_inset_secondary">10dp</dimen>
+
+
+    <dimen name="stillshot_widget_margin_sides">4dp</dimen>
+    <dimen name="stillshot_widget_margin_top">10dp</dimen>
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!-- Main Activity -->
+
+    <!-- Setting Activity -->
+
+    <!-- Live Activity -->
+
+    <!-- Role Select Activity -->
+
+</resources>

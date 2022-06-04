@@ -1,0 +1,254 @@
+    private void addLevelsData() {
+        CollectionReference reference = firebaseFirestore.collection(DBConstants.all_levels_points);
+        for (int i = 1; i < 61; i++) {
+            Map<String, Object> map = new HashMap<>();
+            if (i == 1) {
+                map.put("each", 1000);
+                map.put("point", 1000);
+            }
+            if (i == 2) {
+                map.put("each", 1000);
+                map.put("point", 2000);
+            }
+            if (i == 3) {
+                map.put("each", 1000);
+                map.put("point", 3000);
+            }
+            if (i == 4) {
+                map.put("each", 1500);
+                map.put("point", 4500);
+            }
+            if (i == 5) {
+                map.put("each", 1500);
+                map.put("point", 6000);
+            }
+            if (i == 6) {
+                map.put("each", 1500);
+                map.put("point", 7500);
+            }
+            if (i == 7) {
+                map.put("each", 2500);
+                map.put("point", 10000);
+            }
+            if (i == 8) {
+                map.put("each", 2500);
+                map.put("point", 12500);
+            }
+            if (i == 9) {
+                map.put("each", 2500);
+                map.put("point", 15000);
+            }
+            if (i == 10) {
+                map.put("each", 4000);
+                map.put("point", 19000);
+            }
+            if (i == 11) {
+                map.put("each", 4000);
+                map.put("point", 23000);
+            }
+            if (i == 12) {
+                map.put("each", 4000);
+                map.put("point", 27000);
+            }
+            if (i == 13) {
+                map.put("each", 6000);
+                map.put("point", 33000);
+            }
+            if (i == 14) {
+                map.put("each", 6000);
+                map.put("point", 39000);
+            }
+            if (i == 15) {
+                map.put("each", 6000);
+                map.put("point", 45000);
+            }
+            if (i == 16) {
+                map.put("each", 10000);
+                map.put("point", 55000);
+            }
+            if (i == 17) {
+                map.put("each", 10000);
+                map.put("point", 65000);
+            }
+            if (i == 18) {
+                map.put("each", 10000);
+                map.put("point", 75000);
+            }
+            if (i == 19) {
+                map.put("each", 15000);
+                map.put("point", 90000);
+            }
+            if (i == 20) {
+                map.put("each", 15000);
+                map.put("point", 105000);
+            }
+            if (i == 21) {
+                map.put("each", 15000);
+                map.put("point", 120000);
+            }
+            if (i == 22) {
+                map.put("each", 25000);
+                map.put("point", 170000);
+            }
+            if (i == 23) {
+                map.put("each", 25000);
+                map.put("point", 195000);
+            }
+            if (i == 24) {
+                map.put("each", 25000);
+                map.put("point", 220000);
+            }
+            if (i == 25) {
+                map.put("each", 40000);
+                map.put("point", 260000);
+            }
+            if (i == 26) {
+                map.put("each", 40000);
+                map.put("point", 300000);
+            }
+            if (i == 27) {
+                map.put("each", 40000);
+                map.put("point", 340000);
+            }
+            if (i == 28) {
+                map.put("each", 60000);
+                map.put("point", 400000);
+            }
+            if (i == 29) {
+                map.put("each", 60000);
+                map.put("point", 460000);
+            }
+            if (i == 30) {
+                map.put("each", 60000);
+                map.put("point", 520000);
+            }
+            if (i == 31) {
+                map.put("each", 90000);
+                map.put("point", 610000);
+            }
+            if (i == 32) {
+                map.put("each", 90000);
+                map.put("point", 700000);
+            }
+            if (i == 33) {
+                map.put("each", 90000);
+                map.put("point", 790000);
+            }
+            if (i == 34) {
+                map.put("each", 110000);
+                map.put("point", 900000);
+            }
+            if (i == 35) {
+                map.put("each", 110000);
+                map.put("point", 1010000);
+            }
+            if (i == 36) {
+                map.put("each", 110000);
+                map.put("point", 1120000);
+            }
+            if (i == 37) {
+                map.put("each", 150000);
+                map.put("point", 1270000);
+            }
+            if (i == 38) {
+                map.put("each", 150000);
+                map.put("point", 1420000);
+            }
+            if (i == 39) {
+                map.put("each", 150000);
+                map.put("point", 1570000);
+            }
+            if (i == 40) {
+                map.put("each", 170000);
+                map.put("point", 1740000);
+            }
+            if (i == 41) {
+                map.put("each", 170000);
+                map.put("point", 1910000);
+            }
+            if (i == 42) {
+                map.put("each", 170000);
+                map.put("point", 2080000);
+            }
+            if (i == 43) {
+                map.put("each", 200000);
+                map.put("point", 2280000);
+            }
+            if (i == 44) {
+                map.put("each", 200000);
+                map.put("point", 2480000);
+            }
+            if (i == 45) {
+                map.put("each", 200000);
+                map.put("point", 2680000);
+            }
+            if (i == 46) {
+                map.put("each", 400000);
+                map.put("point", 3080000);
+            }
+            if (i == 47) {
+                map.put("each", 400000);
+                map.put("point", 3480000);
+            }
+            if (i == 48) {
+                map.put("each", 400000);
+                map.put("point", 3880000);
+            }
+            if (i == 49) {
+                map.put("each", 1000000);
+                map.put("point", 4880000);
+            }
+            if (i == 50) {
+                map.put("each", 1000000);
+                map.put("point", 5880000);
+            }
+            if (i == 51) {
+                map.put("each", 1000000);
+                map.put("point", 6880000);
+            }
+            if (i == 52) {
+                map.put("each", 1200000);
+                map.put("point", 8080000);
+            }
+            if (i == 53) {
+                map.put("each", 1200000);
+                map.put("point", 9280000);
+            }
+            if (i == 54) {
+                map.put("each", 1200000);
+                map.put("point", 10480000);
+            }
+            if (i == 55) {
+                map.put("each", 1500000);
+                map.put("point", 11980000);
+            }
+            if (i == 56) {
+                map.put("each", 1500000);
+                map.put("point", 13480000);
+            }
+            if (i == 57) {
+                map.put("each", 1500000);
+                map.put("point", 14980000);
+            }
+            if (i == 58) {
+                map.put("each", 1800000);
+                map.put("point", 16780000);
+            }
+            if (i == 59) {
+                map.put("each", 1800000);
+                map.put("point", 18580000);
+            }
+            if (i == 60) {
+                map.put("each", 1800000);
+                map.put("point", 20380000);
+            }
+
+            map.put("level", String.valueOf(i));
+            map.put("point_id", String.valueOf(i));
+            reference.document(String.valueOf(i))
+                    .set(map)
+                    .addOnCompleteListener(task -> {
+                        Commn.showDebugLog("adding_levels_data:");
+                    });
+        }
+    }

@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Cryp Tok</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="rising_start">Starlist</string>
+    <string name="check_my_vip">Check My VIP</string>
+    <string name="friends">Friends</string>
+    <string name="following">Following</string>
+    <string name="fans">Fans</string>
+    <string name="my_post">My Post</string>
+    <string name="add_wallet">Add Wallet</string>
+    <string name="message">Message</string>
+    <string name="wallet">Wallet</string>
+    <string name="family">Family</string>
+    <string name="fans_group">Fans Group</string>
+    <string name="task_center">Task Center</string>
+    <string name="item_bag">Item Bag</string>
+    <string name="Activities">Activities</string>
+    <string name="Level">Level</string>
+    <string name="Ranking">Ranking</string>
+    <string name="out_of_100">Out of 100</string>
+    <string name="scan_qr_code">Scan QR Code</string>
+    <string name="Settings">Settings</string>
+    <string name="help">Help</string>
+    <string name="feedback">Feedback</string>
+    <string name="instagram">Follow us</string>
+    <string name="facebook">Like us</string>
+    <string name="family_batch">Family Batch</string>
+    <string name="history">History</string>
+    <string name="Recharge_By">Recharge By</string>
+    <string name="account_balance">Account Balance</string>
+    <string name="bonus_beans">Bonus Beans</string>
+
+    <string name="Rs">\u20B9</string>
+    <!-- Main Activity -->
+    <string name="need_necessary_permissions">Necessary permissions acquired</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Setting Activity -->
+
+    <!-- Live Activity -->
+
+    <!-- Role Choose Activity -->
+
+    <!-- Legal digits for channel names -->
+
+</resources>
