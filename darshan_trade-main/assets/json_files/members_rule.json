@@ -1,0 +1,135 @@
+[
+  {
+    "start_1": "1",
+    "start_2": "2",
+    "cond": "Directly push 3 Star and 20 team members",
+    "color": "F1CA89",
+    "list": [
+      {
+        "icon": "ic_direct.png",
+        "heading": "Direct recommend award",
+        "content": "Robot activation direct push 30%"
+      },
+      {
+        "icon": "ic_team.png",
+        "heading": "Team rewards",
+        "content": "Profit distribution team reward 20%"
+      }
+    ]
+  },
+  {
+    "start_1": "2",
+    "start_2": "3",
+    "color": "FFE6BC",
+    "cond": "Directly push 5 users, at least 3 different leg star2,\n100 team members",
+    "list": [
+      {
+        "icon": "ic_direct.png",
+        "heading": "Direct recommend award",
+        "content": "Robot activation direct push 40%"
+      },
+      {
+        "icon": "ic_team.png",
+        "heading": "Team rewards",
+        "content": "Profit distribution team reward 30%"
+      }
+    ]
+  },
+  {
+    "start_1": "3",
+    "start_2": "4",
+    "color": "CEE5D0",
+    "cond": "Directly push 8 users, at least 3 different leg star3,\n300 team members",
+    "list": [
+      {
+        "icon": "ic_direct.png",
+        "heading": "Direct recommend award",
+        "content": "Robot activation direct push 50%"
+      },
+      {
+        "icon": "ic_team.png",
+        "heading": "Team rewards",
+        "content": "Profit distribution team reward 40%"
+      },
+      {
+        "icon": "ic_peer.png",
+        "heading": "Peer rewards",
+        "content": "Same rank bonus 5%"
+      }
+    ]
+  },
+  {
+    "start_1": "4",
+    "start_2": "5",
+    "color": "D3E4CD",
+    "cond": "Directly push 12 users, at least 3 different leg star4,\n800 team members",
+    "list": [
+      {
+        "icon": "ic_direct.png",
+        "heading": "Direct recommend award",
+        "content": "Robot activation direct push 60%"
+      },
+      {
+        "icon": "ic_team.png",
+        "heading": "Team rewards",
+        "content": "Profit distribution team reward 50%"
+      },
+      {
+        "icon": "ic_peer.png",
+        "heading": "Peer rewards",
+        "content": "Same rank bonus 5%"
+      }
+    ]
+  },
+  {
+    "start_1": "5",
+    "start_2": "6",
+    "color": "F7D59C",
+    "cond": "Directly push 20 users, at least 3 different leg star5,\n2420 team members",
+    "list": [
+      {
+        "icon": "ic_direct.png",
+        "heading": "Direct recommend award",
+        "content": "Robot activation direct push 65%"
+      },
+      {
+        "icon": "ic_team.png",
+        "heading": "Team rewards",
+        "content": "Profit distribution team reward 55%"
+      },
+      {
+        "icon": "ic_peer.png",
+        "heading": "Peer rewards",
+        "content": "Same rank bonus 5%"
+      }
+    ]
+  },
+  {
+    "start_1": "6",
+    "start_2": "6",
+    "color": "E6DDC6",
+    "cond": "Directly push 20 users, at least 3 different leg star5,\n2420 team members",
+    "list": [
+      {
+        "icon": "ic_direct.png",
+        "heading": "Direct recommend award",
+        "content": "Robot activation direct push 70%"
+      },
+      {
+        "icon": "ic_team.png",
+        "heading": "Team rewards",
+        "content": "Profit distribution team reward 60%"
+      },
+      {
+        "icon": "ic_peer.png",
+        "heading": "Peer rewards",
+        "content": "Same rank bonus 5%"
+      },
+      {
+        "icon": "ic_global.png",
+        "heading": "Global dividend",
+        "content": "Global 5% weighted dividend"
+      }
+    ]
+  }
+]

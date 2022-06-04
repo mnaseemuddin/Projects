@@ -1,0 +1,1 @@
+export 'package:royal_q/presentation/about/about.screen.dart';
