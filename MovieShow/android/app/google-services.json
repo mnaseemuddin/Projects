@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "13254535800",
+    "project_id": "movieshow-ef7f7",
+    "storage_bucket": "movieshow-ef7f7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13254535800:android:49fc776554171b84541b8d",
+        "android_client_info": {
+          "package_name": "com.lgt.movieshow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13254535800-n86cjfm3uv4bgavgretaa6kfn5eu7k01.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lgt.movieshow",
+            "certificate_hash": "c51f44ce87a489d172f2d27e0297cd52c83aed2a"
+          }
+        },
+        {
+          "client_id": "13254535800-ctakfigka4r54nmcnpvh44nu50bni2tf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOE0Mk_8ijaTP74uZM_TpJbxWcQx-qz_s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13254535800-ctakfigka4r54nmcnpvh44nu50bni2tf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "13254535800-8jore4rsmo7rhnbg802cv0f832m4pdnc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.lgt.movieshow"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
